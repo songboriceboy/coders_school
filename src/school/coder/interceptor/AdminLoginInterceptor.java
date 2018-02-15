@@ -6,10 +6,11 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
-import school.coder.domain.UserInfo;
+import school.coder.domain.AdminInfo;
 
 
-public class LoginInterceptor implements HandlerInterceptor{
+
+public class AdminLoginInterceptor implements HandlerInterceptor{
 
 
 
@@ -19,9 +20,9 @@ public class LoginInterceptor implements HandlerInterceptor{
 		// TODO Auto-generated method stub
 		
 		HttpSession hsHttpSession = request.getSession();
-		UserInfo userInfo = (UserInfo)hsHttpSession.getAttribute("userinfo");
+		AdminInfo adminInfo = (AdminInfo)hsHttpSession.getAttribute("admin_info");
 		
-		if(userInfo==null)
+		if(adminInfo==null)
 		{
 			request.getRequestDispatcher("/WEB-INF/jsp/admin/login.jsp").forward(request, response);  
 			return false;

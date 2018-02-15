@@ -38,7 +38,7 @@ public class AdminController {
         if(ai != null)
         {
             hs.setAttribute("admin_info",ai);
-            return new ModelAndView("redirect:/jsp/admin/index.jsp");
+            return new ModelAndView("redirect:/admin/");
         }
         else
         {

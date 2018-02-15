@@ -1,7 +1,9 @@
 package school.coder.service.impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import school.coder.domain.AdminInfo;
+import school.coder.mapper.AdminMapper;
 import school.coder.service.AdminService;
 
 /**
@@ -9,8 +11,10 @@ import school.coder.service.AdminService;
  */
 @Service
 public class AdminServiceImpl implements AdminService {
+    @Autowired
+    AdminMapper adminMapper;
     @Override
     public AdminInfo Login(AdminInfo adminInfo) {
-        return null;
+        return adminMapper.Login(adminInfo);
     }
 }

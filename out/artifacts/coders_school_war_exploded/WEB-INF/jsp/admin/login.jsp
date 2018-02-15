@@ -210,15 +210,15 @@
                                 <div class="b35"></div>
                                 <h1>
                                     <a href="http://www.mooban.cn/member/login.php" class="b"><i
-                                            class="uk-icon-user mb-a"></i> 用户登录</a>
+                                            class="uk-icon-user mb-a"></i> 管理员登录</a>
                                 </h1>
-                                <form id="Dform" class="uk-form" method="post" action="login.php">
+                                <form id="Dform" class="uk-form" method="post" action="${pageContext.request.contextPath}/admin/login">
 
                                     <div class="uk-form-row">
                                         <div class="uk-form-icon">
                                             <i class="uk-icon-user"></i>
                                             <input title=""
-                                                   class="uk-form-width-large uk-form-large" name="username"
+                                                   class="uk-form-width-large uk-form-large" name="admin_name"
                                                    type="text" id="username" value="" placeholder="请输入账号/邮箱"
                                                    data-cached-title="注意账号或者邮箱地址的格式">
                                         </div>
@@ -228,7 +228,7 @@
                                             <i class="uk-icon-lock"></i>
                                             <input data-uk-tooltip="{pos:'right',animation:true}" title=""
                                                    maxlength="20" class="uk-form-width-large uk-form-large"
-                                                   name="password" id="password" type="password" value=""
+                                                   name="admin_pwd" id="password" type="password" value=""
                                                    placeholder="请输入登录密码" data-cached-title="6-20个字符，区分大小写">
                                         </div>
                                     </div>
