@@ -239,44 +239,9 @@
                                                 id="loginBtn">立 即 登 录
                                         </button>
                                     </div>
-                                    <div class="uk-form-row uk-text-small uk-margin-small-top">
-                                        <label class="uk-float-left"
-                                               data-uk-tooltip="{pos:'left',animation:true}"
-                                               title="选中后，一月内不用再次登录，网吧或公共计算机请勿选"><input type="checkbox"
-                                                                                        name="cookietime"
-                                                                                        value="1"
-                                                                                        id="cookietime"
-                                                                                        checked=""> 记住我</label>
-                                        <a class="uk-float-right uk-link uk-link-muted"
-                                           href="send.php">忘记密码?</a>
-                                    </div>
+
                                     <div class="b20"></div>
-                                    <div class="uk-form-row uk-text-center">
-                                        <a class="uk-icon-button uk-icon-hover uk-icon-qq"
-                                           href="http://www.mooban.cn/api/oauth/qq/connect.php"
-                                           data-uk-tooltip="{pos:'bottom',animation:true}" title="QQ登录">
-                                        </a> &nbsp;
-                                        <a class="uk-icon-button uk-icon-hover uk-icon-weibo"
-                                           href="http://www.mooban.cn/api/oauth/sina/connect.php"
-                                           data-uk-tooltip="{pos:'bottom',animation:true}" title="微博登录">
-                                        </a> &nbsp;
-                                        <a class="uk-icon-button uk-icon-hover uk-icon-paw"
-                                           href="http://www.mooban.cn/api/oauth/baidu/connect.php"
-                                           data-uk-tooltip="{pos:'bottom',animation:true}" title="百度登录">
-                                        </a> &nbsp;
-                                        <a class="uk-icon-button uk-icon-hover uk-icon-envelope-square"
-                                           href="http://www.mooban.cn/api/oauth/netease/connect.php"
-                                           data-uk-tooltip="{pos:'bottom',animation:true}" title="网易邮箱">
-                                        </a> &nbsp;
-                                        <a class="uk-icon-button uk-icon-hover uk-icon-windows"
-                                           href="http://www.mooban.cn/api/oauth/msn/connect.php"
-                                           data-uk-tooltip="{pos:'bottom',animation:true}" title="微软登录">
-                                        </a> &nbsp;
-                                        <a class="uk-icon-button uk-icon-hover uk-icon-github"
-                                           href="http://www.mooban.cn/api/oauth/github/connect.php"
-                                           data-uk-tooltip="{pos:'bottom',animation:true}" title="Github">
-                                        </a> &nbsp;
-                                    </div>
+
                                     <div class="b35"></div>
                                 </form>
                             </div>
@@ -285,23 +250,7 @@
                     </div>
                 </div>
                 <div class="uk-width-medium-1-2">
-                    <div class="uk-grid">
-                        <div class="uk-width-1-6"></div>
-                        <div class="uk-width-4-6">
-                            <div class="b35"></div>
-                            <h1 class="uk-text-center">
-                                <a href="javascript:;"
-                                   class="b">没有账号？立即注册</a>
-                            </h1>
-                            <button class="uk-button uk-button-large uk-button-success uk-width-1-1">立 即 注 册
-                            </button>
-                            <div class="b20"></div>
-                            <div class="uk-text-center">
-                                <a href="javascript:;"><img src="http://www.mooban.cn/skin/moob/img/register-reg-4.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="uk-width-1-6"></div>
-                    </div>
+
                 </div>
             </div>
         </div>
