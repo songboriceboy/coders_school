@@ -11,6 +11,6 @@
     <title>hello</title>
   </head>
   <body>
-hello
+<a href="${pageContext.request.contextPath}/user/login">login</a>
   </body>
 </html>
