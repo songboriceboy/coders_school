@@ -51,7 +51,7 @@ public class TopicController {
         }
         else //代表是修改文章
         {
-//            articleService.updateTrueArticles(topicInfo);
+            topicService.updateTopic(topicInfo);
         }
         response.setContentType("application/json;charset=utf-8");
         String strJson = JSON.toJSONString(topicInfo);
@@ -85,20 +85,12 @@ public class TopicController {
     @RequestMapping("/modify/{id}")
     public ModelAndView modifyTopic(@PathVariable int id)
     {
-
+        TopicInfo topicInfo = topicService.getTopicByID(id);
         ModelAndView maView = new ModelAndView();
         maView.setViewName("front/topic/new");
-        maView.addObject("topic_id",id);
+        maView.addObject("topic",topicInfo);
         return maView;
     }
 
-    @RequestMapping("/get_topic/{id}")
-    public void getTopicByID(@PathVariable int id,HttpServletResponse response) throws IOException {
 
-        TopicInfo topicInfo = topicService.getTopicByID(id);
-        response.setContentType("application/json;charset=utf-8");
-        String strJson = JSON.toJSONString(topicInfo);
-        response.getWriter().println(strJson);
-
-    }
 }

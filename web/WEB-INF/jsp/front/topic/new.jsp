@@ -13,11 +13,13 @@
     <link id="data-uikit-theme" rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/uikit.docs.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/docs.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/editor-md-master/css/editormd.css" />
-    <script src="${pageContext.request.contextPath}/assets/editor-md-master/jquery.min.js"></script>
-
+    <script src="${pageContext.request.contextPath}/assets/jquery/jquery.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/editor-md-master/editormd.min.js"></script>
+    <%--<script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/uikit.min.js"></script>--%>
     <script>
 
-        var testEditor = null;
+//        var testEditor = null;
+
         $(function () {
 
             var testEditor = editormd({
@@ -59,7 +61,7 @@
             });
 
             /**
-             * 咱贴上传图片
+             * 上传图片
              */
             $("#test-editormd").on('paste', function (ev) {
                 var data = ev.clipboardData;
@@ -88,30 +90,26 @@
 
 
 
-            var topic_id = $('#topic_id');
-            alert(topic_id.val());
-            if(topic_id.val() != '')
-            {
-                $.getJSON('${pageContext.request.contextPath}/topic/get_topic/'+topic_id.val(), {})
-                        .done(function (article) {
+            <%--var topic_id = $('#topic_id');--%>
 
-                            if(article != null)
-                            {
-                                testEditor.setMarkdown(article.mark_content);
-                                $("#title").val(data.node.text);
+            <%--if(topic_id.val() != '')--%>
+            <%--{--%>
+                <%--$.getJSON('${pageContext.request.contextPath}/topic/get_topic/'+topic_id.val(), {})--%>
+                        <%--.done(function (topic) {--%>
 
-                            }
-                            else
-                            {
-                                testEditor.setMarkdown("");
-                                $("#title").val('');
+                            <%--if(topic!= null)--%>
+                            <%--{--%>
 
-                            }
-                        })
-                        .fail(function () {
-                            data.instance.refresh();
-                        });
-            }
+                                <%--testEditor.appendMarkdown(topic.topic_markdown_content);--%>
+                                <%--$("#title").val(topic.topic_title);--%>
+
+                            <%--}--%>
+
+                        <%--})--%>
+                        <%--.fail(function () {--%>
+
+                        <%--});--%>
+            <%--}--%>
 
 
 
@@ -153,11 +151,11 @@
 
                         <input type="hidden" value="${topic_id}" id="topic_id">
 
-                        标题： <input type="text" name="topic_title" value="" id = "title">
+                        标题： <input type="text" name="topic_title" value="${topic.topic_title}" id = "title">
 
                         <div class="editormd" id="test-editormd">
 
-                            <textarea class="editormd-markdown-textarea" name="topic_markdown_content" id = "topic_markdown_content"></textarea>
+                            <textarea class="editormd-markdown-textarea" name="topic_markdown_content" id = "topic_markdown_content">${topic.topic_markdown_content}</textarea>
                             <!-- html textarea 需要开启配置项 saveHTMLToTextarea == true -->
                             <%--<textarea class="editormd-html-textarea" name="article_content"></textarea>--%>
 
@@ -173,7 +171,6 @@
 </div>
 
 
-<script src="${pageContext.request.contextPath}/assets/editor-md-master/editormd.min.js"></script>
-<script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/uikit.min.js"></script>
+
 </body>
 <html>

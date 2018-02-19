@@ -22,6 +22,11 @@ public class TopicServiceImpl implements TopicService {
     }
 
     @Override
+    public int updateTopic(TopicInfo topicInfo) {
+        return topicMapper.updateTopic(topicInfo);
+    }
+
+    @Override
     public List<TopicInfo> getAllTopics() {
         return topicMapper.getAllTopics();
     }

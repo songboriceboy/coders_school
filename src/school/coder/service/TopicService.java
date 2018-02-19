@@ -9,6 +9,7 @@ import java.util.List;
  */
 public interface TopicService {
     int insertTopic(TopicInfo topicInfo);
+    int updateTopic(TopicInfo topicInfo);
     List<TopicInfo> getAllTopics();
     TopicInfo getTopicByID(int id);
 }
