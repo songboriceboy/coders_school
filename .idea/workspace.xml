@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872bce5c-9269-4a5f-82e2-113350dfc46c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/controller/UserController.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/school/coder/controller/UserController.java" afterPath="$PROJECT_DIR$/src/school/coder/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/school/coder/mapper/UserMapper.java" afterPath="$PROJECT_DIR$/src/school/coder/mapper/UserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/school/coder/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/school/coder/mapper/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/school/coder/service/UserService.java" afterPath="$PROJECT_DIR$/src/school/coder/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/school/coder/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/school/coder/service/impl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/front/login.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/front/reg.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/reg.jsp" />
     </list>
     <ignored path="coders_school.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,13 +26,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="reg.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="reg.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/reg.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="121" column="3" selection-start-line="121" selection-start-column="3" selection-end-line="121" selection-end-column="3" />
+            <state relative-caret-position="245">
+              <caret line="207" column="0" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
               <folding>
-                <element signature="e#8227#8233#0#HTML" expanded="false" />
+                <element signature="e#8157#8163#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -81,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="32">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -94,18 +89,18 @@
       <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="114" column="108" selection-start-line="114" selection-start-column="108" selection-end-line="114" selection-end-column="108" />
+            <state relative-caret-position="207">
+              <caret line="186" column="53" selection-start-line="186" selection-start-column="53" selection-end-line="186" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/school/coder/domain/UserInfo.java">
+      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="50">
+              <caret line="80" column="75" selection-start-line="80" selection-start-column="75" selection-end-line="80" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -190,15 +185,15 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin/header/sidebar.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin/header/header.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin/index.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/reg.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/login.jsp" />
         <option value="$PROJECT_DIR$/src/school/coder/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/school/coder/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/school/coder/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/school/coder/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/school/coder/controller/UserController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/login.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/reg.jsp" />
       </list>
     </option>
   </component>
@@ -330,6 +325,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="front" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coders_school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coders_school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1162,12 +1187,12 @@
       <workItem from="1518673130460" duration="3735000" />
       <workItem from="1518682011852" duration="1243000" />
       <workItem from="1518689425225" duration="4444000" />
-      <workItem from="1519009086728" duration="5379000" />
+      <workItem from="1519009086728" duration="5786000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14801000" />
+    <option name="totallyTimeSpent" value="15208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1183,7 +1208,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43163097" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22075783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1494,18 +1519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="115" column="6" selection-start-line="115" selection-start-column="6" selection-end-line="115" selection-end-column="6" />
-          <folding>
-            <element signature="n#header#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/school/coder/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -1577,24 +1590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/reg.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="121" column="3" selection-start-line="121" selection-start-column="3" selection-end-line="121" selection-end-column="3" />
-          <folding>
-            <element signature="e#8227#8233#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="114" column="108" selection-start-line="114" selection-start-column="108" selection-end-line="114" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/school/coder/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1658,9 +1653,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        <state relative-caret-position="32">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="80" column="75" selection-start-line="80" selection-start-column="75" selection-end-line="80" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="186" column="53" selection-start-line="186" selection-start-column="53" selection-end-line="186" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/reg.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="207" column="0" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+          <folding>
+            <element signature="e#8157#8163#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

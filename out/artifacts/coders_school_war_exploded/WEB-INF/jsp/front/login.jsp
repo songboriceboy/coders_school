@@ -183,16 +183,13 @@
                         <div class="uk-width-1-6"></div>
                         <div class="uk-width-4-6">
                             <div class="b35"></div>
-                            <h1 class="uk-text-center">
+                            <h1 class="uk-text-center uk-margin-large-top">
                                 <a href="javascript:;"
                                    class="b">没有账号？立即注册</a>
                             </h1>
-                            <button class="uk-button uk-button-large uk-button-success uk-width-1-1">立 即 注 册
-                            </button>
-                            <div class="b20"></div>
-                            <div class="uk-text-center">
-                                <a href="javascript:;"><img src="http://www.mooban.cn/skin/moob/img/register-reg-4.png" alt=""></a>
-                            </div>
+                            <a href="${pageContext.request.contextPath}/user/reg" class="uk-button uk-button-large uk-button-success uk-width-1-1">立 即 注 册
+                            </a>
+
                         </div>
                         <div class="uk-width-1-6"></div>
                     </div>

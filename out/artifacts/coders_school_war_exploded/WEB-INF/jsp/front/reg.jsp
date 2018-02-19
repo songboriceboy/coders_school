@@ -169,12 +169,12 @@
                             <div class="uk-panel">
                                 <div class="b35"></div>
                                 <h1 class="uk-text-center">
-                                    <a href="javascript:Go('login.php?forward=http%3A%2F%2Fwww.mooban.cn%2Fknow%2F');"
+                                    <a href="javascript:;"
                                        class="b">我已注册账号</a>
                                 </h1>
-                                <button class="uk-button uk-button-large uk-button-success uk-width-1-1"
-                                        onclick="Go('http://www.mooban.cn/member/login.php')">立 即 登 录
-                                </button>
+                                <a href="${pageContext.request.contextPath}/user/login" class="uk-button uk-button-large uk-button-success uk-width-1-1"
+                                        >立 即 登 录
+                                </a>
                                 <div class="b20"></div>
                                 <div class="uk-form-row">
                                     <h3 class="uk-margin-bottom-remove"><span
@@ -205,10 +205,7 @@
                                         </a>
                                     </h3>
                                 </div>
-                                <div class="uk-form-row uk-text-center">
-                                    <a href="javascript:Go('login.php?forward=http%3A%2F%2Fwww.mooban.cn%2Fknow%2F');"><img
-                                            src="http://www.mooban.cn/skin/moob/img/register-reg-4.png" alt=""></a>
-                                </div>
+
                             </div>
                         </div>
                         <div class="uk-width-1-6"></div>
