@@ -15,3 +15,14 @@ create table userinfo(
 		user_phone varchar(20) not null DEFAULT '',
 		user_score int not null DEFAULT 0
 )engine = innodb;
+create table section_info(
+    section_id int not null PRIMARY KEY auto_increment,
+		section_name varchar(50) not null DEFAULT '',
+		section_desc varchar(600) not null DEFAULT '',
+		section_parent_id int not null DEFAULT -1
+)engine = innodb;
+
+insert into section_info(section_name,section_desc,section_parent_id)
+values('问与答','问与答',-1);
+insert into section_info(section_name,section_desc,section_parent_id)
+values('技术分享','技术分享',-1);
