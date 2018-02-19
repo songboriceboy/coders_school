@@ -149,7 +149,7 @@
                           target="_blank" id = "article_form">
                         <h1>完整demo</h1>
 
-                        <input type="hidden" value="${topic_id}" id="topic_id">
+                        <input type="hidden" name = "topic_id" value="${topic.topic_id}" id="topic_id">
 
                         标题： <input type="text" name="topic_title" value="${topic.topic_title}" id = "title">
 

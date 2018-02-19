@@ -11,7 +11,7 @@
         ,topic_markdown_content=#{topic_markdown_content}
         ,topic_createtime=#{topic_createtime}
         ,section_id=#{section_id}
-        ,user_id=#{user_id})
+        ,user_id=#{user_id}
         where topic_id = #{topic_id}
     </update>
     <select id="getAllTopics" resultType="Topicinfo">

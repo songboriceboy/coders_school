@@ -33,10 +33,20 @@ public class TopicController {
     {
 
         ModelAndView maView = new ModelAndView();
+        TopicInfo topicInfo = new TopicInfo();
+        maView.addObject("topic",topicInfo);
         maView.setViewName("front/topic/new");
         return maView;
     }
-
+    @RequestMapping("/modify/{id}")
+    public ModelAndView modifyTopic(@PathVariable int id)
+    {
+        TopicInfo topicInfo = topicService.getTopicByID(id);
+        ModelAndView maView = new ModelAndView();
+        maView.setViewName("front/topic/new");
+        maView.addObject("topic",topicInfo);
+        return maView;
+    }
     @RequestMapping("/save_topic")
     public void SaveArticle(HttpServletRequest request, HttpServletResponse response, TopicInfo topicInfo) throws IOException {
 
@@ -82,15 +92,7 @@ public class TopicController {
         response.getWriter().println(strJson);
     }
 
-    @RequestMapping("/modify/{id}")
-    public ModelAndView modifyTopic(@PathVariable int id)
-    {
-        TopicInfo topicInfo = topicService.getTopicByID(id);
-        ModelAndView maView = new ModelAndView();
-        maView.setViewName("front/topic/new");
-        maView.addObject("topic",topicInfo);
-        return maView;
-    }
+
 
 
 }
