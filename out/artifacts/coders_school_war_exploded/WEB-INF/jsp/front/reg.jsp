@@ -106,16 +106,10 @@
                                     <a href="http://www.mooban.cn/member/register.php" class="b list_cat"><i
                                             class="uk-icon-user mb-a"></i> 用户注册</a>
                                 </h1>
-                                <iframe src="" name="send" id="send" style="display:none;"></iframe>
-                                <form class="uk-form jqtransformdone" action="register.php" method="post"
+
+                                <form class="uk-form jqtransformdone" action="${pageContext.request.contextPath}/user/reguser" method="post"
                                       target="send" onsubmit="return check();">
-                                    <input name="action" type="hidden" id="action"
-                                           value="92f3b602c33e9d4acb42c319bb47ef63">
-                                    <input name="forward" type="hidden" value="http://www.mooban.cn/know/">
-                                    <input name="post[truename]" type="hidden" value="魔芋">
-                                    <input name="post[gender]" type="hidden" value="1">
-                                    <input name="post[areaid]" type="hidden" value="1">
-                                    <input name="post[regid]" type="hidden" value="5">
+
                                     <div class="uk-form-row">
                                         <div class="uk-form-icon">
                                             <i class="uk-icon-user" id="dusername"></i>
@@ -123,7 +117,7 @@
                                                    onkeyup="value=value.replace(/[^a-z0-9_\-]/g,'')"
                                                    title="4-20个字符，只能使用小写字母(a-z)、数字(0-9)、下划线(_)、中划线(-)，且以字母或数字开头和结尾"
                                                    class="uk-form-width-large uk-form-large"
-                                                   name="post[username]" id="username"
+                                                   name="user_name" id="username"
                                                    onblur="validator('username');" type="text"
                                                    autocomplete="off" placeholder="请输入账号">
                                         </div>
@@ -134,7 +128,7 @@
                                             <i class="uk-icon-lock" id="dpassword"></i>
                                             <input data-uk-tooltip="{pos:'right',animation:true}" maxlength="20"
                                                    title="" class="uk-form-width-large uk-form-large"
-                                                   name="post[password]" id="password"
+                                                   name="user_pwd" id="password"
                                                    onblur="validator('password');" type="password"
                                                    autocomplete="off" value="" placeholder="请输入密码"
                                                    data-cached-title="6-20个字符，区分大小写，推荐使用数字、字母和特殊符号组合">
@@ -146,7 +140,7 @@
                                             <i class="uk-icon-unlock-alt" id="dcpassword"></i>
                                             <input data-uk-tooltip="{pos:'right',animation:true}" maxlength="20"
                                                    title="" class="uk-form-width-large uk-form-large"
-                                                   name="post[cpassword]" id="cpassword"
+                                                   name="user_pwd_again" id="cpassword"
                                                    onblur="validate('cpassword');" type="password"
                                                    autocomplete="off" value="" placeholder="请确认密码"
                                                    data-cached-title="必须和上面输入的密码一样">
@@ -225,6 +219,32 @@
 
     </div>
 </div>
+<script>
+    function check() {
 
+        var username = document.getElementById('username');
+        if (username.value == '') {
+
+            alert("请填写用户登录名");
+            return false;
+        }
+
+        var pwd = document.getElementById('password');
+        if (pwd.value.length < 6) {
+            alert("请填写用户登录密码");
+            return false;
+        }
+
+        var pwd_again = document.getElementById('cpassword');
+        if ($.trim(pwd_again.value).length > 1 && pwd.value != pwd_again.value) {
+            alert("两次输入密码不一致");
+            return false;
+        }
+
+
+
+        return true;
+    }
+</script>
 </body>
 </html>

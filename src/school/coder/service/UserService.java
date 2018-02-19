@@ -1,0 +1,14 @@
+package school.coder.service;
+
+import school.coder.domain.UserInfo;
+
+/**
+ * Created by Administrator on 2018/2/19.
+ */
+public interface UserService {
+    int regUser(UserInfo userInfo);
+    UserInfo userLogin(String email, String pass);
+    boolean IsUserExist(String email);
+    int SaveUserHeaderPicPath(String path,int id);
+}
+

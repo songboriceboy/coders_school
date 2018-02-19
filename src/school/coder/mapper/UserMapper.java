@@ -1,0 +1,13 @@
+package school.coder.mapper;
+
+import school.coder.domain.UserInfo;
+
+/**
+ * Created by Administrator on 2018/2/19.
+ */
+public interface UserMapper {
+    int regUser(UserInfo userInfo);
+    UserInfo userLogin(String email, String pass);
+    boolean IsUserExist(String email);
+    int SaveUserHeaderPicPath(String path,int id);
+}
