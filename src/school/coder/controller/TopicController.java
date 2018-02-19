@@ -46,6 +46,15 @@ public class TopicController {
         maView.addObject("topic",topicInfo);
         return maView;
     }
+    @RequestMapping("/show/{id}")
+    public ModelAndView showTopic(@PathVariable int id)
+    {
+        TopicInfo topicInfo = topicService.getTopicByID(id);
+        ModelAndView maView = new ModelAndView();
+        maView.setViewName("front/topic/show");
+        maView.addObject("topic",topicInfo);
+        return maView;
+    }
     @RequestMapping("/save_topic")
     public void SaveArticle(HttpServletRequest request, HttpServletResponse response, TopicInfo topicInfo) throws IOException {
 

@@ -19,7 +19,7 @@
   <ul>
     <c:forEach items="${topics}" var="topic">
         <li>
-          ${topic.topic_title}
+          <a href="${pageContext.request.contextPath}/topic/show/${topic.topic_id}">${topic.topic_title}</a>
           <a href="${pageContext.request.contextPath}/topic/modify/${topic.topic_id}">修改</a>
         </li>
     </c:forEach>
