@@ -14,5 +14,6 @@
   欢迎您 ${user_info.user_name}
 <a href="${pageContext.request.contextPath}/user/login">login</a>
 <a href="${pageContext.request.contextPath}/user/reg">reg</a>
+  <a href="${pageContext.request.contextPath}/topic/new">new topic</a>
   </body>
 </html>
