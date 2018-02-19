@@ -12,5 +12,6 @@
   </head>
   <body>
 <a href="${pageContext.request.contextPath}/user/login">login</a>
+<a href="${pageContext.request.contextPath}/user/reg">reg</a>
   </body>
 </html>

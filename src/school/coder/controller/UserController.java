@@ -11,11 +11,19 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/user")
 public class UserController {
     @RequestMapping("/login")
-    public ModelAndView index()
+    public ModelAndView login()
     {
 
         ModelAndView maView = new ModelAndView();
         maView.setViewName("front/login");
+        return maView;
+    }
+    @RequestMapping("/reg")
+    public ModelAndView reg()
+    {
+
+        ModelAndView maView = new ModelAndView();
+        maView.setViewName("front/reg");
         return maView;
     }
 }
