@@ -72,7 +72,7 @@
                         reader.onload = function (event) {
                             var base64 = event.target.result;
                             //ajax上传图片
-                            $.post("${pageContext.request.contextPath}/article/uploadimg.action",{base:base64}, function (res) {
+                            $.post("${pageContext.request.contextPath}/topic/uploadimg",{base:base64}, function (res) {
                                 // layer.msg(ret.msg);
                                 var ret = JSON.parse(res);
                                 if (ret.code === 1) {
@@ -129,7 +129,7 @@
                 var param = $("#article_form").serialize();
                 $.post('${pageContext.request.contextPath}/topic/save_topic', param)
                         .done(function (article) {
-                            if(article.id >= 0)
+                            if(article.topic_id >= 0)
                             {
                                 alert("ok");
                                 return false;

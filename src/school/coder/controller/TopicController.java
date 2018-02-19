@@ -8,11 +8,15 @@ import org.springframework.web.servlet.ModelAndView;
 import school.coder.domain.TopicInfo;
 import school.coder.service.TopicService;
 import school.coder.service.UserService;
+import school.coder.util.imgUploadBackData;
+import school.coder.util.picEncode;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.io.IOException;
 import java.util.Date;
+import java.util.UUID;
 
 /**
  * Created by Administrator on 2018/2/19.
@@ -52,4 +56,27 @@ public class TopicController {
         response.getWriter().println(strJson);
     }
 
+    @RequestMapping("/uploadimg")
+    public void uploadImg(HttpServletRequest request, HttpServletResponse response, TopicInfo topicInfo) throws IOException {
+        String strTemp = request.getParameter("base");
+        System.out.println(strTemp);
+        strTemp = strTemp.replace("data:image/png;base64,","");
+        String strPath = request.getServletContext().getRealPath(File.separator+"upload");
+        String strUUid = UUID.randomUUID().toString();
+        System.out.println(strPath);
+
+        File file = new File(strPath);
+
+        if(!file.exists())
+        {
+            file.mkdir();
+        }
+        String strSavePath = strPath+File.separator+strUUid+".jpg";
+        picEncode.generateImage(strTemp,strSavePath);
+        imgUploadBackData iubd = new imgUploadBackData();
+        iubd.setPath("upload"+File.separator+strUUid+".jpg");
+        iubd.setCode(1);
+        String strJson = JSON.toJSONString(iubd);
+        response.getWriter().println(strJson);
+    }
 }
