@@ -127,13 +127,17 @@
 
             $("#submit").click(function () {
                 var param = $("#article_form").serialize();
-                $.post('${pageContext.request.contextPath}/article/save_article.action', param)
+                $.post('${pageContext.request.contextPath}/topic/save_topic', param)
                         .done(function (article) {
                             if(article.id >= 0)
+                            {
                                 alert("ok");
+                                return false;
+                            }
+
                         })
                         .fail(function () {
-                            data.instance.refresh();
+
                         });
             })
 
@@ -151,17 +155,16 @@
             <div class="tm-main uk-width-medium-3-4">
 
                 <div>
-                    <form action="${pageContext.request.contextPath}/article/add_or_modify_article.action" method="post"
+                    <form action="#" method="post"
                           target="_blank" id = "article_form">
                         <h1>完整demo</h1>
-                        <input type="hidden" name="id" value="" id = "aid">
-                        <input type="hidden" name="nodeid" value="" id = "nodeid">
 
-                        标题： <input type="text" name="article_title" value="" id = "title">
+
+                        标题： <input type="text" name="topic_title" value="" id = "title">
 
                         <div class="editormd" id="test-editormd">
 
-                            <textarea class="editormd-markdown-textarea" name="mark_content" id = "mark_content"></textarea>
+                            <textarea class="editormd-markdown-textarea" name="topic_markdown_content" id = "topic_markdown_content"></textarea>
                             <!-- html textarea 需要开启配置项 saveHTMLToTextarea == true -->
                             <%--<textarea class="editormd-html-textarea" name="article_content"></textarea>--%>
 
