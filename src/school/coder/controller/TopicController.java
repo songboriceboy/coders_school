@@ -53,6 +53,7 @@ public class TopicController {
         ModelAndView maView = new ModelAndView();
         maView.setViewName("front/topic/show");
         maView.addObject("topic",topicInfo);
+        maView.addObject("txt","${txt}");
         return maView;
     }
     @RequestMapping("/save_topic")
