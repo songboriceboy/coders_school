@@ -1,6 +1,6 @@
 package school.coder.controller;
 
-import com.alibaba.druid.sql.dialect.sqlserver.ast.Top;
+
 import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import school.coder.domain.TopicInfo;
 import school.coder.service.TopicService;
-import school.coder.service.UserService;
 import school.coder.util.imgUploadBackData;
 import school.coder.util.picEncode;
 
@@ -91,8 +90,5 @@ public class TopicController {
         String strJson = JSON.toJSONString(iubd);
         response.getWriter().println(strJson);
     }
-
-
-
 
 }
