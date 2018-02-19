@@ -13,6 +13,7 @@ create table userinfo(
 		user_name varchar(64) not null DEFAULT '',
 		user_pwd varchar(64) not null DEFAULT '',
 		user_phone varchar(20) not null DEFAULT '',
+		user_avatar varchar(200) not null DEFAULT '',
 		user_score int not null DEFAULT 0
 )engine = innodb;
 create table section_info(

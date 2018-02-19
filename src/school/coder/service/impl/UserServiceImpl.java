@@ -29,7 +29,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public int SaveUserHeaderPicPath(String path, int id) {
-        return 0;
+    public int updateUserAvatar(UserInfo userInfo) {
+        return userMapper.updateUserAvatar(userInfo);
     }
+
+
 }

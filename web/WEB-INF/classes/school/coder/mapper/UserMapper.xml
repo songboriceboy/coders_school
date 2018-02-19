@@ -7,4 +7,8 @@
     <select id="userLogin" parameterType="UserInfo" resultType="UserInfo">
         select * from UserInfo where user_name = #{user_name} and user_pwd = #{user_pwd}
     </select>
+    <update id="updateUserAvatar" parameterType="UserInfo">
+        update userinfo set user_avatar = #{user_avatar} where user_id = #{user_id}
+    </update>
+
 </mapper>

@@ -9,5 +9,5 @@ public interface UserMapper {
     int regUser(UserInfo userInfo);
     UserInfo userLogin(UserInfo userInfo);
     boolean IsUserExist(String email);
-    int SaveUserHeaderPicPath(String path,int id);
+    int updateUserAvatar(UserInfo userInfo);
 }

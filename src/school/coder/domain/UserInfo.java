@@ -9,7 +9,17 @@ public class UserInfo {
     private String user_name;
     private String user_pwd;
     private String user_phone;
+    private String user_avatar;
     private int user_score;
+
+    public String getUser_avatar() {
+
+        return user_avatar;
+    }
+
+    public void setUser_avatar(String user_avatar) {
+        this.user_avatar = user_avatar;
+    }
 
     public int getUser_id() {
         return user_id;
