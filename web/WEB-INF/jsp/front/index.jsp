@@ -11,6 +11,7 @@
     <title>hello</title>
   </head>
   <body>
+  欢迎您 ${user_info.user_name}
 <a href="${pageContext.request.contextPath}/user/login">login</a>
 <a href="${pageContext.request.contextPath}/user/reg">reg</a>
   </body>

@@ -19,8 +19,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserInfo userLogin(String email, String pass) {
-        return null;
+    public UserInfo userLogin(UserInfo userInfo) {
+         return userMapper.userLogin(userInfo);
     }
 
     @Override

@@ -7,7 +7,7 @@ import school.coder.domain.UserInfo;
  */
 public interface UserMapper {
     int regUser(UserInfo userInfo);
-    UserInfo userLogin(String email, String pass);
+    UserInfo userLogin(UserInfo userInfo);
     boolean IsUserExist(String email);
     int SaveUserHeaderPicPath(String path,int id);
 }

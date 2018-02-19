@@ -8,6 +8,7 @@ import school.coder.domain.UserInfo;
 import school.coder.service.UserService;
 import school.coder.util.CreateMD5;
 
+import javax.servlet.http.HttpServletRequest;
 import java.security.NoSuchAlgorithmException;
 
 /**
@@ -41,6 +42,19 @@ public class UserController {
         userInfo.setUser_phone("");
         userInfo.setUser_pwd(CreateMD5.getMd5(userInfo.getUser_pwd()));
         userService.regUser(userInfo);
+        ModelAndView maView = new ModelAndView();
+        maView.setViewName("front/index");
+        return maView;
+    }
+    @RequestMapping("/userlogin")
+    public ModelAndView userlogin(UserInfo userInfo, HttpServletRequest request) throws NoSuchAlgorithmException {
+
+        userInfo.setUser_pwd(CreateMD5.getMd5(userInfo.getUser_pwd()));
+        UserInfo userInfo1 = userService.userLogin(userInfo);
+        if(userInfo1!=null)
+        {
+            request.getSession().setAttribute("user_info",userInfo1);
+        }
         ModelAndView maView = new ModelAndView();
         maView.setViewName("front/index");
         return maView;
