@@ -23,12 +23,12 @@
 </head>
 <body class="tm-background">
 
-<%@ include file="header/header.jsp"%>
+<%@ include file="common/common.jsp"%>
 
 <div class="tm-middle">
     <div class="uk-container uk-container-center">
         <div class="uk-grid" data-uk-grid-margin>
-            <%@ include file="header/sidebar.jsp"%>
+            <%@ include file="common/sidebar.jsp"%>
             <div class="tm-main uk-width-medium-4-5">
                 <article class="uk-article">
                     <h1>开始使用</h1>
@@ -39,7 +39,7 @@
 </div>
 </div>
 
-<%@ include file="header/footer.jsp"%>
+<%@ include file="common/footer.jsp"%>
 
 </body>
 <html>
