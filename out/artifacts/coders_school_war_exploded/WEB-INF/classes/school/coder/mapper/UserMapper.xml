@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="school.coder.mapper.UserMapper">
-    <select id="regUser" parameterType="userInfo" resultType="int">
+    <insert id="regUser" parameterType="userInfo">
         insert into userinfo(user_name,user_pwd,user_phone,user_score) values(#{user_name},#{user_pwd},#{user_phone},2000)
-    </select>
+    </insert>
 </mapper>

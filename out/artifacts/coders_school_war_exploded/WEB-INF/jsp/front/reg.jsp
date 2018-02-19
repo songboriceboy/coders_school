@@ -231,7 +231,7 @@
 
         var pwd = document.getElementById('password');
         if (pwd.value.length < 6) {
-            alert("请填写用户登录密码");
+            alert("用户登录密码不能低于6位");
             return false;
         }
 
@@ -240,9 +240,6 @@
             alert("两次输入密码不一致");
             return false;
         }
-
-
-
         return true;
     }
 </script>
