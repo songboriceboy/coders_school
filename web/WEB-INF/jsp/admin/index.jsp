@@ -23,7 +23,7 @@
 </head>
 <body class="tm-background">
 
-<%@ include file="common/common.jsp"%>
+<%@ include file="common/header.jsp"%>
 
 <div class="tm-middle">
     <div class="uk-container uk-container-center">

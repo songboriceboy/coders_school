@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872bce5c-9269-4a5f-82e2-113350dfc46c" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/header/footer.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/common/footer.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/header/header.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/common/header.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/header/sidebar.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/common/sidebar.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/coders_school_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/coders_school_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coders_school.iml" afterPath="$PROJECT_DIR$/coders_school.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/index.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin/index.jsp" />
     </list>
     <ignored path="coders_school.iws" />
@@ -86,8 +79,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+            <state relative-caret-position="600">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -307,6 +300,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1125,12 +1122,12 @@
       <workItem from="1518673130460" duration="3735000" />
       <workItem from="1518682011852" duration="1243000" />
       <workItem from="1518689425225" duration="4444000" />
-      <workItem from="1519009086728" duration="148000" />
+      <workItem from="1519009086728" duration="215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9570000" />
+    <option name="totallyTimeSpent" value="9637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1580,8 +1577,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        <state relative-caret-position="600">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
