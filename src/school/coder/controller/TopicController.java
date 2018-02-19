@@ -1,8 +1,10 @@
 package school.coder.controller;
 
+import com.alibaba.druid.sql.dialect.sqlserver.ast.Top;
 import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import school.coder.domain.TopicInfo;
@@ -78,5 +80,25 @@ public class TopicController {
         iubd.setCode(1);
         String strJson = JSON.toJSONString(iubd);
         response.getWriter().println(strJson);
+    }
+
+    @RequestMapping("/modify/{id}")
+    public ModelAndView modifyTopic(@PathVariable int id)
+    {
+
+        ModelAndView maView = new ModelAndView();
+        maView.setViewName("front/topic/new");
+        maView.addObject("topic_id",id);
+        return maView;
+    }
+
+    @RequestMapping("/get_topic/{id}")
+    public void getTopicByID(@PathVariable int id,HttpServletResponse response) throws IOException {
+
+        TopicInfo topicInfo = topicService.getTopicByID(id);
+        response.setContentType("application/json;charset=utf-8");
+        String strJson = JSON.toJSONString(topicInfo);
+        response.getWriter().println(strJson);
+
     }
 }

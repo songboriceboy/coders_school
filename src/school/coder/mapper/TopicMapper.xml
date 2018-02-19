@@ -6,6 +6,10 @@
         values(#{topic_title},#{topic_content},#{topic_markdown_content},#{topic_createtime},#{section_id},#{user_id})
     </insert>
 
-
-
+    <select id="getAllTopics" resultType="Topicinfo">
+        select * from topic_info
+    </select>
+    <select id="getTopicByID" resultType="Topicinfo">
+        select * from topic_info where topic_id = #{value}
+    </select>
 </mapper>

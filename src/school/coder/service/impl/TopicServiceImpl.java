@@ -7,6 +7,8 @@ import school.coder.mapper.TopicMapper;
 import school.coder.mapper.UserMapper;
 import school.coder.service.TopicService;
 
+import java.util.List;
+
 /**
  * Created by Administrator on 2018/2/19.
  */
@@ -17,5 +19,15 @@ public class TopicServiceImpl implements TopicService {
     @Override
     public int insertTopic(TopicInfo topicInfo) {
         return topicMapper.insertTopic(topicInfo);
+    }
+
+    @Override
+    public List<TopicInfo> getAllTopics() {
+        return topicMapper.getAllTopics();
+    }
+
+    @Override
+    public TopicInfo getTopicByID(int id) {
+        return topicMapper.getTopicByID(id);
     }
 }

@@ -88,40 +88,32 @@
 
 
 
+            var topic_id = $('#topic_id');
+            alert(topic_id.val());
+            if(topic_id.val() != '')
+            {
+                $.getJSON('${pageContext.request.contextPath}/topic/get_topic/'+topic_id.val(), {})
+                        .done(function (article) {
+
+                            if(article != null)
+                            {
+                                testEditor.setMarkdown(article.mark_content);
+                                $("#title").val(data.node.text);
+
+                            }
+                            else
+                            {
+                                testEditor.setMarkdown("");
+                                $("#title").val('');
+
+                            }
+                        })
+                        .fail(function () {
+                            data.instance.refresh();
+                        });
+            }
 
 
-
-
-            <%--$("#title_tree").bind("activate_node.jstree", function (e, data) {--%>
-                <%--console.log(data.node);--%>
-
-                <%--$.getJSON('${pageContext.request.contextPath}/article/open_article.action', { 'tagid':${tid},'id' : data.node.id,'parent' : data.node.parent, 'text' : data.node.text })--%>
-                        <%--.done(function (article) {--%>
-
-                            <%--if(article != null)--%>
-                            <%--{--%>
-
-
-                                <%--testEditor.setMarkdown(article.mark_content);--%>
-                                <%--$("#title").val(data.node.text);--%>
-                                <%--$("#aid").val(article.id);--%>
-                                <%--$("#nodeid").val(data.node.id);--%>
-                            <%--}--%>
-                            <%--else--%>
-                            <%--{--%>
-                                <%--testEditor.setMarkdown("");--%>
-
-                                <%--$("#title").val(data.node.text);--%>
-                                <%--$("#aid").val(0);--%>
-                                <%--$("#nodeid").val(data.node.id);--%>
-                            <%--}--%>
-
-
-                        <%--})--%>
-                        <%--.fail(function () {--%>
-                            <%--data.instance.refresh();--%>
-                        <%--});--%>
-            <%--});--%>
 
 
 
@@ -159,6 +151,7 @@
                           target="_blank" id = "article_form">
                         <h1>完整demo</h1>
 
+                        <input type="hidden" value="${topic_id}" id="topic_id">
 
                         标题： <input type="text" name="topic_title" value="" id = "title">
 
