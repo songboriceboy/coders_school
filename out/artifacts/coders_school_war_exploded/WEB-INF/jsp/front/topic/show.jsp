@@ -143,6 +143,7 @@
                 `;
                         var li = $(comment);
                         $('#uk-comment-list').append(li);
+                        autosize(document.querySelector('textarea'));
                         return false;
                     })
                     $('#uk-comment-list').on('click', '.btn-reply', function () {
@@ -164,6 +165,7 @@
                         </div>`;
                         var replynode = $(reply);
                         $(this).closest('.reply-item').append(replynode);
+                        autosize(document.querySelector('textarea'));
                         return false;
                     })
                 }
