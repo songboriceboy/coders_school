@@ -38,3 +38,14 @@ create table topic_info(
 		user_id int not null DEFAULT -1
 )engine = innodb;
 
+DROP TABLE IF EXISTS topic_comment_info;
+CREATE TABLE topic_comment_info (
+  comment_id int(11) NOT NULL AUTO_INCREMENT,
+  comment_content longtext NOT NULL DEFAULT '',
+  comment_markdown_content longtext NOT NULL DEFAULT '',
+  comment_createtime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  topic_id int(11) NOT NULL DEFAULT '-1',
+  reply_comment_id int(11) NOT NULL DEFAULT '-1',
+  user_id int(11) NOT NULL DEFAULT '-1',
+  PRIMARY KEY (comment_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
