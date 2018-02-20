@@ -24,20 +24,21 @@ public class TopicCommentController {
     TopicCommentService topicCommentService;
 
     @RequestMapping("/add_comment")
-    public void SaveArticle(HttpServletRequest request, HttpServletResponse response,TopicCommentInfo topicCommentInfo) throws IOException {
+    public void addComment(HttpServletRequest request
+            , HttpServletResponse response,TopicCommentInfo topicCommentInfo) throws IOException {
 
         String strMarkdown = request.getParameter("test-editormd-html-code");
         topicCommentInfo.setComment_content(strMarkdown);
         topicCommentInfo.setComment_createtime(new Date());
         UserInfo userInfo = (UserInfo)request.getSession().getAttribute("user_info");
         topicCommentInfo.setUser_id(userInfo.getUser_id());
-        System.out.println(topicCommentInfo);
+//        System.out.println(topicCommentInfo);
         topicCommentService.addComment(topicCommentInfo);
         //代表是新增
 
-//        response.setContentType("application/json;charset=utf-8");
-//        String strJson = JSON.toJSONString(topicInfo);
-//        response.getWriter().println(strJson);
+        response.setContentType("application/json;charset=utf-8");
+        String strJson = JSON.toJSONString(topicCommentInfo);
+        response.getWriter().println(strJson);
     }
 
 }

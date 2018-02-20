@@ -54,6 +54,7 @@ public class TopicController {
         maView.setViewName("front/topic/show");
         maView.addObject("topic",topicInfo);
         maView.addObject("txt","${txt}");
+        maView.addObject("cid","${comment.comment_id}");
         return maView;
     }
     @RequestMapping("/save_topic")

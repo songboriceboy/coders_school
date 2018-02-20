@@ -122,35 +122,9 @@
                     autosize(document.querySelector('textarea'));
                     //动态添加元素的事件绑定问题参考了http://blog.csdn.net/lixin2151408/article/details/71411564
                     //最后面的评论框提交
-                    $('#final-reply').on('submit', 'form', function () {
-                        alert('first')
-//                        var txt = $(this).find('textarea').val();
-                        var txt = testEditor.getHTML();
-                        var comment = `
-                    <li class="reply-item">
-                    <article class="uk-comment">
-                        <header class="uk-comment-header">
-                            <img class="uk-comment-avatar" src="https://sfault-avatar.b0.upaiyun.com/245/908/2459088887-5a6fbf581bbbb_big64" width="50" height="50" alt="">
-                            <h4 class="uk-comment-title">Author</h4>
-                            <div class="uk-comment-meta">12 days ago | Profile | #</div>
-                        </header>
-                        <div class="uk-comment-body">
-                            <p>${txt}</p>
-                        </div>
-                        <div class="x-comment-footer uk-margin-top">
-                            <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
-                            <a href="#" class="uk-button">赞</a>
-                        </div>
-                    </article>
-                    <ul class="ul-comment-list-child">
-                    </ul>
-                    </li>
-                `;
-                        var li = $(comment);
-                        $('#uk-comment-list').append(li);
-                        autosize(document.querySelector('textarea'));
-                        return false;
-                    })
+//                    $('#final-reply').on('submit', 'form', function () {
+//
+//                    })
                     $('#uk-comment-list').on('click', '.btn-reply', function () {
 //                        alert($(this).closest('.uk-comment').html());
                         alert($(this).closest('.uk-comment').find('h4').text());
@@ -262,16 +236,44 @@
                         var param = $("#reply-form").serialize();
                         $.post('${pageContext.request.contextPath}/comment/add_comment', param)
                                 .done(function (comment) {
-                                    if(comment.topic_id >= 0)
+                                    if(comment.comment_id >= 0)
                                     {
-                                        alert("ok");
+                                        alert('first');
+//                        var txt = $(this).find('textarea').val();
+                                        var txt = testEditor.getHTML();
+                                        var comment = `
+                    <li class="reply-item" id="comment_${cid}">
+                    <article class="uk-comment">
+                        <header class="uk-comment-header">
+                            <img class="uk-comment-avatar" src="https://sfault-avatar.b0.upaiyun.com/245/908/2459088887-5a6fbf581bbbb_big64" width="50" height="50" alt="">
+                            <h4 class="uk-comment-title">Author</h4>
+                            <div class="uk-comment-meta">12 days ago | Profile | #</div>
+                        </header>
+                        <div class="uk-comment-body">
+                            <p>${txt}</p>
+                        </div>
+                        <div class="x-comment-footer uk-margin-top">
+                            <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
+                            <a href="#" class="uk-button">赞</a>
+                        </div>
+                    </article>
+                    <ul class="ul-comment-list-child">
+                    </ul>
+                    </li>
+                `;
+                                        var li = $(comment);
+                                        $('#uk-comment-list').append(li);
+                                        autosize(document.querySelector('textarea'));
                                         return false;
+
                                     }
 
                                 })
                                 .fail(function () {
 
                                 });
+
+                        return false;
                     })
                 }
         );
