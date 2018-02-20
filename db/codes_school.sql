@@ -50,17 +50,3 @@ CREATE TABLE topic_comment_info (
   PRIMARY KEY (comment_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-SELECT
-topic_comment_info.comment_id
-,topic_comment_info.comment_content
-,topic_comment_info.comment_createtime
-,topic_comment_info.user_id
-,COALESCE(tci.comment_id,0) as tci_comment_id
-,COALESCE(tci.reply_comment_id,0) as reply_comment_id
-,COALESCE(tci.comment_content,'') as tci_comment_content
-,COALESCE(tci.comment_createtime,'') as comment_createtime
-,COALESCE(tci.user_id,0) as tci_user_id
-from topic_comment_info
-left join topic_comment_info tci on topic_comment_info.comment_id = tci.reply_comment_id
-where topic_comment_info.topic_id = 3
-order by topic_comment_info.comment_createtime
