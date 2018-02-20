@@ -27,10 +27,10 @@
                 id: "test-editormd",
 //                height: 840,
                 width   : "90%",
-                height  : 100,
-//                autoHeight      : true,
+//                height  : 100,
+                autoHeight      : true,
 
-                placeholder          : "文明社会，理性评论，支持Markdown",
+                placeholder          : `文明社会，理性评论，支持Markdown`,
                 path: "${pageContext.request.contextPath}/assets/editor-md-master/lib/",
                 toolbarIcons: function () {
                     // Or return editormd.toolbarModes[name]; // full, simple, mini

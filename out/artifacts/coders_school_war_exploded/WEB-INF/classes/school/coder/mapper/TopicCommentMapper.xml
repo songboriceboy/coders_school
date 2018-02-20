@@ -8,4 +8,16 @@
         ,#{topic_id},#{reply_comment_id},#{user_id})
     </insert>
 
+    <select id="getAllCommentsByTopicID" resultType="TopicCommentInfoEx" parameterType="int">
+SELECT
+topic_comment_info.comment_id
+,topic_comment_info.comment_content
+,topic_comment_info.comment_createtime
+,topic_comment_info.user_id
+,COALESCE(tci.comment_id,0) as tci_comment_id
+from topic_comment_info
+left join topic_comment_info tci on topic_comment_info.reply_comment_id = tci.comment_id
+where topic_comment_info.topic_id = #{value}
+order by topic_comment_info.comment_createtime
+    </select>
 </mapper>
