@@ -35,6 +35,8 @@ public class TopicController {
         TopicInfo topicInfo = new TopicInfo();
         maView.addObject("topic",topicInfo);
         maView.setViewName("front/topic/new");
+//        maView.setViewName("front/topic/test_new");
+
         return maView;
     }
     @RequestMapping("/modify/{id}")
@@ -43,6 +45,7 @@ public class TopicController {
         TopicInfo topicInfo = topicService.getTopicByID(id);
         ModelAndView maView = new ModelAndView();
         maView.setViewName("front/topic/new");
+
         maView.addObject("topic",topicInfo);
         return maView;
     }

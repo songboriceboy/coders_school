@@ -27,8 +27,19 @@ public class TopicCommentController {
     public void addComment(HttpServletRequest request
             , HttpServletResponse response,TopicCommentInfo topicCommentInfo) throws IOException {
 
+//        if(topicCommentInfo.getComment_markdown_content() == null)
+//        {
+//            topicCommentInfo.setComment_markdown_content("");
+//        }
+
+        String strMarkdown2 = request.getParameter("test-editormd2-html-code");
         String strMarkdown = request.getParameter("test-editormd-html-code");
-        topicCommentInfo.setComment_content(strMarkdown);
+        if(strMarkdown != null) {
+            topicCommentInfo.setComment_content(strMarkdown);
+        }
+        if(strMarkdown2 != null) {
+            topicCommentInfo.setComment_content(strMarkdown2);
+        }
         topicCommentInfo.setComment_createtime(new Date());
         UserInfo userInfo = (UserInfo)request.getSession().getAttribute("user_info");
         topicCommentInfo.setUser_id(userInfo.getUser_id());

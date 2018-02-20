@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/editor-md-master/css/editormd.css" />
 
     <script src="${pageContext.request.contextPath}/assets/jquery/jquery.js"></script>
-    <script src="${pageContext.request.contextPath}/assets/js/autosize.js"></script>
+    <%--<script src="${pageContext.request.contextPath}/assets/js/autosize.js"></script>--%>
     <script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/components/tooltip.js"></script>
     <script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/uikit.min.js"></script>
 
@@ -93,10 +93,16 @@
     <script>
         //动态生成的评论框提交
         function check_submit(form) {
-            alert(form);
-            var txt = $(form).find('textarea').val();
-            alert(txt);
-            var comment = `
+            var txt = testEditor2.getHTML();
+
+            var param = $("#reply-reply-form").serialize();
+            $.post('${pageContext.request.contextPath}/comment/add_comment', param)
+                    .done(function (comment) {
+                        if(comment.comment_id >= 0)
+                        {
+                            alert('first');
+
+                            var comment = `
                     <li class="reply-child-item">
                     <article class="uk-comment">
                         <header class="uk-comment-header">
@@ -114,50 +120,26 @@
                     </article>
                     </li>
                 `;
-            var li = $(comment);
-            $(form).closest('.reply-item').find('.ul-comment-list-child').append(li);
-            return false;
-        }
-        $(document).ready(function () {
-                    autosize(document.querySelector('textarea'));
-                    //动态添加元素的事件绑定问题参考了http://blog.csdn.net/lixin2151408/article/details/71411564
-                    //最后面的评论框提交
-//                    $('#final-reply').on('submit', 'form', function () {
-//
-//                    })
-                    $('#uk-comment-list').on('click', '.btn-reply', function () {
-//                        alert($(this).closest('.uk-comment').html());
-                        alert($(this).closest('.uk-comment').find('h4').text());
-                        alert($(this).closest('.reply-item').attr('id'));
-                        var reply_comment_id = $(this).closest('.reply-item').attr('id').replace('comment_','');
+                            var li = $(comment);
+                            $(form).closest('.reply-item').find('.ul-comment-list-child').append(li);
+                            return false;
 
-                        alert(reply_comment_id);
-                        var $div = $('#reply-anywhere');
-                        alert($div.length);
-                        if ($div.length > 0)
-                        {
-                            $('#reply-anywhere').remove();
                         }
-                        var reply = `
-                                   <div class="reply" id="reply-anywhere">
-                            <form class="uk-form" action="#" method="post" onsubmit="return check_submit(this);">
-                                <div class="uk-form-row">
-                                    <input type="hidden" name = "topic_id" value="${topic.topic_id}">
-                                    <input type="hidden" name = "reply_comment_id" value="${reply_comment_id}">
-                                    <textarea rows="1" name = "comment_content" placeholder="文明社会，理性评论" style="width:80%;min-height: 25px; max-height: 132px; overflow: hidden; word-wrap: break-word; height: 30px;"></textarea>
-                                    <input type="submit" class="uk-button">
-                                </div>
-                            </form>
-                        </div>`;
-                        var replynode = $(reply);
-                        $(this).closest('.reply-item').append(replynode);
-                        autosize(document.querySelector('textarea'));
-                        return false;
+
                     })
+                    .fail(function () {
+
+                    });
+
+            return false;
+
+        }
+
+        var testEditor2 = null;
+        $(document).ready(function () {
 
 
-
-            //markdown
+                    //markdown
                     var testEditor = editormd({
                         id: "test-editormd",
 //                height: 840,
@@ -237,6 +219,127 @@
                         }
                     });
 
+//                    autosize(document.querySelector('textarea'));
+                    //点击某条评论里的回复按钮，动态生成一个textarea
+                    $('#uk-comment-list').on('click', '.btn-reply', function () {
+
+//                        alert($(this).closest('.uk-comment').find('h4').text());
+                        var reply_comment_id = $(this).closest('.reply-item').attr('id').replace('comment_','');
+
+                        var $div = $('#reply-anywhere');
+                        if ($div.length > 0)
+                        {
+                            testEditor2.editor.remove();
+                            $('#reply-anywhere').remove();
+                        }
+                        var reply = `
+                                   <div class="reply" id="reply-anywhere">
+                            <form class="uk-form" id="reply-reply-form" action="#" method="post" onsubmit="return check_submit(this);">
+                                <div class="uk-form-row">
+                                    <input type="hidden" name = "topic_id" value="${topic.topic_id}">
+                                    <input type="hidden" name = "reply_comment_id" value="${reply_comment_id}">
+                               <div class="editormd" id="test-editormd2">
+    <textarea class="editormd-markdown-textarea" name="comment_markdown_content" id = "topic_markdown_content2"></textarea>
+</div>
+                                    <input type="submit" class="uk-button">
+                                </div>
+                            </form>
+                        </div>`;
+                        var replynode = $(reply);
+                        $(this).closest('.reply-item').append(replynode);
+
+
+                        //markdown
+                        testEditor2 = editormd({
+                            id: "test-editormd2",
+//                height: 840,
+                            width   : "90%",
+                            height  : 250,
+                            placeholder          : "文明社会，理性评论，支持Markdown",
+                            path: "${pageContext.request.contextPath}/assets/editor-md-master/lib/",
+                            toolbarIcons: function () {
+                                // Or return editormd.toolbarModes[name]; // full, simple, mini
+                                // Using "||" set icons align right.
+                                return ["undo", "redo", "|", "watch", "fullscreen", "preview"]
+                            },
+                            //toolbar  : false,             // 关闭工具栏
+                            codeFold: true,
+                            searchReplace: true,
+                            saveHTMLToTextarea: true,      // 保存 HTML 到 Textarea
+                            htmlDecode: "style,script,iframe|on*",            // 开启 HTML 标签解析，为了安全性，默认不开启
+                            emoji: true,
+                            taskList: true,
+                            tocm: true,          // Using [TOCM]
+                            tex: true,                      // 开启科学公式 TeX 语言支持，默认关闭
+                            //previewCodeHighlight : false,  // 关闭预览窗口的代码高亮，默认开启
+                            flowChart: true,                // 疑似 Sea.js与 Raphael.js 有冲突，必须先加载 Raphael.js ，Editor.md 才能在 Sea.js 下正常进行；
+                            sequenceDiagram: true,          // 同上
+                            //dialogLockScreen : false,      // 设置弹出层对话框不锁屏，全局通用，默认为 true
+                            //dialogShowMask : false,     // 设置弹出层对话框显示透明遮罩层，全局通用，默认为 true
+                            //dialogDraggable : false,    // 设置弹出层对话框不可拖动，全局通用，默认为 true
+                            //dialogMaskOpacity : 0.4,    // 设置透明遮罩层的透明度，全局通用，默认值为 0.1
+                            //dialogMaskBgColor : "#000", // 设置透明遮罩层的背景颜色，全局通用，默认为 #fff
+                            imageUpload: true,
+                            imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+                            imageUploadURL: "{:url('api/uploader/uploadEditorImg?pic_type=10')}",
+                            onload: function () {
+                                this.unwatch();
+                                this.on('paste', function () {
+                                    console.log(1);
+                                });
+
+                            },
+                            onpreviewing : function() {
+                                this.watch();
+//                            console.log("onpreviewing =>", this, this.id, this.settings);
+                                // on previewing you can custom css .editormd-preview-active
+                            },
+
+                            onpreviewed : function() {
+//                            console.log("onpreviewed =>", this, this.id, this.settings);
+                                this.unwatch();
+                            }
+                        });
+
+                        /**
+                         * 上传图片
+                         */
+                        $("#test-editormd2").on('paste', function (ev) {
+                            var data = ev.clipboardData;
+                            var items = (event.clipboardData || event.originalEvent.clipboardData).items;
+                            for (var index in items) {
+                                var item = items[index];
+                                if (item.kind === 'file') {
+                                    var blob = item.getAsFile();
+                                    var reader = new FileReader();
+                                    reader.onload = function (event) {
+                                        var base64 = event.target.result;
+                                        //ajax上传图片
+                                        $.post("${pageContext.request.contextPath}/topic/uploadimg",{base:base64}, function (res) {
+                                            // layer.msg(ret.msg);
+                                            var ret = JSON.parse(res);
+                                            if (ret.code === 1) {
+                                                //新一行的图片显示
+                                                testEditor.insertValue("\n![" + "image.png" + "](${pageContext.request.contextPath}/" + ret.path + ")");
+                                            }
+                                        });
+                                    }; // data url!
+                                    var url = reader.readAsDataURL(blob);
+                                }
+                            }
+                        });
+
+
+
+
+                        return false;
+                    })
+
+                    //动态添加元素的事件绑定问题参考了http://blog.csdn.net/lixin2151408/article/details/71411564
+                    //最后面的评论框提交
+//                    $('#final-reply').on('submit', 'form', function () {
+//
+//                    })
                     $("#submit").click(function () {
                         var param = $("#reply-form").serialize();
                         $.post('${pageContext.request.contextPath}/comment/add_comment', param)
@@ -268,7 +371,7 @@
                 `;
                                         var li = $(comment);
                                         $('#uk-comment-list').append(li);
-                                        autosize(document.querySelector('textarea'));
+
                                         return false;
 
                                     }
@@ -377,6 +480,5 @@
 
     </div>
 </div>
-
 </body>
 </html>
