@@ -147,6 +147,8 @@
                         return false;
                     })
                     $('#uk-comment-list').on('click', '.btn-reply', function () {
+//                        alert($(this).closest('.uk-comment').html());
+                        alert($(this).closest('.uk-comment').find('h4').text());
                         alert('kkkkkkkk');
                         var $div = $('#reply-anywhere');
                         alert($div.length);
