@@ -102,33 +102,6 @@
                 }
             });
 
-
-
-            <%--var topic_id = $('#topic_id');--%>
-
-            <%--if(topic_id.val() != '')--%>
-            <%--{--%>
-                <%--$.getJSON('${pageContext.request.contextPath}/topic/get_topic/'+topic_id.val(), {})--%>
-                        <%--.done(function (topic) {--%>
-
-                            <%--if(topic!= null)--%>
-                            <%--{--%>
-
-                                <%--testEditor.appendMarkdown(topic.topic_markdown_content);--%>
-                                <%--$("#title").val(topic.topic_title);--%>
-
-                            <%--}--%>
-
-                        <%--})--%>
-                        <%--.fail(function () {--%>
-
-                        <%--});--%>
-            <%--}--%>
-
-
-
-
-
             $("#submit").click(function () {
                 var param = $("#article_form").serialize();
                 $.post('${pageContext.request.contextPath}/topic/save_topic', param)

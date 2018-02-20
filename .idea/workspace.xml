@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="872bce5c-9269-4a5f-82e2-113350dfc46c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp" />
     </list>
     <ignored path="coders_school.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,26 +35,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="show.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="117" column="65" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="65" />
+            <state relative-caret-position="60">
+              <caret line="176" column="22" selection-start-line="176" selection-start-column="22" selection-end-line="176" selection-end-column="22" />
               <folding>
-                <marker date="1519087892576" expanded="true" signature="6436:6991" ph="..." />
-                <marker date="1519087892576" expanded="true" signature="6550:6960" ph="..." />
-                <marker date="1519087892576" expanded="true" signature="6608:6924" ph="..." />
-                <marker date="1519087892576" expanded="false" signature="6696:6797" ph="..." />
+                <marker date="1519091951938" expanded="true" signature="6712:7267" ph="..." />
+                <marker date="1519091951938" expanded="true" signature="6826:7236" ph="..." />
+                <marker date="1519091951938" expanded="true" signature="6884:7200" ph="..." />
+                <marker date="1519091951938" expanded="false" signature="6972:7073" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="new.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2756">
-              <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+            <state relative-caret-position="369">
+              <caret line="118" column="14" selection-start-line="25" selection-start-column="8" selection-end-line="118" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -216,8 +217,8 @@
         <option value="$PROJECT_DIR$/src/school/coder/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/school/coder/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/school/coder/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp" />
       </list>
     </option>
   </component>
@@ -1187,12 +1188,12 @@
       <workItem from="1518689425225" duration="4444000" />
       <workItem from="1519009086728" duration="15719000" />
       <workItem from="1519035541775" duration="9314000" />
-      <workItem from="1519083768434" duration="5858000" />
+      <workItem from="1519083768434" duration="6601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40313000" />
+    <option name="totallyTimeSpent" value="41056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1679,19 +1680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="117" column="65" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="65" />
-          <folding>
-            <marker date="1519087892576" expanded="true" signature="6436:6991" ph="..." />
-            <marker date="1519087892576" expanded="true" signature="6550:6960" ph="..." />
-            <marker date="1519087892576" expanded="true" signature="6608:6924" ph="..." />
-            <marker date="1519087892576" expanded="false" signature="6696:6797" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/editor-md-master/examples/on-off.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -1730,9 +1718,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2756">
-          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+        <state relative-caret-position="369">
+          <caret line="118" column="14" selection-start-line="25" selection-start-column="8" selection-end-line="118" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="176" column="22" selection-start-line="176" selection-start-column="22" selection-end-line="176" selection-end-column="22" />
+          <folding>
+            <marker date="1519091951938" expanded="true" signature="6712:7267" ph="..." />
+            <marker date="1519091951938" expanded="true" signature="6826:7236" ph="..." />
+            <marker date="1519091951938" expanded="true" signature="6884:7200" ph="..." />
+            <marker date="1519091951938" expanded="false" signature="6972:7073" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

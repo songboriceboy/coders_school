@@ -18,10 +18,14 @@
           content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Title</title>
     <link href="${pageContext.request.contextPath}/assets/uikit-2.25.0/css/uikit.almost-flat.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/editor-md-master/css/editormd.css" />
+
     <script src="${pageContext.request.contextPath}/assets/jquery/jquery.js"></script>
     <script src="${pageContext.request.contextPath}/assets/js/autosize.js"></script>
     <script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/components/tooltip.js"></script>
     <script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/uikit.min.js"></script>
+
+    <script src="${pageContext.request.contextPath}/assets/editor-md-master/editormd.min.js"></script>
     <style>
         html, h1, h2, h3, h4, h5, h6 {
             font-family: 'Microsoft YaHei',"Helvetica Neue",Helvetica,Arial,sans-serif!important;
@@ -120,7 +124,8 @@
                     //最后面的评论框提交
                     $('#final-reply').on('submit', 'form', function () {
                         alert('first')
-                        var txt = $(this).find('textarea').val();
+//                        var txt = $(this).find('textarea').val();
+                        var txt = testEditor.getHTML();
                         var comment = `
                     <li class="reply-item">
                     <article class="uk-comment">
@@ -170,6 +175,104 @@
                         autosize(document.querySelector('textarea'));
                         return false;
                     })
+
+
+
+            //markdown
+                    var testEditor = editormd({
+                        id: "test-editormd",
+//                height: 840,
+                        width   : "90%",
+                        height  : 250,
+                        placeholder          : "文明社会，理性评论，支持Markdown",
+                        path: "${pageContext.request.contextPath}/assets/editor-md-master/lib/",
+                        toolbarIcons: function () {
+                            // Or return editormd.toolbarModes[name]; // full, simple, mini
+                            // Using "||" set icons align right.
+                            return ["undo", "redo", "|", "watch", "fullscreen", "preview"]
+                        },
+                        //toolbar  : false,             // 关闭工具栏
+                        codeFold: true,
+                        searchReplace: true,
+                        saveHTMLToTextarea: true,      // 保存 HTML 到 Textarea
+                        htmlDecode: "style,script,iframe|on*",            // 开启 HTML 标签解析，为了安全性，默认不开启
+                        emoji: true,
+                        taskList: true,
+                        tocm: true,          // Using [TOCM]
+                        tex: true,                      // 开启科学公式 TeX 语言支持，默认关闭
+                        //previewCodeHighlight : false,  // 关闭预览窗口的代码高亮，默认开启
+                        flowChart: true,                // 疑似 Sea.js与 Raphael.js 有冲突，必须先加载 Raphael.js ，Editor.md 才能在 Sea.js 下正常进行；
+                        sequenceDiagram: true,          // 同上
+                        //dialogLockScreen : false,      // 设置弹出层对话框不锁屏，全局通用，默认为 true
+                        //dialogShowMask : false,     // 设置弹出层对话框显示透明遮罩层，全局通用，默认为 true
+                        //dialogDraggable : false,    // 设置弹出层对话框不可拖动，全局通用，默认为 true
+                        //dialogMaskOpacity : 0.4,    // 设置透明遮罩层的透明度，全局通用，默认值为 0.1
+                        //dialogMaskBgColor : "#000", // 设置透明遮罩层的背景颜色，全局通用，默认为 #fff
+                        imageUpload: true,
+                        imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+                        imageUploadURL: "{:url('api/uploader/uploadEditorImg?pic_type=10')}",
+                        onload: function () {
+                            this.unwatch();
+                            this.on('paste', function () {
+                                console.log(1);
+                            });
+
+                        },
+                        onpreviewing : function() {
+                            this.watch();
+                            console.log("onpreviewing =>", this, this.id, this.settings);
+                            // on previewing you can custom css .editormd-preview-active
+                        },
+
+                        onpreviewed : function() {
+                            console.log("onpreviewed =>", this, this.id, this.settings);
+                            this.unwatch();
+                        }
+                    });
+
+                    /**
+                     * 上传图片
+                     */
+                    $("#test-editormd").on('paste', function (ev) {
+                        var data = ev.clipboardData;
+                        var items = (event.clipboardData || event.originalEvent.clipboardData).items;
+                        for (var index in items) {
+                            var item = items[index];
+                            if (item.kind === 'file') {
+                                var blob = item.getAsFile();
+                                var reader = new FileReader();
+                                reader.onload = function (event) {
+                                    var base64 = event.target.result;
+                                    //ajax上传图片
+                                    $.post("${pageContext.request.contextPath}/topic/uploadimg",{base:base64}, function (res) {
+                                        // layer.msg(ret.msg);
+                                        var ret = JSON.parse(res);
+                                        if (ret.code === 1) {
+                                            //新一行的图片显示
+                                            testEditor.insertValue("\n![" + "image.png" + "](${pageContext.request.contextPath}/" + ret.path + ")");
+                                        }
+                                    });
+                                }; // data url!
+                                var url = reader.readAsDataURL(blob);
+                            }
+                        }
+                    });
+
+                    <%--$("#submit").click(function () {--%>
+                        <%--var param = $("#article_form").serialize();--%>
+                        <%--$.post('${pageContext.request.contextPath}/topic/save_topic', param)--%>
+                                <%--.done(function (article) {--%>
+                                    <%--if(article.topic_id >= 0)--%>
+                                    <%--{--%>
+                                        <%--alert("ok");--%>
+                                        <%--return false;--%>
+                                    <%--}--%>
+
+                                <%--})--%>
+                                <%--.fail(function () {--%>
+
+                                <%--});--%>
+                    <%--})--%>
                 }
         );
     </script>
@@ -251,7 +354,13 @@
             <div class="reply" id="final-reply">
                 <form class="uk-form" action="#" method="post" id="reply-form">
                     <div class="uk-form-row">
-                        <textarea rows="1" placeholder="文明社会，理性评论" style="width:80%;min-height: 25px; max-height: 132px; overflow: hidden; word-wrap: break-word; height: 30px;"></textarea>
+                        <div class="editormd" id="test-editormd">
+
+                            <textarea class="editormd-markdown-textarea" name="topic_markdown_content" id = "topic_markdown_content"></textarea>
+                            <!-- html textarea 需要开启配置项 saveHTMLToTextarea == true -->
+                            <%--<textarea class="editormd-html-textarea" name="article_content"></textarea>--%>
+
+                        </div>
                         <input type="submit" class="uk-button">
                     </div>
                 </form>
