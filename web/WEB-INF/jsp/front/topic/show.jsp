@@ -128,7 +128,10 @@
                     $('#uk-comment-list').on('click', '.btn-reply', function () {
 //                        alert($(this).closest('.uk-comment').html());
                         alert($(this).closest('.uk-comment').find('h4').text());
-                        alert('kkkkkkkk');
+                        alert($(this).closest('.reply-item').attr('id'));
+                        var reply_comment_id = $(this).closest('.reply-item').attr('id').replace('comment_','');
+
+                        alert(reply_comment_id);
                         var $div = $('#reply-anywhere');
                         alert($div.length);
                         if ($div.length > 0)
@@ -139,7 +142,9 @@
                                    <div class="reply" id="reply-anywhere">
                             <form class="uk-form" action="#" method="post" onsubmit="return check_submit(this);">
                                 <div class="uk-form-row">
-                                    <textarea rows="1" placeholder="文明社会，理性评论" style="width:80%;min-height: 25px; max-height: 132px; overflow: hidden; word-wrap: break-word; height: 30px;"></textarea>
+                                    <input type="hidden" name = "topic_id" value="${topic.topic_id}">
+                                    <input type="hidden" name = "reply_comment_id" value="${reply_comment_id}">
+                                    <textarea rows="1" name = "comment_content" placeholder="文明社会，理性评论" style="width:80%;min-height: 25px; max-height: 132px; overflow: hidden; word-wrap: break-word; height: 30px;"></textarea>
                                     <input type="submit" class="uk-button">
                                 </div>
                             </form>
