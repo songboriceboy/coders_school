@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/editor-md-master/css/editormd.css" />
     <script src="${pageContext.request.contextPath}/assets/jquery/jquery.js"></script>
     <script src="${pageContext.request.contextPath}/assets/editor-md-master/editormd.min.js"></script>
+
     <%--<script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/uikit.min.js"></script>--%>
     <script>
 
@@ -26,12 +27,13 @@
                 id: "test-editormd",
 //                height: 840,
                 width   : "90%",
-                height  : 640,
+                height  : 250,
+                placeholder          : "文明社会，理性评论，支持Markdown",
                 path: "${pageContext.request.contextPath}/assets/editor-md-master/lib/",
                 toolbarIcons: function () {
                     // Or return editormd.toolbarModes[name]; // full, simple, mini
                     // Using "||" set icons align right.
-                    return ["undo", "redo", "|", "bold", "hr", "|", "preview", "watch", "|", "fullscreen", "info", "testIcon", "testIcon2", "file", "faicon", "||", "watch", "fullscreen", "preview", "testIcon"]
+                    return ["undo", "redo", "|", "watch", "fullscreen", "preview"]
                 },
                 //toolbar  : false,             // 关闭工具栏
                 codeFold: true,
@@ -54,9 +56,21 @@
                 imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
                 imageUploadURL: "{:url('api/uploader/uploadEditorImg?pic_type=10')}",
                 onload: function () {
+                    this.unwatch();
                     this.on('paste', function () {
                         console.log(1);
                     });
+
+                },
+                onpreviewing : function() {
+                    this.watch();
+                     console.log("onpreviewing =>", this, this.id, this.settings);
+                    // on previewing you can custom css .editormd-preview-active
+                },
+
+                onpreviewed : function() {
+                     console.log("onpreviewed =>", this, this.id, this.settings);
+                    this.unwatch();
                 }
             });
 
@@ -142,7 +156,7 @@
     <div class="uk-container uk-container-center">
         <div class="uk-grid" data-uk-grid-margin>
 
-            <div class="tm-main uk-width-medium-3-4">
+            <div class="tm-main uk-width-medium-2-4">
 
                 <div>
                     <form action="#" method="post"

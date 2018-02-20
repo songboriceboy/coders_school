@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872bce5c-9269-4a5f-82e2-113350dfc46c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new.jsp" />
     </list>
     <ignored path="coders_school.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,16 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/school/coder/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -45,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-219">
-              <caret line="132" column="41" selection-start-line="132" selection-start-column="41" selection-end-line="132" selection-end-column="41" />
+            <state relative-caret-position="150">
+              <caret line="117" column="65" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="65" />
               <folding>
                 <marker date="1519087892576" expanded="true" signature="6436:6991" ph="..." />
                 <marker date="1519087892576" expanded="true" signature="6550:6960" ph="..." />
@@ -60,11 +49,63 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/school/coder/service/UserService.java">
+      <file leaf-file-name="new.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="-2756">
+              <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resettings.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assets/editor-md-master/examples/resettings.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="63" column="38" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="on-off.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assets/editor-md-master/examples/on-off.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editormd.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assets/editor-md-master/editormd.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="2246" column="19" selection-start-line="2246" selection-start-column="8" selection-end-line="2246" selection-end-column="19" />
+              <folding>
+                <marker date="1463323853000" expanded="true" signature="7817:7850" ph="..." />
+                <marker date="1463323853000" expanded="true" signature="8001:8033" ph="..." />
+                <marker date="1463323853000" expanded="true" signature="17569:17583" ph="..." />
+                <marker date="1463323853000" expanded="true" signature="48269:48273" ph="..." />
+                <marker date="1463323853000" expanded="true" signature="48592:48614" ph="..." />
+                <marker date="1463323853000" expanded="true" signature="48775:48793" ph="..." />
+                <marker date="1463323853000" expanded="true" signature="48806:48812" ph="©" />
+                <marker date="1463323853000" expanded="true" signature="119169:119174" ph="&amp;##64;" />
+                <marker date="1463323853000" expanded="true" signature="121265:121289" ph="..." />
+                <marker date="1463323853000" expanded="true" signature="124140:124157" ph="..." />
+                <marker date="1463323853000" expanded="true" signature="143560:143573" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DHTML.js" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1000">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,41 +149,6 @@
                 <marker date="1519043544147" expanded="true" signature="472:552" ph="select * fro... UserInfo" />
                 <marker date="1519043544147" expanded="true" signature="635:710" ph="update useri... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TopicMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/school/coder/mapper/TopicMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <marker date="1519037952156" expanded="true" signature="313:540" ph="insert into topic_info... " />
-                <marker date="1519037952156" expanded="true" signature="619:910" ph="update topic... " />
-                <marker date="1519037952156" expanded="true" signature="987:1011" ph="select * fro... topic_info" />
-                <marker date="1519037952156" expanded="true" signature="1088:1138" ph="select * fro... topic_info" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="springmvc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/spring/springmvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1150">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="20" selection-end-column="98" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -196,7 +202,6 @@
         <option value="$PROJECT_DIR$/src/school/coder/service/TopicService.java" />
         <option value="$PROJECT_DIR$/src/school/coder/mapper/TopicMapper.java" />
         <option value="$PROJECT_DIR$/src/school/coder/service/impl/TopicServiceImpl.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new.jsp" />
         <option value="$PROJECT_DIR$/src/school/coder/mapper/TopicMapper.xml" />
         <option value="$PROJECT_DIR$/src/school/coder/domain/TopicCommentInfo.java" />
         <option value="$PROJECT_DIR$/web/assets/js/autosize.js" />
@@ -212,6 +217,7 @@
         <option value="$PROJECT_DIR$/src/school/coder/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/school/coder/controller/UserController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new.jsp" />
       </list>
     </option>
   </component>
@@ -1181,12 +1187,12 @@
       <workItem from="1518689425225" duration="4444000" />
       <workItem from="1519009086728" duration="15719000" />
       <workItem from="1519035541775" duration="9314000" />
-      <workItem from="1519083768434" duration="2609000" />
+      <workItem from="1519083768434" duration="5858000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37064000" />
+    <option name="totallyTimeSpent" value="40313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1201,7 +1207,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26523888" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20593081" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1245,23 +1251,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/spring/applicationContext-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1600">
-          <caret line="64" column="51" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/school/coder/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin/header/titletree.jsp" />
     <entry file="file://$PROJECT_DIR$/web/assets/css/docs.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1319,13 +1308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="1012" column="0" selection-start-line="1012" selection-start-column="0" selection-end-line="1012" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mybatis-3.2.7.jar!/org/apache/ibatis/builder/xml/XMLMapperBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
@@ -1375,6 +1357,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1440,26 +1423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/editor-md-master/editormd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="2242" column="45" selection-start-line="2242" selection-start-column="45" selection-end-line="2242" selection-end-column="45" />
-          <folding>
-            <marker date="1463323853000" expanded="true" signature="7817:7850" ph="..." />
-            <marker date="1463323853000" expanded="true" signature="8001:8033" ph="..." />
-            <marker date="1463323853000" expanded="true" signature="17569:17583" ph="..." />
-            <marker date="1463323853000" expanded="true" signature="48269:48273" ph="..." />
-            <marker date="1463323853000" expanded="true" signature="48592:48614" ph="..." />
-            <marker date="1463323853000" expanded="true" signature="48775:48793" ph="..." />
-            <marker date="1463323853000" expanded="true" signature="48806:48812" ph="©" />
-            <marker date="1463323853000" expanded="true" signature="119169:119174" ph="&amp;##64;" />
-            <marker date="1463323853000" expanded="true" signature="121265:121289" ph="..." />
-            <marker date="1463323853000" expanded="true" signature="124140:124157" ph="..." />
-            <marker date="1463323853000" expanded="true" signature="143560:143573" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1472,6 +1435,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1559,20 +1523,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2075">
-          <caret line="63" column="15" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/js/autosize.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1707,16 +1663,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/editor-md-master/editormd.amd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1704">
+          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-219">
-          <caret line="132" column="41" selection-start-line="132" selection-start-column="41" selection-end-line="132" selection-end-column="41" />
+        <state relative-caret-position="150">
+          <caret line="117" column="65" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="65" />
           <folding>
             <marker date="1519087892576" expanded="true" signature="6436:6991" ph="..." />
             <marker date="1519087892576" expanded="true" signature="6550:6960" ph="..." />
             <marker date="1519087892576" expanded="true" signature="6608:6924" ph="..." />
             <marker date="1519087892576" expanded="false" signature="6696:6797" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/editor-md-master/examples/on-off.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/editor-md-master/examples/resettings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="63" column="38" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/editor-md-master/editormd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="2246" column="19" selection-start-line="2246" selection-start-column="8" selection-end-line="2246" selection-end-column="19" />
+          <folding>
+            <marker date="1463323853000" expanded="true" signature="7817:7850" ph="..." />
+            <marker date="1463323853000" expanded="true" signature="8001:8033" ph="..." />
+            <marker date="1463323853000" expanded="true" signature="17569:17583" ph="..." />
+            <marker date="1463323853000" expanded="true" signature="48269:48273" ph="..." />
+            <marker date="1463323853000" expanded="true" signature="48592:48614" ph="..." />
+            <marker date="1463323853000" expanded="true" signature="48775:48793" ph="..." />
+            <marker date="1463323853000" expanded="true" signature="48806:48812" ph="©" />
+            <marker date="1463323853000" expanded="true" signature="119169:119174" ph="&amp;##64;" />
+            <marker date="1463323853000" expanded="true" signature="121265:121289" ph="..." />
+            <marker date="1463323853000" expanded="true" signature="124140:124157" ph="..." />
+            <marker date="1463323853000" expanded="true" signature="143560:143573" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2756">
+          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
