@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html>
 <html lang="en" class="uk-height-1-1">
@@ -103,7 +103,7 @@
                             alert('first');
 
                             var comment = `
-                    <li class="reply-child-item">
+                    <li class="reply-child-item" id="comment_${cid}">
                     <article class="uk-comment">
                         <header class="uk-comment-header">
                             <img class="uk-comment-avatar" src="https://sfault-avatar.b0.upaiyun.com/245/908/2459088887-5a6fbf581bbbb_big64" width="50" height="50" alt="">
@@ -407,66 +407,52 @@
             <div>
                 ${topic.topic_content}
             </div>
-            <ul class="uk-comment-list" id="uk-comment-list">
-                <!--<li class="reply-item">-->
-                <!--<article class="uk-comment">-->
-                <!--<header class="uk-comment-header">-->
-                <!--<img class="uk-comment-avatar" src="https://sfault-avatar.b0.upaiyun.com/245/908/2459088887-5a6fbf581bbbb_big64" width="50" height="50" alt="">-->
-                <!--<h4 class="uk-comment-title">Author</h4>-->
-                <!--<div class="uk-comment-meta">12 days ago | Profile | #</div>-->
-                <!--</header>-->
-                <!--<div class="uk-comment-body">-->
-                <!--<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>-->
-                <!--</div>-->
-                <!--<div class="x-comment-footer uk-margin-top">-->
-                <!--<a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>-->
-                <!--<a href="#" class="uk-button">赞</a>-->
-                <!--</div>-->
-                <!--</article>-->
-                <!--<ul class="ul-comment-list-child">-->
-                <!--&lt;!&ndash;<li class="reply-child-item">&ndash;&gt;-->
-                <!--&lt;!&ndash;<article class="uk-comment">&ndash;&gt;-->
-                <!--&lt;!&ndash;<header class="uk-comment-header">&ndash;&gt;-->
-                <!--&lt;!&ndash;<img class="uk-comment-avatar" src="https://sfault-avatar.b0.upaiyun.com/245/908/2459088887-5a6fbf581bbbb_big64" width="50" height="50" alt="">&ndash;&gt;-->
-                <!--&lt;!&ndash;<h4 class="uk-comment-title">Author</h4>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="uk-comment-meta">12 days ago | Profile | #</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</header>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="uk-comment-body">&ndash;&gt;-->
-                <!--&lt;!&ndash;<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="x-comment-footer uk-margin-top">&ndash;&gt;-->
-                <!--&lt;!&ndash;<a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>&ndash;&gt;-->
-                <!--&lt;!&ndash;<a href="#" class="uk-button">赞</a>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</article>&ndash;&gt;-->
-                <!--&lt;!&ndash;</li>&ndash;&gt;-->
-                <!--&lt;!&ndash;<li class="reply-child-item">&ndash;&gt;-->
-                <!--&lt;!&ndash;<article class="uk-comment">&ndash;&gt;-->
-                <!--&lt;!&ndash;<header class="uk-comment-header">&ndash;&gt;-->
-                <!--&lt;!&ndash;<img class="uk-comment-avatar" src="https://sfault-avatar.b0.upaiyun.com/245/908/2459088887-5a6fbf581bbbb_big64" width="50" height="50" alt="">&ndash;&gt;-->
-                <!--&lt;!&ndash;<h4 class="uk-comment-title">Author</h4>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="uk-comment-meta">12 days ago | Profile | #</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</header>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="uk-comment-body">&ndash;&gt;-->
-                <!--&lt;!&ndash;<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="x-comment-footer uk-margin-top">&ndash;&gt;-->
-                <!--&lt;!&ndash;<a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>&ndash;&gt;-->
-                <!--&lt;!&ndash;<a href="#" class="uk-button">赞</a>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</article>&ndash;&gt;-->
-                <!--&lt;!&ndash;</li>&ndash;&gt;-->
 
-                <!--</ul>-->
-                <!--&lt;!&ndash;<li class="reply">&ndash;&gt;-->
-                <!--&lt;!&ndash;<form class="uk-form" action="#" method="post">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="uk-form-row">&ndash;&gt;-->
-                <!--&lt;!&ndash;<textarea rows="1" placeholder="文明社会，理性评论" style="width:80%;min-height: 25px; max-height: 132px; overflow: hidden; word-wrap: break-word; height: 30px;"></textarea>&ndash;&gt;-->
-                <!--&lt;!&ndash;<input type="submit" class="uk-button">&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</form>&ndash;&gt;-->
-                <!--&lt;!&ndash;</li>&ndash;&gt;-->
-                <!--</li>-->
+
+            <%--<ul class="uk-comment-list" id="uk-comment-list">--%>
+             <%----%>
+            <%--</ul>--%>
+
+            <ul class="uk-comment-list" id="uk-comment-list">
+                <c:forEach items="${mapComments}" var="entry">
+                    <li class="reply-item" id="comment_${entry.value.curr_comment_id}">
+                        <article class="uk-comment">
+                            <header class="uk-comment-header">
+                                <img class="uk-comment-avatar" src="https://sfault-avatar.b0.upaiyun.com/245/908/2459088887-5a6fbf581bbbb_big64" width="50" height="50" alt="">
+                                <h4 class="uk-comment-title">${entry.value.curr_comment_user_id}</h4>
+                                <div class="uk-comment-meta">${entry.value.curr_comment_createtime} | Profile | #</div>
+                            </header>
+                            <div class="uk-comment-body">
+                                <p>${entry.value.curr_comment_content}</p>
+                            </div>
+                            <div class="x-comment-footer uk-margin-top">
+                                <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
+                                <a href="#" class="uk-button">赞</a>
+                            </div>
+                        </article>
+
+                        <ul class="ul-comment-list-child">
+                            <c:forEach items="${entry.value.childCommentList}" var="childComment">
+                                <li class="reply-child-item" id="comment_${childComment.comment_id}">
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img class="uk-comment-avatar" src="https://sfault-avatar.b0.upaiyun.com/245/908/2459088887-5a6fbf581bbbb_big64" width="50" height="50" alt="">
+                                            <h4 class="uk-comment-title">${childComment.user_id}</h4>
+                                            <div class="uk-comment-meta">${childComment.comment_createtime}| Profile | #</div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p>${childComment.comment_content}</p>
+                                        </div>
+                                        <div class="x-comment-footer uk-margin-top">
+                                            <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
+                                            <a href="#" class="uk-button">赞</a>
+                                        </div>
+                                    </article>
+                                </li>
+                            </c:forEach>
+                        </ul>
+                    </li>
+                </c:forEach>
             </ul>
 
             <div class="reply" id="final-reply">
