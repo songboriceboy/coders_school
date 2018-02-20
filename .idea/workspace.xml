@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872bce5c-9269-4a5f-82e2-113350dfc46c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/test_new.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/controller/TopicCommentController.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/controller/TopicCommentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/controller/TopicController.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/controller/TopicController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/controller/TopicCommentController.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/controller/TopicCommentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/controller/TopicController.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/controller/TopicController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/jsp/front/topic/show.jsp" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/jsp/front/topic/show.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/school/coder/controller/TopicCommentController.java" afterPath="$PROJECT_DIR$/src/school/coder/controller/TopicCommentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/school/coder/controller/TopicController.java" afterPath="$PROJECT_DIR$/src/school/coder/controller/TopicController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp" />
     </list>
     <ignored path="coders_school.iws" />
@@ -38,12 +27,12 @@
       <file leaf-file-name="show.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+            <state relative-caret-position="250">
+              <caret line="125" column="27" selection-start-line="125" selection-start-column="27" selection-end-line="125" selection-end-column="27" />
               <folding>
-                <marker date="1519111148856" expanded="true" signature="10140:10935" ph="..." />
-                <marker date="1519111148856" expanded="true" signature="10276:10904" ph="..." />
-                <marker date="1519111148856" expanded="true" signature="10334:10868" ph="..." />
+                <marker date="1519111370204" expanded="true" signature="10436:11231" ph="..." />
+                <marker date="1519111370204" expanded="true" signature="10572:11200" ph="..." />
+                <marker date="1519111370204" expanded="true" signature="10630:11164" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1187,12 +1176,12 @@
       <workItem from="1519009086728" duration="15719000" />
       <workItem from="1519035541775" duration="9314000" />
       <workItem from="1519083768434" duration="8515000" />
-      <workItem from="1519104082779" duration="7057000" />
+      <workItem from="1519104082779" duration="7327000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50027000" />
+    <option name="totallyTimeSpent" value="50297000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1207,7 +1196,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37726524" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3607908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1721,12 +1710,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+        <state relative-caret-position="250">
+          <caret line="125" column="27" selection-start-line="125" selection-start-column="27" selection-end-line="125" selection-end-column="27" />
           <folding>
-            <marker date="1519111148856" expanded="true" signature="10140:10935" ph="..." />
-            <marker date="1519111148856" expanded="true" signature="10276:10904" ph="..." />
-            <marker date="1519111148856" expanded="true" signature="10334:10868" ph="..." />
+            <marker date="1519111370204" expanded="true" signature="10436:11231" ph="..." />
+            <marker date="1519111370204" expanded="true" signature="10572:11200" ph="..." />
+            <marker date="1519111370204" expanded="true" signature="10630:11164" ph="..." />
           </folding>
         </state>
       </provider>

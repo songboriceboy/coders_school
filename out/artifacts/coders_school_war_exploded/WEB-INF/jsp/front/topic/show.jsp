@@ -122,6 +122,14 @@
                 `;
                             var li = $(comment);
                             $(form).closest('.reply-item').find('.ul-comment-list-child').append(li);
+
+                            var $div = $('#reply-anywhere');
+                            if ($div.length > 0)
+                            {
+                                testEditor2.editor.remove();
+                                $('#reply-anywhere').remove();
+                            }
+
                             return false;
 
                         }
