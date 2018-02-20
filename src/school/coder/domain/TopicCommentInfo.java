@@ -14,6 +14,19 @@ public class TopicCommentInfo {
     private int reply_comment_id;
     private int user_id;
 
+    @Override
+    public String toString() {
+        return "TopicCommentInfo{" +
+                "comment_id=" + comment_id +
+                ", comment_content='" + comment_content + '\'' +
+                ", comment_markdown_content='" + comment_markdown_content + '\'' +
+                ", comment_createtime=" + comment_createtime +
+                ", topic_id=" + topic_id +
+                ", reply_comment_id=" + reply_comment_id +
+                ", user_id=" + user_id +
+                '}';
+    }
+
     public int getComment_id() {
         return comment_id;
     }

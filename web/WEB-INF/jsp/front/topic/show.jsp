@@ -220,12 +220,12 @@
                         },
                         onpreviewing : function() {
                             this.watch();
-                            console.log("onpreviewing =>", this, this.id, this.settings);
+//                            console.log("onpreviewing =>", this, this.id, this.settings);
                             // on previewing you can custom css .editormd-preview-active
                         },
 
                         onpreviewed : function() {
-                            console.log("onpreviewed =>", this, this.id, this.settings);
+//                            console.log("onpreviewed =>", this, this.id, this.settings);
                             this.unwatch();
                         }
                     });
@@ -258,21 +258,21 @@
                         }
                     });
 
-                    <%--$("#submit").click(function () {--%>
-                        <%--var param = $("#article_form").serialize();--%>
-                        <%--$.post('${pageContext.request.contextPath}/topic/save_topic', param)--%>
-                                <%--.done(function (article) {--%>
-                                    <%--if(article.topic_id >= 0)--%>
-                                    <%--{--%>
-                                        <%--alert("ok");--%>
-                                        <%--return false;--%>
-                                    <%--}--%>
+                    $("#submit").click(function () {
+                        var param = $("#reply-form").serialize();
+                        $.post('${pageContext.request.contextPath}/comment/add_comment', param)
+                                .done(function (comment) {
+                                    if(comment.topic_id >= 0)
+                                    {
+                                        alert("ok");
+                                        return false;
+                                    }
 
-                                <%--})--%>
-                                <%--.fail(function () {--%>
+                                })
+                                .fail(function () {
 
-                                <%--});--%>
-                    <%--})--%>
+                                });
+                    })
                 }
         );
     </script>
@@ -355,13 +355,13 @@
                 <form class="uk-form" action="#" method="post" id="reply-form">
                     <div class="uk-form-row">
                         <div class="editormd" id="test-editormd">
-
-                            <textarea class="editormd-markdown-textarea" name="topic_markdown_content" id = "topic_markdown_content"></textarea>
+                            <input type="hidden" name = "topic_id" value="${topic.topic_id}">
+                            <textarea class="editormd-markdown-textarea" name="comment_markdown_content" id = "topic_markdown_content"></textarea>
                             <!-- html textarea 需要开启配置项 saveHTMLToTextarea == true -->
                             <%--<textarea class="editormd-html-textarea" name="article_content"></textarea>--%>
 
                         </div>
-                        <input type="submit" class="uk-button">
+                        <input type="submit" class="uk-button" id="submit">
                     </div>
                 </form>
             </div>
