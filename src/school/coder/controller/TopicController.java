@@ -64,7 +64,7 @@ public class TopicController {
     {
         TopicInfo topicInfo = topicService.getTopicByID(id);
         List<TopicCommentInfoEx> list  = topicCommentService.getAllCommentsByTopicID(id);
-        Map<Integer,TopicCommentList> mapComments = new HashMap<>();
+        Map<Integer,TopicCommentList> mapComments = new LinkedHashMap<>();
         //获取嵌套评论列表
         for(TopicCommentInfoEx topicCommentInfoEx : list)
         {
@@ -114,10 +114,15 @@ public class TopicController {
         maView.setViewName("front/topic/show");
         maView.addObject("topic",topicInfo);
         maView.addObject("mapComments",mapComments);
-        maView.addObject("txt","${txt}");
+
         maView.addObject("cid","${comment.comment_id}");
         maView.addObject("reply_comment_id","${reply_comment_id}");
 
+        maView.addObject("toAuthor","${toAuthor}");
+        maView.addObject("comment_content","${comment.comment_content}");
+        maView.addObject("comment_createtime","${comment.comment_createtime}");
+        maView.addObject("user_name","${comment.user_name}");
+        maView.addObject("user_avatar","${comment.user_avatar}");
         return maView;
     }
     @RequestMapping("/save_topic")

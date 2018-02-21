@@ -179,7 +179,6 @@
 
         //动态生成的评论框提交
         function check_submit(form) {
-            var txt = testEditor2.getHTML();
 
             var param = $("#reply-reply-form").serialize();
             $.post('${pageContext.request.contextPath}/comment/add_comment', param)
@@ -192,12 +191,12 @@
                     <li class="reply-child-item" id="comment_${cid}">
                     <article class="uk-comment">
                         <header class="uk-comment-header">
-                            <img class="uk-comment-avatar" src="https://sfault-avatar.b0.upaiyun.com/245/908/2459088887-5a6fbf581bbbb_big64" width="50" height="50" alt="">
-                            <h4 class="uk-comment-title">Author</h4>
-                            <div class="uk-comment-meta">12 days ago | Profile | #</div>
+                            <img class="uk-comment-avatar" src="${pageContext.request.contextPath}/avatar/${user_avatar}" width="50" height="50" alt="">
+                            <h4 class="uk-comment-title">${user_name}</h4>
+                            <div class="uk-comment-meta">${comment_createtime} | Profile | #</div>
                         </header>
                         <div class="uk-comment-body">
-                           <p>${txt}</p>
+                           <p>${comment_content}</p>
                         </div>
                         <div class="x-comment-footer uk-margin-top">
                             <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
@@ -237,7 +236,13 @@
                     //点击某条评论里的回复按钮，动态生成一个textarea
                     $('#uk-comment-list').on('click', '.btn-reply', function () {
 
-//                        alert($(this).closest('.uk-comment').find('h4').text());
+                        var $isChildComment = $(this).closest('.reply-child-item');
+                        var toAuthor = '';
+                        if($isChildComment.length > 0)
+                        {
+                            var toAuthor = 'to:'+ $(this).closest('.uk-comment').find('.uk-comment-title').text();
+                        }
+
                         var reply_comment_id = $(this).closest('.reply-item').attr('id').replace('comment_','');
 
                         var $div = $('#reply-anywhere');
@@ -253,7 +258,7 @@
                                     <input type="hidden" name = "topic_id" value="${topic.topic_id}">
                                     <input type="hidden" name = "reply_comment_id" value="${reply_comment_id}">
                                <div class="editormd" id="test-editormd2">
-    <textarea class="editormd-markdown-textarea" name="comment_markdown_content"></textarea>
+    <textarea class="editormd-markdown-textarea" name="comment_markdown_content">${toAuthor}</textarea>
 </div>
                                     <input type="submit" class="uk-button">
                                 </div>
@@ -283,13 +288,13 @@
                                         var comment = `
                     <li class="reply-item" id="comment_${cid}">
                     <article class="uk-comment">
-                        <header class="uk-comment-header">
-                            <img class="uk-comment-avatar" src="https://sfault-avatar.b0.upaiyun.com/245/908/2459088887-5a6fbf581bbbb_big64" width="50" height="50" alt="">
-                            <h4 class="uk-comment-title">Author</h4>
-                            <div class="uk-comment-meta">12 days ago | Profile | #</div>
+                     <header class="uk-comment-header">
+                            <img class="uk-comment-avatar" src="${pageContext.request.contextPath}/avatar/${user_avatar}" width="50" height="50" alt="">
+                            <h4 class="uk-comment-title">${user_name}</h4>
+                            <div class="uk-comment-meta">${comment_createtime} | Profile | #</div>
                         </header>
                         <div class="uk-comment-body">
-                            <p>${txt}</p>
+                           <p>${comment_content}</p>
                         </div>
                         <div class="x-comment-footer uk-margin-top">
                             <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
