@@ -81,25 +81,29 @@ public class TopicController {
                 topicCommentList.setCurr_comment_content(comment_content);
                 topicCommentList.setCurr_comment_createtime(comment_createtime);
                 topicCommentList.setCurr_comment_user_id(user_id);
-                List<TopicCommentInfo> childCommentList = new ArrayList<>();
+                topicCommentList.setCurr_user_avatar(topicCommentInfoEx.getUser_avatar());
+                topicCommentList.setCurr_user_name(topicCommentInfoEx.getUser_name());
+                List<TopicCommentInfoEx> childCommentList = new ArrayList<>();
                 topicCommentList.setChildCommentList(childCommentList);
                 mapComments.put(topicCommentInfoEx.getComment_id(),topicCommentList);
             }
             else
             {
                 TopicCommentList topicCommentList = mapComments.get(tci_comment_id);
-                List<TopicCommentInfo> childCommentList = topicCommentList.getChildCommentList();
+                List<TopicCommentInfoEx> childCommentList = topicCommentList.getChildCommentList();
 
                 Integer comment_id = topicCommentInfoEx.getComment_id();
                 String comment_content = topicCommentInfoEx.getComment_content();
                 Date comment_createtime =topicCommentInfoEx.getComment_createtime();
                 Integer user_id = topicCommentInfoEx.getUser_id();
 
-                TopicCommentInfo topicCommentInfo = new TopicCommentInfo();
+                TopicCommentInfoEx topicCommentInfo = new TopicCommentInfoEx();
                 topicCommentInfo.setComment_content(comment_content);
                 topicCommentInfo.setComment_id(comment_id);
                 topicCommentInfo.setComment_createtime(comment_createtime);
                 topicCommentInfo.setUser_id(user_id);
+                topicCommentInfo.setUser_name(topicCommentInfoEx.getUser_name());
+                topicCommentInfo.setUser_avatar(topicCommentInfoEx.getUser_avatar());
 
                 childCommentList.add(topicCommentInfo);
             }

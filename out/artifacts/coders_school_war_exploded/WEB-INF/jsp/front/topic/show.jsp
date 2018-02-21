@@ -253,7 +253,7 @@
                                     <input type="hidden" name = "topic_id" value="${topic.topic_id}">
                                     <input type="hidden" name = "reply_comment_id" value="${reply_comment_id}">
                                <div class="editormd" id="test-editormd2">
-    <textarea class="editormd-markdown-textarea" name="comment_markdown_content" id = "topic_markdown_content2"></textarea>
+    <textarea class="editormd-markdown-textarea" name="comment_markdown_content"></textarea>
 </div>
                                     <input type="submit" class="uk-button">
                                 </div>
@@ -262,10 +262,7 @@
                         var replynode = $(reply);
                         $(this).closest('.reply-item').append(replynode);
 
-
                         testEditor2 = initMdEditor(2);
-
-
 
                         return false;
                     })
@@ -344,8 +341,8 @@
                     <li class="reply-item" id="comment_${entry.value.curr_comment_id}">
                         <article class="uk-comment">
                             <header class="uk-comment-header">
-                                <img class="uk-comment-avatar" src="https://sfault-avatar.b0.upaiyun.com/245/908/2459088887-5a6fbf581bbbb_big64" width="50" height="50" alt="">
-                                <h4 class="uk-comment-title">${entry.value.curr_comment_user_id}</h4>
+                                <img class="uk-comment-avatar" src="${pageContext.request.contextPath}/avatar/${entry.value.curr_user_avatar}" width="50" height="50" alt="">
+                                <h4 class="uk-comment-title">${entry.value.curr_user_name}</h4>
                                 <div class="uk-comment-meta">${entry.value.curr_comment_createtime} | Profile | #</div>
                             </header>
                             <div class="uk-comment-body">
@@ -362,8 +359,8 @@
                                 <li class="reply-child-item" id="comment_${childComment.comment_id}">
                                     <article class="uk-comment">
                                         <header class="uk-comment-header">
-                                            <img class="uk-comment-avatar" src="https://sfault-avatar.b0.upaiyun.com/245/908/2459088887-5a6fbf581bbbb_big64" width="50" height="50" alt="">
-                                            <h4 class="uk-comment-title">${childComment.user_id}</h4>
+                                            <img class="uk-comment-avatar" src="${pageContext.request.contextPath}/avatar/${childComment.user_avatar}" width="50" height="50" alt="">
+                                            <h4 class="uk-comment-title">${childComment.user_name}</h4>
                                             <div class="uk-comment-meta">${childComment.comment_createtime}| Profile | #</div>
                                         </header>
                                         <div class="uk-comment-body">
@@ -386,7 +383,7 @@
                     <div class="uk-form-row">
                         <div class="editormd" id="test-editormd">
                             <input type="hidden" name = "topic_id" value="${topic.topic_id}">
-                            <textarea class="editormd-markdown-textarea" name="comment_markdown_content" id = "topic_markdown_content"></textarea>
+                            <textarea class="editormd-markdown-textarea" name="comment_markdown_content"></textarea>
                             <!-- html textarea 需要开启配置项 saveHTMLToTextarea == true -->
                             <%--<textarea class="editormd-html-textarea" name="article_content"></textarea>--%>
 

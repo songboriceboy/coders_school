@@ -15,8 +15,11 @@ topic_comment_info.comment_id
 ,topic_comment_info.comment_createtime
 ,topic_comment_info.user_id
 ,COALESCE(tci.comment_id,0) as tci_comment_id
+,userinfo.user_avatar
+,userinfo.user_name
 from topic_comment_info
 left join topic_comment_info tci on topic_comment_info.reply_comment_id = tci.comment_id
+join userinfo on userinfo.user_id = topic_comment_info.user_id
 where topic_comment_info.topic_id = #{value}
 order by topic_comment_info.comment_createtime
     </select>
