@@ -180,34 +180,36 @@ public class TopicController {
         response.getWriter().println(strJson);
     }
 
-    @RequestMapping("/gettopiccounts/{cateid}")
-    public void getTopicCounts(@PathVariable int cateid
-                       ,HttpServletResponse response) throws IOException
-    {
-        TopicPageInfo topicPageInfo = new TopicPageInfo();
-        topicPageInfo.setSection_id(cateid);
-
-
-        int count = topicService.getTopicsCounts(topicPageInfo);
-
-        PrintWriter pWriter = response.getWriter();
-        TopicCounts bookcounts = new TopicCounts();
-        bookcounts.setCounts(count);
-
-        String strJsonString = JSON.toJSONString(bookcounts);
-        pWriter.println(strJsonString);
-    }
+//    @RequestMapping("/gettopiccounts/{cateid}")
+//    public void getTopicCounts(@PathVariable int cateid
+//                       ,HttpServletResponse response) throws IOException
+//    {
+//        TopicPageInfo topicPageInfo = new TopicPageInfo();
+//        topicPageInfo.setSection_id(cateid);
+//
+//
+//        int count = topicService.getTopicsCounts(topicPageInfo);
+//
+//        PrintWriter pWriter = response.getWriter();
+//        TopicCounts bookcounts = new TopicCounts();
+//        bookcounts.setCounts(count);
+//
+//        String strJsonString = JSON.toJSONString(bookcounts);
+//        pWriter.println(strJsonString);
+//    }
 
     @RequestMapping("getpagedtopics")
     public void getPagedTopics(TopicPageInfo pageinfo
             ,HttpServletResponse response) throws IOException
     {
+        int count = topicService.getTopicsCounts(pageinfo);
         List<TopicInfoEx> lstBookInfos = new ArrayList<TopicInfoEx>();
 
 
         lstBookInfos = topicService.getPagedTopics(pageinfo);
         PageData<TopicInfoEx> pageData = new PageData<TopicInfoEx>();
         pageData.setList(lstBookInfos);
+        pageData.setTotal(count);
 
         String strJsonString = JSON.toJSONString(pageData);
         PrintWriter pWriter = response.getWriter();

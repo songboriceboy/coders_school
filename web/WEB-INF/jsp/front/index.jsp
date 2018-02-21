@@ -12,10 +12,10 @@
   <head>
     <title>hello</title>
     <link href="${pageContext.request.contextPath}/assets/uikit-2.25.0/css/uikit.almost-flat.min.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/assets/Mricode.Pagination-master/mricode.pagination.css" rel="stylesheet" />
     <script src="${pageContext.request.contextPath}/assets/jquery/jquery.js"></script>
-    <script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/uikit.min.js"></script>
-      <script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/components/pagination.js"></script>
-      <script src="${pageContext.request.contextPath}/assets/js/template.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/Mricode.Pagination-master/mricode.pagination.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/js/template.js"></script>
     <style>
       .avatar{
         width: 45px;
@@ -63,78 +63,94 @@
         xhr.send(fd);
       }
 
-      var pagination;
-      var pagesize = 3;
+//      var pagination;
+//      var pagesize = 3;
       //规定，cateid=0代表加载全部分类的主题
       //index:要第几页
       //catetoryid:分类是什么（0，代表全部分类）
-      function loadData(index,section_id)
-      {
-        $.getJSON('${pageContext.request.contextPath}/topic/getpagedtopics'
-                ,{pageIndex:index,pageSize:pagesize,section_id:section_id},function(data)
-                {
-                  var html = template('topic-list-tpl',data);
+      <%--function loadData(index,section_id)--%>
+      <%--{--%>
+        <%--$.getJSON('${pageContext.request.contextPath}/topic/getpagedtopics'--%>
+                <%--,{pageIndex:index,pageSize:pagesize,section_id:section_id},function(data)--%>
+                <%--{--%>
+                  <%--var html = template('topic-list-tpl',data);--%>
 
-                  $('#topic-list').html(html);
+                  <%--$('#topic-list').html(html);--%>
 
-                })
-      }
+                <%--})--%>
+      <%--}--%>
 
       $(function()
       {
+        $("#page").pagination({
+          pageIndex: 0,
+          pageSize: 5,
+          showInfo: true,
+          showJump: true,
+          showPageSizes: true,
+          remote: {
+            url: '${pageContext.request.contextPath}/topic/getpagedtopics',
+            success: function (data) {
+              var html = template('topic-list-tpl', data);
+              $('#topic-list').html(html);
+            }
+          }
+        });
         //alert('ddd');
         //向服务器发起ajax请求，询问分类表中一共有多少条记录
         //回调函数,服务器回应我们的请求后，该回调函数会被浏览器调用
         //并且将服务器回应的数据，通过data参数传进来
         //$.get('请求地址','发给服务器的参数',回调函数(data));
         //0：代表查找全部分类
-        $.getJSON('${pageContext.request.contextPath}/topic/gettopiccounts/0',function(json){
-          //alert(param)
-          //$('#count').html(param);
+        <%--$.getJSON('${pageContext.request.contextPath}/topic/gettopiccounts/0',function(json){--%>
+          <%--//alert(param)--%>
+          <%--//$('#count').html(param);--%>
 
-          //var pagination = UIkit.pagination(分页组件元素,配置选项json对象);
-
-
-          pagination = UIkit.pagination('.uk-pagination', {items:json.counts,itemsOnPage:pagesize});
-
-          loadData(0,0);
-
-          $('.uk-pagination').on('select.uk.pagination',function(e,index){
-            //alert(index);
-            //向服务器要第二页数据（每页3条）
-
-            loadData(index,0);
-
-          })
-        });
+          <%--//var pagination = UIkit.pagination(分页组件元素,配置选项json对象);--%>
 
 
-        $('.uk-navbar-nav li a').on('click',function(){
-          //alert('ddd');
-          var section_id = $(this).attr("section_id");
+          <%--pagination = UIkit.pagination('.uk-pagination', {items:json.counts,itemsOnPage:pagesize});--%>
 
-          $.getJSON('${pageContext.request.contextPath}/topic/gettopiccounts/'+section_id,function(json){
-            //alert(param)
-            //$('#count').html(param);
+          <%--loadData(0,0);--%>
 
-            //var pagination = UIkit.pagination(分页组件元素,配置选项json对象);
-//            var json=JSON.parse(param);
+          <%--$('.uk-pagination').on('select.uk.pagination',function(e,index){--%>
+            <%--alert(index+'ddd');--%>
+            <%--//向服务器要第二页数据（每页3条）--%>
 
-            pagination.options.items = json.counts;
-            pagination.init();
-            //var pagination = UIkit.pagination('.uk-pagination', {items:json.counts,itemsOnPage:9});
-            //第二次发ajax
-            loadData(0,section_id);
+            <%--loadData(index,0);--%>
 
-            $('.uk-pagination').on('select.uk.pagination',function(e,index){
-              //alert(index);
-              //向服务器要第二页数据（每页3条）
+          <%--})--%>
+        <%--});--%>
 
-              loadData(index,section_id);
+        <%--pagination = UIkit.pagination('.uk-pagination', {items:pagesize,itemsOnPage:pagesize});--%>
+        <%--$('.uk-navbar-nav li a').on('click',function(){--%>
 
-            })
-          });
-        })
+          <%--var section_id = $(this).attr("section_id");--%>
+
+          <%--$.getJSON('${pageContext.request.contextPath}/topic/gettopiccounts/'+section_id,function(json){--%>
+            <%--//alert(param)--%>
+            <%--//$('#count').html(param);--%>
+
+<%--//            pagination = UIkit.pagination(分页组件元素,配置选项json对象);--%>
+<%--//            var json=JSON.parse(param);--%>
+
+            <%--pagination.options.items = json.counts;--%>
+            <%--pagination.init();--%>
+            <%--//var pagination = UIkit.pagination('.uk-pagination', {items:json.counts,itemsOnPage:9});--%>
+            <%--//第二次发ajax--%>
+            <%--loadData(0,section_id);--%>
+
+            <%--$('.uk-pagination').on('select.uk.pagination',function(e,index){--%>
+              <%--alert(index+'sss');--%>
+              <%--//向服务器要第二页数据（每页3条）--%>
+
+              <%--loadData(index,section_id);--%>
+
+            <%--})--%>
+          <%--});--%>
+        <%--})--%>
+
+        <%--$('.uk-navbar-nav li a').first().trigger('click');--%>
       });
 
     </script>
@@ -166,9 +182,7 @@
 
   </ul>
 
-  <ul class="uk-pagination">
-
-  </ul>
+  <div id="page" class="m-pagination"></div>
 
 
   <script type="text/html" id="topic-list-tpl">
