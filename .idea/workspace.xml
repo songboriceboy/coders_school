@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="872bce5c-9269-4a5f-82e2-113350dfc46c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/school/coder/controller/TopicController.java" afterPath="$PROJECT_DIR$/src/school/coder/controller/TopicController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/assets/Mricode.Pagination-master/test-ajax.html" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/assets/Mricode.Pagination-master/test-ajax.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp" />
     </list>
     <ignored path="coders_school.iws" />
@@ -41,21 +42,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new.jsp">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="147" column="38" selection-start-line="147" selection-start-column="38" selection-end-line="147" selection-end-column="38" />
+            <state relative-caret-position="100">
+              <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp">
+      <file leaf-file-name="test-ajax.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assets/Mricode.Pagination-master/test-ajax.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="92" column="42" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
+              <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test-default.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assets/Mricode.Pagination-master/test-default.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-300">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -101,18 +112,6 @@
             <state relative-caret-position="975">
               <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://D:/用户目录/下载/novel_ssm-master/novel_ssm-master/WebContent/WEB-INF/jsp/front/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="128" column="8" selection-start-line="128" selection-start-column="8" selection-end-line="153" selection-end-column="18" />
-              <folding>
-                <element signature="e#4695#5430#0#HTML" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -169,7 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/school/coder/interceptor/LoginInterceptor.java" />
         <option value="$PROJECT_DIR$/src/school/coder/interceptor/AdminLoginInterceptor.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin/header/footer.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin/header/sidebar.jsp" />
@@ -219,6 +217,7 @@
         <option value="$PROJECT_DIR$/src/school/coder/mapper/TopicMapper.xml" />
         <option value="$PROJECT_DIR$/src/school/coder/vo/PageData.java" />
         <option value="$PROJECT_DIR$/src/school/coder/controller/TopicController.java" />
+        <option value="$PROJECT_DIR$/web/assets/Mricode.Pagination-master/test-ajax.html" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp" />
       </list>
     </option>
@@ -1211,12 +1210,12 @@
       <workItem from="1519104082779" duration="9052000" />
       <workItem from="1519122887307" duration="8535000" />
       <workItem from="1519169697057" duration="15619000" />
-      <workItem from="1519204624861" duration="8931000" />
+      <workItem from="1519204624861" duration="9263000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85107000" />
+    <option name="totallyTimeSpent" value="85439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1275,21 +1274,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/school/coder/mapper/TopicCommentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/uikit-2.25.0/css/uikit.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/school/coder/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -1795,10 +1779,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp">
+    <entry file="file://$PROJECT_DIR$/web/assets/Mricode.Pagination-master/test-default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/Mricode.Pagination-master/test-ajax.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="92" column="42" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
           <folding />
         </state>
       </provider>

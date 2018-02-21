@@ -70,9 +70,10 @@
         $("#page").pagination({
           pageIndex: 0,
           pageSize: 5,
-          showInfo: true,
-          showJump: true,
-          showPageSizes: true,
+          showFirstLastBtn:true,
+//          showInfo: true,
+//          showJump: true,
+//          showPageSizes: true,
           remote: {
             url: '${pageContext.request.contextPath}/topic/getpagedtopics',
             success: function (data) {
