@@ -3,6 +3,7 @@ package school.coder.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import school.coder.domain.TopicInfo;
+import school.coder.domain.TopicInfoEx;
 import school.coder.mapper.TopicMapper;
 import school.coder.mapper.UserMapper;
 import school.coder.service.TopicService;
@@ -27,7 +28,7 @@ public class TopicServiceImpl implements TopicService {
     }
 
     @Override
-    public List<TopicInfo> getAllTopics() {
+    public List<TopicInfoEx> getAllTopics() {
         return topicMapper.getAllTopics();
     }
 

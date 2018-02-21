@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import school.coder.domain.TopicInfo;
+import school.coder.domain.TopicInfoEx;
 import school.coder.service.TopicService;
 
 import java.util.List;
@@ -18,7 +19,7 @@ public class HomeController {
 	public ModelAndView index()
 	{
 		System.out.println("hello");
-		List<TopicInfo> topicInfoList = topicService.getAllTopics();
+		List<TopicInfoEx> topicInfoList = topicService.getAllTopics();
 		ModelAndView maView = new ModelAndView();
 		maView.setViewName("front/index");
 		maView.addObject("topics",topicInfoList);

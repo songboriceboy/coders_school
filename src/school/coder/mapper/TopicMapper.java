@@ -1,6 +1,7 @@
 package school.coder.mapper;
 
 import school.coder.domain.TopicInfo;
+import school.coder.domain.TopicInfoEx;
 
 import java.util.List;
 
@@ -10,6 +11,6 @@ import java.util.List;
 public interface TopicMapper {
     int insertTopic(TopicInfo topicInfo);
     int updateTopic(TopicInfo topicInfo);
-    List<TopicInfo> getAllTopics();
+    List<TopicInfoEx> getAllTopics();
     TopicInfo getTopicByID(int id);
 }
