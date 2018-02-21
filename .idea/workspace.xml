@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="872bce5c-9269-4a5f-82e2-113350dfc46c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/school/coder/controller/TopicCommentController.java" afterPath="$PROJECT_DIR$/src/school/coder/controller/TopicCommentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/school/coder/controller/TopicController.java" afterPath="$PROJECT_DIR$/src/school/coder/controller/TopicController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layer/theme/default/icon-ext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layer/theme/default/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layer/theme/default/loading-0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layer/theme/default/loading-1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layer/theme/default/loading-2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layer/layer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layer/mobile/layer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layer/mobile/need/layer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layer/theme/default/layer.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/jsp/front/topic/show.jsp" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/jsp/front/topic/show.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp" />
     </list>
     <ignored path="coders_school.iws" />
@@ -32,15 +41,14 @@
       <file leaf-file-name="show.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="239" column="41" selection-start-line="239" selection-start-column="41" selection-end-line="239" selection-end-column="41" />
+            <state relative-caret-position="191">
+              <caret line="303" column="57" selection-start-line="303" selection-start-column="57" selection-end-line="303" selection-end-column="57" />
               <folding>
-                <element signature="e#3082#7102#0#HTML" expanded="false" />
-                <element signature="e#5820#7060#0#HTML" expanded="false" />
-                <element signature="e#7161#9186#0#HTML" expanded="false" />
-                <marker date="1519183743821" expanded="true" signature="10260:11035" ph="..." />
-                <marker date="1519183743821" expanded="true" signature="10396:11004" ph="..." />
-                <marker date="1519183743821" expanded="true" signature="10454:10968" ph="..." />
+                <element signature="e#3137#3331#0#HTML" expanded="false" />
+                <element signature="e#6106#7346#0#HTML" expanded="false" />
+                <marker date="1519186575440" expanded="true" signature="10717:11492" ph="..." />
+                <marker date="1519186575440" expanded="true" signature="10853:11461" ph="..." />
+                <marker date="1519186575440" expanded="true" signature="10911:11425" ph="..." />
               </folding>
             </state>
           </provider>
@@ -108,7 +116,7 @@
       <file leaf-file-name="TopicController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/school/coder/controller/TopicController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
+            <state relative-caret-position="399">
               <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding />
             </state>
@@ -407,6 +415,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coders_school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coders_school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -634,15 +664,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\coders_school\web" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\coder_school\coders_school\web\assets" />
       <recent name="C:\coder_school\coders_school\web\WEB-INF\jsp\front\topic" />
       <recent name="C:\coder_school\coders_school\src\school\coder\mapper" />
       <recent name="C:\coder_school\coders_school\web\assets\js" />
-      <recent name="C:\coder_school\coders_school\web\assets" />
       <recent name="E:\coders_school\web\assets\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\coders_school\web" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.21">
@@ -1168,12 +1198,12 @@
       <workItem from="1519083768434" duration="8515000" />
       <workItem from="1519104082779" duration="9052000" />
       <workItem from="1519122887307" duration="8535000" />
-      <workItem from="1519169697057" duration="11110000" />
+      <workItem from="1519169697057" duration="12898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71667000" />
+    <option name="totallyTimeSpent" value="73455000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1189,7 +1219,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26523888" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3261944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1635,14 +1665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/school/coder/controller/TopicCommentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/school/coder/domain/TopicInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1684,9 +1706,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/school/coder/controller/TopicCommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/school/coder/controller/TopicController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
+        <state relative-caret-position="399">
           <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding />
         </state>
@@ -1694,15 +1724,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="239" column="41" selection-start-line="239" selection-start-column="41" selection-end-line="239" selection-end-column="41" />
+        <state relative-caret-position="191">
+          <caret line="303" column="57" selection-start-line="303" selection-start-column="57" selection-end-line="303" selection-end-column="57" />
           <folding>
-            <element signature="e#3082#7102#0#HTML" expanded="false" />
-            <element signature="e#5820#7060#0#HTML" expanded="false" />
-            <element signature="e#7161#9186#0#HTML" expanded="false" />
-            <marker date="1519183743821" expanded="true" signature="10260:11035" ph="..." />
-            <marker date="1519183743821" expanded="true" signature="10396:11004" ph="..." />
-            <marker date="1519183743821" expanded="true" signature="10454:10968" ph="..." />
+            <element signature="e#3137#3331#0#HTML" expanded="false" />
+            <element signature="e#6106#7346#0#HTML" expanded="false" />
+            <marker date="1519186575440" expanded="true" signature="10717:11492" ph="..." />
+            <marker date="1519186575440" expanded="true" signature="10853:11461" ph="..." />
+            <marker date="1519186575440" expanded="true" signature="10911:11425" ph="..." />
           </folding>
         </state>
       </provider>

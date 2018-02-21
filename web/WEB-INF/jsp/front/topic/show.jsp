@@ -9,7 +9,7 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html>
-<html lang="en" class="uk-height-1-1">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -26,6 +26,7 @@
     <script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/uikit.min.js"></script>
 
     <script src="${pageContext.request.contextPath}/assets/editor-md-master/editormd.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/layer/layer.js"></script>
     <style>
         html, h1, h2, h3, h4, h5, h6 {
             font-family: 'Microsoft YaHei',"Helvetica Neue",Helvetica,Arial,sans-serif!important;
@@ -93,6 +94,15 @@
     <script>
         var testEditor = null;
         var testEditor2 = null;
+        function isLogin() {
+            <c:if test="${empty user_info}">
+                return 0;
+            </c:if>
+            <c:if test="${!empty user_info}">
+                return 1;
+            </c:if>
+        }
+
         function initMdEditor(num) {
             //markdown
            var editorMd = editormd({
@@ -179,6 +189,14 @@
 
         //动态生成的评论框提交
         function check_submit(form) {
+
+            var userid = isLogin();
+
+            if(userid === 0)
+            {
+                layer.msg('未登录',{time:2000});
+                return false;
+            }
 
             var param = $("#reply-reply-form").serialize();
             $.post('${pageContext.request.contextPath}/comment/add_comment', param)
@@ -278,6 +296,15 @@
 //
 //                    })
                     $("#submit").click(function () {
+
+                        var userid = isLogin();
+
+                        if(userid === 0)
+                        {
+                            layer.msg('未登录',{time:2000});
+                            return false;
+                        }
+
                         var param = $("#reply-form").serialize();
                         $.post('${pageContext.request.contextPath}/comment/add_comment', param)
                                 .done(function (comment) {
@@ -323,10 +350,10 @@
         );
     </script>
 </head>
-<body class="uk-height-1-1">
+<body>
 <%@include file="../common/header.jsp"%>
 
-<div class="mb-cover uk-height-1-1">
+<div class="mb-cover">
     <div class="b20"></div>
     <div class="uk-container uk-container-center">
 
