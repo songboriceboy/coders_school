@@ -8,10 +8,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import school.coder.domain.TopicCommentInfo;
-import school.coder.domain.TopicCommentInfoEx;
-import school.coder.domain.TopicInfo;
-import school.coder.domain.UserInfo;
+import school.coder.domain.*;
+import school.coder.service.SectionService;
 import school.coder.service.TopicCommentService;
 import school.coder.service.TopicService;
 import school.coder.util.imgUploadBackData;
@@ -34,14 +32,20 @@ public class TopicController {
     private TopicService topicService;
     @Autowired
     private TopicCommentService topicCommentService;
+    @Autowired
+    private SectionService sectionService;
     @RequestMapping("/new")
     public ModelAndView newTopic()
     {
+
+        List<SectionInfo> sectionInfoList = sectionService.getAllSections();
 
         ModelAndView maView = new ModelAndView();
         TopicInfo topicInfo = new TopicInfo();
 
 //        topicInfo.setTopic_markdown_content("\n\n\n\n\n");
+        maView.addObject("firstSection", sectionInfoList.get(0));
+        maView.addObject("sectionList",sectionInfoList);
         maView.addObject("topic",topicInfo);
         maView.setViewName("front/topic/new");
 //        maView.setViewName("front/topic/test_new");

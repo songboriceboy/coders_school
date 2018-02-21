@@ -139,7 +139,20 @@
                         <input type="hidden" name = "topic_id" value="${topic.topic_id}" id="topic_id">
 
                         标题： <input type="text" name="topic_title" value="${topic.topic_title}" id = "title">
+                        <div class="uk-margin">
 
+                            <div class="uk-button uk-form-select uk-active" data-uk-form-select="">
+                                <span>${firstSection}</span>
+                                <i class="uk-icon-caret-down"></i>
+                                <select name="Section">
+                                    <c:forEach items="${sectionList}" var="section">
+                                        <option value="${section.section_id}">${section.section_name}</option>
+                                    </c:forEach>
+
+                                </select>
+                            </div>
+
+                        </div>
                         <div class="editormd" id="test-editormd">
 
                             <textarea class="editormd-markdown-textarea" name="topic_markdown_content" id = "topic_markdown_content">${topic.topic_markdown_content}</textarea>
