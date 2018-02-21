@@ -44,7 +44,8 @@ public class TopicController {
         TopicInfo topicInfo = new TopicInfo();
 
 //        topicInfo.setTopic_markdown_content("\n\n\n\n\n");
-        maView.addObject("firstSection", sectionInfoList.get(0));
+        SectionInfo sectionInfoFirst = sectionInfoList.get(0);
+        maView.addObject("firstSection", sectionInfoFirst);
         maView.addObject("sectionList",sectionInfoList);
         maView.addObject("topic",topicInfo);
         maView.setViewName("front/topic/new");

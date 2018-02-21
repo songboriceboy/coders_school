@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/editor-md-master/css/editormd.css" />
     <script src="${pageContext.request.contextPath}/assets/jquery/jquery.js"></script>
     <script src="${pageContext.request.contextPath}/assets/editor-md-master/editormd.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/uikit.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/components/form-select.js"></script>
+
 
     <%--<script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/uikit.min.js"></script>--%>
     <script>
@@ -142,13 +145,12 @@
                         <div class="uk-margin">
 
                             <div class="uk-button uk-form-select uk-active" data-uk-form-select="">
-                                <span>${firstSection}</span>
+                                <span>${firstSection.section_name}</span>
                                 <i class="uk-icon-caret-down"></i>
-                                <select name="Section">
+                                <select name="section_id">
                                     <c:forEach items="${sectionList}" var="section">
                                         <option value="${section.section_id}">${section.section_name}</option>
                                     </c:forEach>
-
                                 </select>
                             </div>
 
