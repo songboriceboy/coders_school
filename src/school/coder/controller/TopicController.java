@@ -180,23 +180,7 @@ public class TopicController {
         response.getWriter().println(strJson);
     }
 
-//    @RequestMapping("/gettopiccounts/{cateid}")
-//    public void getTopicCounts(@PathVariable int cateid
-//                       ,HttpServletResponse response) throws IOException
-//    {
-//        TopicPageInfo topicPageInfo = new TopicPageInfo();
-//        topicPageInfo.setSection_id(cateid);
-//
-//
-//        int count = topicService.getTopicsCounts(topicPageInfo);
-//
-//        PrintWriter pWriter = response.getWriter();
-//        TopicCounts bookcounts = new TopicCounts();
-//        bookcounts.setCounts(count);
-//
-//        String strJsonString = JSON.toJSONString(bookcounts);
-//        pWriter.println(strJsonString);
-//    }
+
 
     @RequestMapping("getpagedtopics")
     public void getPagedTopics(TopicPageInfo pageinfo
