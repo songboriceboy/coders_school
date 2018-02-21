@@ -107,6 +107,34 @@
 
           })
         });
+
+
+        $('.uk-navbar-nav li a').on('click',function(){
+          //alert('ddd');
+          var section_id = $(this).attr("section_id");
+
+          $.getJSON('${pageContext.request.contextPath}/topic/gettopiccounts/'+section_id,function(json){
+            //alert(param)
+            //$('#count').html(param);
+
+            //var pagination = UIkit.pagination(分页组件元素,配置选项json对象);
+//            var json=JSON.parse(param);
+
+            pagination.options.items = json.counts;
+            pagination.init();
+            //var pagination = UIkit.pagination('.uk-pagination', {items:json.counts,itemsOnPage:9});
+            //第二次发ajax
+            loadData(0,section_id);
+
+            $('.uk-pagination').on('select.uk.pagination',function(e,index){
+              //alert(index);
+              //向服务器要第二页数据（每页3条）
+
+              loadData(index,section_id);
+
+            })
+          });
+        })
       });
 
     </script>
@@ -128,7 +156,7 @@
 
       <ul class="uk-navbar-nav">
           <c:forEach items="${sections}" var="section">
-              <li><a href="javascript:;">${section.section_name}</a></li>
+              <li><a href="javascript:;" section_id="${section.section_id}">${section.section_name}</a></li>
           </c:forEach>
       </ul>
   </nav>
