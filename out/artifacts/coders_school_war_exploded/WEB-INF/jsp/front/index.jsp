@@ -68,7 +68,7 @@
 <a href="${pageContext.request.contextPath}/user/login">login</a>
 <a href="${pageContext.request.contextPath}/user/reg">reg</a>
   <a href="${pageContext.request.contextPath}/topic/new">new topic</a>
-
+  <a href="${pageContext.request.contextPath}/">home</a>
   <div id="wai">
     <div id="nei"></div>
   </div><span id="precent"></span><br/>
