@@ -2,7 +2,6 @@ package school.coder.controller;
 
 
 import com.alibaba.fastjson.JSON;
-import org.omg.CORBA.Object;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,12 +13,15 @@ import school.coder.service.TopicCommentService;
 import school.coder.service.TopicService;
 import school.coder.util.imgUploadBackData;
 import school.coder.util.picEncode;
+import school.coder.vo.PageData;
 import school.coder.vo.TopicCommentList;
+import school.coder.vo.TopicCounts;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.*;
 
 /**
@@ -132,7 +134,7 @@ public class TopicController {
         return maView;
     }
     @RequestMapping("/save_topic")
-    public void SaveArticle(HttpServletRequest request, HttpServletResponse response, TopicInfo topicInfo) throws IOException {
+    public void saveTopic(HttpServletRequest request, HttpServletResponse response, TopicInfo topicInfo) throws IOException {
 
         UserInfo userInfo = (UserInfo)request.getSession().getAttribute("user_info");
         String strMarkdown = request.getParameter("test-editormd-html-code");
@@ -176,6 +178,40 @@ public class TopicController {
         iubd.setCode(1);
         String strJson = JSON.toJSONString(iubd);
         response.getWriter().println(strJson);
+    }
+
+    @RequestMapping("/gettopiccounts/{cateid}")
+    public void getTopicCounts(@PathVariable int cateid
+                       ,HttpServletResponse response) throws IOException
+    {
+        TopicPageInfo topicPageInfo = new TopicPageInfo();
+        topicPageInfo.setSection_id(cateid);
+
+
+        int count = topicService.getTopicsCounts(topicPageInfo);
+
+        PrintWriter pWriter = response.getWriter();
+        TopicCounts bookcounts = new TopicCounts();
+        bookcounts.setCounts(count);
+
+        String strJsonString = JSON.toJSONString(bookcounts);
+        pWriter.println(strJsonString);
+    }
+
+    @RequestMapping("getpagedtopics")
+    public void getPagedTopics(TopicPageInfo pageinfo
+            ,HttpServletResponse response) throws IOException
+    {
+        List<TopicInfoEx> lstBookInfos = new ArrayList<TopicInfoEx>();
+
+
+        lstBookInfos = topicService.getPagedTopics(pageinfo);
+        PageData<TopicInfoEx> pageData = new PageData<TopicInfoEx>();
+        pageData.setList(lstBookInfos);
+
+        String strJsonString = JSON.toJSONString(pageData);
+        PrintWriter pWriter = response.getWriter();
+        pWriter.println(strJsonString);
     }
 
 }

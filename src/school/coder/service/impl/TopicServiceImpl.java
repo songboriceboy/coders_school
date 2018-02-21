@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import school.coder.domain.TopicInfo;
 import school.coder.domain.TopicInfoEx;
+import school.coder.domain.TopicPageInfo;
 import school.coder.mapper.TopicMapper;
 import school.coder.mapper.UserMapper;
 import school.coder.service.TopicService;
@@ -35,5 +36,15 @@ public class TopicServiceImpl implements TopicService {
     @Override
     public TopicInfo getTopicByID(int id) {
         return topicMapper.getTopicByID(id);
+    }
+
+    @Override
+    public int getTopicsCounts(TopicPageInfo topicPageInfo) {
+        return topicMapper.getTopicsCounts(topicPageInfo);
+    }
+
+    @Override
+    public List<TopicInfoEx> getPagedTopics(TopicPageInfo topicPageInfo) {
+        return topicMapper.getPagedTopics(topicPageInfo);
     }
 }
