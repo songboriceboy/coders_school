@@ -11,6 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 import school.coder.domain.TopicCommentInfo;
 import school.coder.domain.TopicCommentInfoEx;
 import school.coder.domain.TopicInfo;
+import school.coder.domain.UserInfo;
 import school.coder.service.TopicCommentService;
 import school.coder.service.TopicService;
 import school.coder.util.imgUploadBackData;
@@ -118,9 +119,11 @@ public class TopicController {
     @RequestMapping("/save_topic")
     public void SaveArticle(HttpServletRequest request, HttpServletResponse response, TopicInfo topicInfo) throws IOException {
 
+        UserInfo userInfo = (UserInfo)request.getSession().getAttribute("user_info");
         String strMarkdown = request.getParameter("test-editormd-html-code");
         topicInfo.setTopic_content(strMarkdown);
         topicInfo.setTopic_createtime(new Date());
+        topicInfo.setUser_id(userInfo.getUser_id());
         System.out.println(topicInfo);
         //代表是新增
         if(topicInfo.getTopic_id() == 0)
