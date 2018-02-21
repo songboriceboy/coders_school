@@ -78,12 +78,10 @@
   <nav class="uk-navbar">
 
       <ul class="uk-navbar-nav">
-          <li><a href="">Active</a></li>
-          <li><a href="">Item</a></li>
-          <li><a href="">Active</a></li>
-          <li><a href="">Item</a></li>
+          <c:forEach items="${sections}" var="section">
+              <li><a href="javascript:;">${section.section_name}</a></li>
+          </c:forEach>
       </ul>
-
   </nav>
 
 
