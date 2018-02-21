@@ -145,11 +145,16 @@
                         <div class="uk-margin">
 
                             <div class="uk-button uk-form-select uk-active" data-uk-form-select="">
-                                <span>${firstSection.section_name}</span>
+                                <span></span>
                                 <i class="uk-icon-caret-down"></i>
                                 <select name="section_id">
                                     <c:forEach items="${sectionList}" var="section">
-                                        <option value="${section.section_id}">${section.section_name}</option>
+                                        <c:if test="${section.section_id == topic.section_id}">
+                                            <option value="${section.section_id}" selected>${section.section_name}</option>
+                                        </c:if>
+                                        <c:if test="${section.section_id != topic.section_id}">
+                                            <option value="${section.section_id}">${section.section_name}</option>
+                                        </c:if>
                                     </c:forEach>
                                 </select>
                             </div>

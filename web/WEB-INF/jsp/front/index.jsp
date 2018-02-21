@@ -75,6 +75,18 @@
   <img class="uk-border-circle" id="avatar">
   <input type="file" name="pic" onchange="upfile();"/>
 
+  <nav class="uk-navbar">
+
+      <ul class="uk-navbar-nav">
+          <li><a href="">Active</a></li>
+          <li><a href="">Item</a></li>
+          <li><a href="">Active</a></li>
+          <li><a href="">Item</a></li>
+      </ul>
+
+  </nav>
+
+
   <ul class="uk-margin-top">
     <c:forEach items="${topics}" var="topic">
 

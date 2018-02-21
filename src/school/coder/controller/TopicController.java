@@ -45,7 +45,7 @@ public class TopicController {
 
 //        topicInfo.setTopic_markdown_content("\n\n\n\n\n");
         SectionInfo sectionInfoFirst = sectionInfoList.get(0);
-        maView.addObject("firstSection", sectionInfoFirst);
+        topicInfo.setSection_id(sectionInfoFirst.getSection_id());
         maView.addObject("sectionList",sectionInfoList);
         maView.addObject("topic",topicInfo);
         maView.setViewName("front/topic/new");
@@ -57,10 +57,11 @@ public class TopicController {
     public ModelAndView modifyTopic(@PathVariable int id)
     {
         TopicInfo topicInfo = topicService.getTopicByID(id);
+        List<SectionInfo> sectionInfoList = sectionService.getAllSections();
 
         ModelAndView maView = new ModelAndView();
         maView.setViewName("front/topic/new");
-
+        maView.addObject("sectionList",sectionInfoList);
         maView.addObject("topic",topicInfo);
         return maView;
     }
