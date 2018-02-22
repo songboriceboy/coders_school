@@ -82,7 +82,34 @@
             color: #00a8e6
         }
 
+
+
+        .avatar{
+            width: 45px;
+            height: 45px;
+        }
+        .author-avatar
+        {
+            float:left;
+        }
+        .topic
+        {
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ccc;
+            line-height: 22px;
+        }
+        .topic .content
+        {
+            margin-left: 60px;
+        }
     </style>
+    <script>
+        $(function () {
+            $('.uk-tab').on('change.uk.tab',function (event, item) {
+                alert(item.text());
+            })
+        })
+    </script>
 </head>
 <body>
 
@@ -93,16 +120,16 @@
     <!--固定宽度，居中对齐-->
     <div class="uk-container uk-container-center">
         <div class="uk-grid" data-uk-grid-margin="">
-            <div class="uk-width-medium-3-4 uk-hidden-small">
+            <div class="uk-width-medium-3-4">
                 <div id="mb_member_left">
-                    <div class="uk-panel uk-panel-box">
+                    <div class="uk-panel uk-panel-box uk-text-center">
                         <div class="uk-grid user-info">
-                            <div class="uk-width-1-5">
+                            <div class="uk-width-medium-1-5">
                                 <a href="#">
                                     <img src="https://user-gold-cdn.xitu.io/2018/2/22/161bc4cd96f02929?imageView2/1/w/90/h/90/q/85/format/webp/interlace/1">
                                 </a>
                             </div>
-                            <div class="uk-width-3-5">
+                            <div class="uk-width-medium-3-5">
                                 <h2>__豆约翰__</h2>
                                 <div>
                                     <span>teacher</span>
@@ -113,7 +140,7 @@
                                     闲看庭前花开花落 漫随天外云卷云舒
                                 </div>
                             </div>
-                            <div class="uk-width-1-5">
+                            <div class="uk-width-medium-1-5">
                                 <div>
                                     编辑个人资料
                                 </div>
@@ -124,82 +151,185 @@
                         <div data-v-815abe10="" data-v-4cdfa676="" class="detail-list detail-list sticky-box"
                              data-v-3f216172="">
                             <ul class="uk-tab" data-uk-tab="">
-                                <li class="uk-active"><a href="#">动态</a></li>
+                                <li class="uk-active"><a href="#">话题</a></li>
+                                <li><a href="#">文章</a></li>
+                                <li><a href="#">动态</a></li>
                                 <li><a href="#">文章</a></li>
                                 <li><a href="#">话题</a></li>
-                                <li class="uk-disabled"><a href="#">关注</a></li>
-                                <li class="uk-tab-responsive uk-active uk-hidden" aria-haspopup="true"
-                                    aria-expanded="false"><a>Active</a>
-                                    <div class="uk-dropdown uk-dropdown-small">
-                                        <ul class="uk-nav uk-nav-dropdown"></ul>
-                                        <div></div>
-                                    </div>
-                                </li>
+                                <li><a href="#">文章</a></li>
+                                <li><a href="#">话题</a></li>
+                                <li><a href="#">关注</a></li>
                             </ul>
-                            <div data-v-815abe10="" class="list-body">
-                                <div data-v-7921c096="" data-v-815abe10="" st:block="activityList"
-                                     class="activity-list-box">
-                                    <ul data-v-7921c096="" class="activity-list">
-                                        <li data-v-7921c096="" class="item">
-                                            <div data-v-7921c096="" class="activity"><a data-v-7921c096=""
-                                                                                        href="/user/5821e3d8bf22ec0068e631e2"
-                                                                                        target="_blank" rel=""
-                                                                                        class="link">
-                                                <div data-v-7921c096="" class="meta-box">
-                                                    <div data-v-7921c096="" class="action">关注了用户</div>
-                                                    <div data-v-7921c096="" class="date">2小时前</div>
-                                                </div>
-                                                <div data-v-7921c096="" class="content user">
-                                                    <div data-v-b2db8566="" data-v-1b9df826="" data-v-7921c096=""
-                                                         data-src="https://dn-mhke0kuv.qbox.me/6s1bRksynJg45dV2remrqkyAd83yysx2K6TnP4vc?imageView2/1/w/90/h/90/q/85/format/webp/interlace/1"
-                                                         class="lazy avatar avatar loaded" title=""
-                                                         style="background-image: url(&quot;https://dn-mhke0kuv.qbox.me/6s1bRksynJg45dV2remrqkyAd83yysx2K6TnP4vc?imageView2/1/w/90/h/90/q/85/format/webp/interlace/1&quot;);"></div>
-                                                    <div data-v-7921c096="" class="info-box">
-                                                        <div data-v-7921c096="" class="username">少木木</div>
-                                                        <div data-v-7921c096="" class="detail">前端小爬爬~ @ 山东科技大学</div>
-                                                    </div>
-                                                </div>
-                                            </a></div><!----><!----></li>
-                                        <li data-v-7921c096="" class="item">
-                                            <div data-v-7921c096="" class="activity"><a data-v-7921c096=""
-                                                                                        href="/user/56e62d3ac4c9710051378d97"
-                                                                                        target="_blank" rel=""
-                                                                                        class="link">
-                                                <div data-v-7921c096="" class="meta-box">
-                                                    <div data-v-7921c096="" class="action">关注了用户</div>
-                                                    <div data-v-7921c096="" class="date">1月前</div>
-                                                </div>
-                                                <div data-v-7921c096="" class="content user">
-                                                    <div data-v-b2db8566="" data-v-1b9df826="" data-v-7921c096=""
-                                                         data-src="https://dn-mhke0kuv.qbox.me/7825953e230f3a8979f0.jpg?imageView2/1/w/90/h/90/q/85/format/webp/interlace/1"
-                                                         class="lazy avatar avatar loaded" title=""
-                                                         style="background-image: url(&quot;https://dn-mhke0kuv.qbox.me/7825953e230f3a8979f0.jpg?imageView2/1/w/90/h/90/q/85/format/webp/interlace/1&quot;);"></div>
-                                                    <div data-v-7921c096="" class="info-box">
-                                                        <div data-v-7921c096="" class="username">Alihanniba</div>
-                                                        <div data-v-7921c096="" class="detail">研发 @ 某滴</div>
-                                                    </div>
-                                                </div>
-                                            </a></div><!----><!----></li>
 
-                                    </ul>
-                                </div><!----></div>
+                            <div id="list-body" class="list-body">
+                                <ul class="bookshelf">
+
+
+                                    <li class="uk-list uk-list-line uk-clearfix topic uk-margin-top">
+                                        <a href="#" class="author-avatar"><img class="avatar" src="/avatar/0d69d4a5-752a-4343-88ff-f138cc91e78b3.jpg"></a>
+                                        <div class="content">
+                                            <div class="uk-grid">
+                                                <div class="uk-width-5-6">
+                                                    <a href="/topic/show/1">电风扇的说法</a>
+                                                    <a href="/topic/modify/1">修改</a>
+                                                </div>
+                                                <div class="uk-width-1-6 uk-vertical-align uk-text-center">
+
+                <span class="uk-badge uk-badge-notification uk-vertical-align-middle">
+                  11
+                </span>
+
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <span class="node"><a href="javascript:;" section_id="3">程序员</a></span>
+                                                <span class="split">•</span>
+                                                <span class="author"><a href="/user/show/1">aaa</a></span>
+                                                <span class="split">•</span>
+                                                <span class="datetime">1519027428000</span>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+
+                                    <li class="uk-list uk-list-line uk-clearfix topic uk-margin-top">
+                                        <a href="#" class="author-avatar"><img class="avatar" src="/avatar/0d69d4a5-752a-4343-88ff-f138cc91e78b3.jpg"></a>
+                                        <div class="content">
+                                            <div class="uk-grid">
+                                                <div class="uk-width-5-6">
+                                                    <a href="/topic/show/2">很反感</a>
+                                                    <a href="/topic/modify/2">修改</a>
+                                                </div>
+                                                <div class="uk-width-1-6 uk-vertical-align uk-text-center">
+
+                <span class="uk-badge uk-badge-notification uk-vertical-align-middle">
+                  8
+                </span>
+
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <span class="node"><a href="javascript:;" section_id="3">程序员</a></span>
+                                                <span class="split">•</span>
+                                                <span class="author"><a href="/user/show/1">aaa</a></span>
+                                                <span class="split">•</span>
+                                                <span class="datetime">1519027673000</span>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+
+                                    <li class="uk-list uk-list-line uk-clearfix topic uk-margin-top">
+                                        <a href="#" class="author-avatar"><img class="avatar" src="/avatar/0d69d4a5-752a-4343-88ff-f138cc91e78b3.jpg"></a>
+                                        <div class="content">
+                                            <div class="uk-grid">
+                                                <div class="uk-width-5-6">
+                                                    <a href="/topic/show/3">范德萨</a>
+                                                    <a href="/topic/modify/3">修改</a>
+                                                </div>
+                                                <div class="uk-width-1-6 uk-vertical-align uk-text-center">
+
+                <span class="uk-badge uk-badge-notification uk-vertical-align-middle">
+                  11
+                </span>
+
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <span class="node"><a href="javascript:;" section_id="8">javascript</a></span>
+                                                <span class="split">•</span>
+                                                <span class="author"><a href="/user/show/1">aaa</a></span>
+                                                <span class="split">•</span>
+                                                <span class="datetime">1519028060000</span>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+
+                                    <li class="uk-list uk-list-line uk-clearfix topic uk-margin-top">
+                                        <a href="#" class="author-avatar"><img class="avatar" src="/avatar/0d69d4a5-752a-4343-88ff-f138cc91e78b3.jpg"></a>
+                                        <div class="content">
+                                            <div class="uk-grid">
+                                                <div class="uk-width-5-6">
+                                                    <a href="/topic/show/4">科技好好干科技好好干科技好好干科技好好干科技好好干科技好好干科技好好干科技好好干</a>
+                                                    <a href="/topic/modify/4">修改</a>
+                                                </div>
+                                                <div class="uk-width-1-6 uk-vertical-align uk-text-center">
+
+                <span class="uk-badge uk-badge-notification uk-vertical-align-middle">
+                  5
+                </span>
+
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <span class="node"><a href="javascript:;" section_id="3">程序员</a></span>
+                                                <span class="split">•</span>
+                                                <span class="author"><a href="/user/show/1">aaa</a></span>
+                                                <span class="split">•</span>
+                                                <span class="datetime">1519206032000</span>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+
+                                    <li class="uk-list uk-list-line uk-clearfix topic uk-margin-top">
+                                        <a href="#" class="author-avatar"><img class="avatar" src="/avatar/0d69d4a5-752a-4343-88ff-f138cc91e78b3.jpg"></a>
+                                        <div class="content">
+                                            <div class="uk-grid">
+                                                <div class="uk-width-5-6">
+                                                    <a href="/topic/show/5">ds都是</a>
+                                                    <a href="/topic/modify/5">修改</a>
+                                                </div>
+                                                <div class="uk-width-1-6 uk-vertical-align uk-text-center">
+
+                <span class="uk-badge uk-badge-notification uk-vertical-align-middle">
+                  9
+                </span>
+
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <span class="node"><a href="javascript:;" section_id="8">javascript</a></span>
+                                                <span class="split">•</span>
+                                                <span class="author"><a href="/user/show/1">aaa</a></span>
+                                                <span class="split">•</span>
+                                                <span class="datetime">1519037977000</span>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="uk-width-medium-1-4" id="mb_list_right">
                 <div class="uk-panel uk-panel-box uk-panel-box-secondary">
-                    <div data-v-4cdfa676="" data-v-3f216172="" class="follow-block block shadow"><a data-v-4cdfa676=""
-                                                                                                    href="/user/59693b86518825490d1dd04f/following"
-                                                                                                    class="follow-item"
-                                                                                                    data-v-3f216172="">
-                        <div data-v-4cdfa676="" class="item-title">关注了</div>
-                        <div data-v-4cdfa676="" class="item-count">8</div>
-                    </a><a data-v-4cdfa676="" href="/user/59693b86518825490d1dd04f/followers" class="follow-item"
-                           data-v-3f216172="">
-                        <div data-v-4cdfa676="" class="item-title">关注者</div>
-                        <div data-v-4cdfa676="" class="item-count">0</div>
-                    </a></div>
+                    <div class="uk-grid">
+                        <div class="uk-width-1-2 uk-text-center uk-text-large">
+                            <a href="/user/59693b86518825490d1dd04f/following">
+                                <div data-v-4cdfa676="" class="item-title uk-text-muted">关注了</div>
+                                <div data-v-4cdfa676="" class="item-count uk-text-muted">8</div>
+                            </a>
+                        </div>
+                        <div class="uk-width-1-2 uk-text-center uk-text-large">
+                            <a href="/user/59693b86518825490d1dd04f/followers">
+                                <div data-v-4cdfa676="" class="item-title uk-text-muted">关注者</div>
+                                <div data-v-4cdfa676="" class="item-count uk-text-muted">0</div>
+                            </a>
+                        </div>
+                    </div>
 
                 </div>
 
