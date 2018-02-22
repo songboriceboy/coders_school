@@ -7,6 +7,15 @@ public class TopicInfoEx extends TopicInfo {
     private String user_name;
     private String user_avatar;
     private String section_name;
+    private int comment_count;
+
+    public int getComment_count() {
+        return comment_count;
+    }
+
+    public void setComment_count(int comment_count) {
+        this.comment_count = comment_count;
+    }
 
     public String getSection_name() {
         return section_name;

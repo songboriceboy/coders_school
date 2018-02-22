@@ -43,12 +43,16 @@
         <entry file="file://$PROJECT_DIR$/src/school/coder/domain/TopicInfoEx.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="31" />
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="29" />
               <folding>
-                <element signature="e#257#258#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#348#349#0" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#501#502#0" expanded="true" />
+                <element signature="e#557#558#0" expanded="true" />
+                <element signature="e#605#606#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,14 +61,17 @@
       <file leaf-file-name="TopicMapper.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/school/coder/mapper/TopicMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+            <state relative-caret-position="277">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
-                <marker date="1519269064398" expanded="true" signature="313:540" ph="insert into topic_info... " />
-                <marker date="1519269064398" expanded="true" signature="619:910" ph="update topic... " />
-                <marker date="1519269064398" expanded="true" signature="981:1111" ph="select topic... topic_info" />
-                <marker date="1519269064398" expanded="true" signature="1223:1644" ph="select topic... topic_info" />
-                <marker date="1519269064398" expanded="true" signature="1722:1772" ph="select * fro... topic_info" />
+                <marker date="1519270303098" expanded="true" signature="313:540" ph="insert into topic_info... " />
+                <marker date="1519270303098" expanded="true" signature="619:910" ph="update topic... " />
+                <marker date="1519270303098" expanded="true" signature="981:1111" ph="select topic... topic_info" />
+                <marker date="1519270303098" expanded="true" signature="1162:1624" ph="select topic... topic_info" />
+                <marker date="1519270303098" expanded="true" signature="1480:1561" ph="select topic... topic_comment_info" />
+                <marker date="1519270303098" expanded="true" signature="1772:1943" ph="select topic... topic_info" />
+                <marker date="1519270303098" expanded="true" signature="2021:2071" ph="select * fro... topic_info" />
+                <marker date="1519270303098" expanded="true" signature="2176:2387" ph="select count... section_id" />
               </folding>
             </state>
           </provider>
@@ -83,8 +90,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+            <state relative-caret-position="99">
+              <caret line="145" column="46" selection-start-line="145" selection-start-column="46" selection-end-line="145" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -1000,12 +1007,12 @@
       <workItem from="1519122887307" duration="8535000" />
       <workItem from="1519169697057" duration="15619000" />
       <workItem from="1519204624861" duration="9325000" />
-      <workItem from="1519262798238" duration="5938000" />
+      <workItem from="1519262798238" duration="7175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91439000" />
+    <option name="totallyTimeSpent" value="92676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1020,7 +1027,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3607908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.261944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1474,34 +1481,41 @@
     <entry file="file://$PROJECT_DIR$/src/school/coder/domain/TopicInfoEx.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="31" />
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="29" />
           <folding>
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        <state relative-caret-position="99">
+          <caret line="145" column="46" selection-start-line="145" selection-start-column="46" selection-end-line="145" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/school/coder/mapper/TopicMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        <state relative-caret-position="277">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
-            <marker date="1519269064398" expanded="true" signature="313:540" ph="insert into topic_info... " />
-            <marker date="1519269064398" expanded="true" signature="619:910" ph="update topic... " />
-            <marker date="1519269064398" expanded="true" signature="981:1111" ph="select topic... topic_info" />
-            <marker date="1519269064398" expanded="true" signature="1223:1644" ph="select topic... topic_info" />
-            <marker date="1519269064398" expanded="true" signature="1722:1772" ph="select * fro... topic_info" />
+            <marker date="1519270303098" expanded="true" signature="313:540" ph="insert into topic_info... " />
+            <marker date="1519270303098" expanded="true" signature="619:910" ph="update topic... " />
+            <marker date="1519270303098" expanded="true" signature="981:1111" ph="select topic... topic_info" />
+            <marker date="1519270303098" expanded="true" signature="1162:1624" ph="select topic... topic_info" />
+            <marker date="1519270303098" expanded="true" signature="1480:1561" ph="select topic... topic_comment_info" />
+            <marker date="1519270303098" expanded="true" signature="1772:1943" ph="select topic... topic_info" />
+            <marker date="1519270303098" expanded="true" signature="2021:2071" ph="select * fro... topic_info" />
+            <marker date="1519270303098" expanded="true" signature="2176:2387" ph="select count... section_id" />
           </folding>
         </state>
       </provider>

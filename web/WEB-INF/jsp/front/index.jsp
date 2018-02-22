@@ -143,7 +143,11 @@
                 <a href="${pageContext.request.contextPath}/topic/modify/{{topic.topic_id}}">修改</a>
               </div>
               <div class="uk-width-1-6 uk-vertical-align uk-text-center">
-                <span class="uk-badge uk-badge-notification uk-vertical-align-middle">100</span>
+                {{if topic.comment_count > 0}}
+                <span class="uk-badge uk-badge-notification uk-vertical-align-middle">
+                  {{topic.comment_count}}
+                </span>
+                {{/if}}
               </div>
             </div>
 
