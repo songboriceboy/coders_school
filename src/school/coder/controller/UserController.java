@@ -3,6 +3,7 @@ package school.coder.controller;
 import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
@@ -30,6 +31,16 @@ import java.util.UUID;
 public class UserController {
     @Autowired
     private UserService userService;
+
+    @RequestMapping("/home/{id}")
+    public ModelAndView home(@PathVariable int id)
+    {
+
+        ModelAndView maView = new ModelAndView();
+        maView.setViewName("front/user/home");
+        return maView;
+    }
+
     @RequestMapping("/upload_avatar")
     public void upload_avatar(@RequestParam MultipartFile file, HttpServletRequest request, HttpServletResponse response) throws IOException {
 

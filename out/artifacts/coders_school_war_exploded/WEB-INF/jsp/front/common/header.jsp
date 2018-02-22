@@ -77,7 +77,7 @@
             </ul>
             <div id="destoon_member" class="uk-navbar-content uk-navbar-flip top-head-avatar">
                 <c:if test = "${!empty user_info}">
-                    <a title="" href="${pageContext.request.contextPath}/user/${user_info.user_id}"
+                    <a title="" href="${pageContext.request.contextPath}/user/home/${user_info.user_id}"
                        class="uk-border-circle uk-thumbnail" data-cached-title="回到个人中心首页">
                         <div class="uk-border-circle"><img
                                 class="uk-border-circle" width="40" height="40"
