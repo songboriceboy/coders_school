@@ -9,11 +9,11 @@
 <header class="uk-hidden-small" id="top-header">
     <div class="uk-container uk-container-center">
         <nav class="uk-navbar">
-            <a class="uk-navbar-brand" href="http://www.mooban.cn/" title="魔工坊">
+            <a class="uk-navbar-brand" href="${pageContext.request.contextPath}/" title="魔工坊">
                 <img src="http://www.mooban.cn/skin/moob/img/logo.png" alt="魔工坊" width="60" height="60">
             </a>
             <ul class="uk-navbar-nav">
-                <li><a href="http://www.mooban.cn/">首页</a></li>
+                <li><a href="${pageContext.request.contextPath}/">首页</a></li>
                 <li class="uk-parent" data-uk-dropdown>
                     <a href="http://www.mooban.cn/down/">模板</a>
                     <div class="uk-dropdown uk-dropdown-width-2 uk-dropdown-navbar" style="width: 200px;">
