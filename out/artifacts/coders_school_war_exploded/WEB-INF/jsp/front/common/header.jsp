@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <header class="uk-hidden-small" id="top-header">
     <div class="uk-container uk-container-center">
         <nav class="uk-navbar">
@@ -75,10 +76,25 @@
                 </li>
             </ul>
             <div id="destoon_member" class="uk-navbar-content uk-navbar-flip top-head-avatar">
-                <div class="uk-button-group"><a class="uk-button uk-button-primary uk-margin-right"
-                                                href="${pageContext.request.contextPath}/user/reg">免费注册</a><a
-                        class="uk-button uk-button-primary"
-                        href="${pageContext.request.contextPath}/user/login">立即登录</a></div>
+                <c:if test = "${!empty user_info}">
+                    <a title="" href="${pageContext.request.contextPath}/user/${user_info.user_id}"
+                       class="uk-border-circle uk-thumbnail" data-cached-title="回到个人中心首页">
+                        <div class="uk-border-circle"><img
+                                class="uk-border-circle" width="40" height="40"
+                                src="${pageContext.request.contextPath}/avatar/${user_info.user_avatar}"
+                                alt="魔工坊">
+                            <div class="uk-border-circle"></div>
+                        </div>
+                    </a>
+                </c:if>
+
+
+                <c:if test="${empty user_info}">
+                    <div class="uk-button-group"><a class="uk-button uk-button-primary uk-margin-right"
+                                                    href="${pageContext.request.contextPath}/user/reg">免费注册</a><a
+                            class="uk-button uk-button-primary"
+                            href="${pageContext.request.contextPath}/user/login">立即登录</a></div>
+                </c:if>
             </div>
 
         </nav>
