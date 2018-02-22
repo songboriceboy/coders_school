@@ -63,13 +63,13 @@
         xhr.send(fd);
       }
 
-
+      var pagesize = 5;
 
       $(function()
       {
         $("#page").pagination({
           pageIndex: 0,
-          pageSize: 5,
+          pageSize: pagesize,
           showFirstLastBtn:true,
 //          showInfo: true,
 //          showJump: true,
@@ -89,7 +89,7 @@
 
           var section_id = $(this).attr("section_id");
           $("#page").pagination('setPageIndex', 0);
-          $("#page").pagination('setPageSize', 5);
+          $("#page").pagination('setPageSize', pagesize);
           $("#page").pagination('setParams', {section_id:section_id});
           $("#page").pagination('remote');
 

@@ -104,12 +104,15 @@
         }
 
         function initMdEditor(num) {
+
+            editormd.urls.atLinkBase = "${pageContext.request.contextPath}/user/"
             //markdown
            var editorMd = editormd({
                 id: "test-editormd"+num,
 //                height: 840,
                 width   : "90%",
                 height  : 250,
+               lineNumbers:false,
                 placeholder          : "文明社会，理性评论，支持Markdown",
                 path: "${pageContext.request.contextPath}/assets/editor-md-master/lib/",
                 toolbarIcons: function () {
@@ -139,9 +142,9 @@
                 imageUploadURL: "{:url('api/uploader/uploadEditorImg?pic_type=10')}",
                 onload: function () {
                     this.unwatch();
-                    this.on('paste', function () {
-                        console.log(1);
-                    });
+//                    this.on('paste', function () {
+//                        console.log(1);
+//                    });
 
                 },
                 onpreviewing : function() {
@@ -250,6 +253,7 @@
         $(document).ready(function () {
 
                     testEditor = initMdEditor('');
+//                    testEditor.hide();
 
                     //点击某条评论里的回复按钮，动态生成一个textarea
                     $('#uk-comment-list').on('click', '.btn-reply', function () {
@@ -258,7 +262,7 @@
                         var toAuthor = '';
                         if($isChildComment.length > 0)
                         {
-                            var toAuthor = 'to:'+ $(this).closest('.uk-comment').find('.uk-comment-title').text();
+                            var toAuthor = '@'+ $(this).closest('.uk-comment').find('.uk-comment-title').text();
                         }
 
                         var reply_comment_id = $(this).closest('.reply-item').attr('id').replace('comment_','');
@@ -346,6 +350,27 @@
 
                         return false;
                     })
+
+
+                    toChange();
+                    $(window).scroll(toChange);
+                    function toChange(){
+                        $('#test-editormd').each(function(i, elem){
+                            console.log($(elem).offset().top);
+                            console.log($(window).height());
+                            console.log($(document).scrollTop());
+                            if($(elem).offset().top < $(window).height() + $(document).scrollTop()){ //如果图片进入了可视区
+
+                                testEditor.show();
+                                testEditor.watch();
+                                testEditor.unwatch();
+                            }
+                            else {
+                                testEditor.hide();
+                            }
+                        });
+                    }
+
                 }
         );
     </script>
