@@ -5,112 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="872bce5c-9269-4a5f-82e2-113350dfc46c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/school/coder/controller/AuthLoginController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/school/coder/vo/GithubAuthResJson.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/avatar/0d69d4a5-752a-4343-88ff-f138cc91e78b3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/avatar/114c70f4-6cb0-4c76-9b0b-fc79d290dbdclogo3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/avatar/12e33b64-41ab-4094-a2c5-54b02b9fba1b3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/avatar/2a829e12-f1d4-4a52-8d78-87d5c9eac41d9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/avatar/2d87ddd5-22d2-4618-99b2-008ea537bb3a3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/avatar/345ba1a5-58dd-4376-9ff0-22fb5fd6417e3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/avatar/52a7ac86-4013-44dd-a7b7-75539765d20c图片1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/avatar/818e8f0e-14c2-4f53-89a6-bb521d56f3353.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/avatar/8fa21a7d-1094-4191-85df-b7f3031e292dlogo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/avatar/9efc21c5-abd1-43ef-b0b1-d83efc57b8973.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/avatar/a2e089c3-ab0c-4ab2-ba93-f50e50da08dd3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/avatar/a3c34988-76ea-4bfd-af30-4c7b3764592a9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/avatar/b2f7d6e6-8efa-4cf6-8e22-5987b904c9783.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/avatar/be29ded7-8511-4519-b43f-6f36c5cf7aba3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/avatar/e6791d7e-13a6-41e6-b90c-3f6152c85b869.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/avatar/ed819a7e-909c-4934-b9b1-33f6e09214883.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/image/201802192006273.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/image/374aadad-e90e-40ef-a712-977a540dcfc7intro2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/upload/1d9cefa3-1fbf-446b-bb2c-b3098a45fe34.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/upload/9a00c95d-8993-4c7b-877d-c9d4e5bd2ac3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/upload/aa6906b7-b794-4a46-9b12-9749f948504e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/upload/dedf3080-5926-4b48-9883-aab696494c6b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/upload/f683f284-df17-4330-8a1e-84b45bf44e8d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/upload/f7379336-1224-45b4-9e48-b4a31579e944.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/upload/fe1d3e5c-27b3-41bb-b303-7c780467ce85.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/controller/AdminController.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/controller/AdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/controller/HomeController.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/controller/HomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/controller/TopicCommentController.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/controller/TopicCommentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/controller/TopicController.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/controller/TopicController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/controller/UserController.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/AdminInfo.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/AdminInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/PageInfo.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/PageInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/SectionInfo.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/SectionInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/TagInfo.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/TagInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/TopicCommentInfo.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/TopicCommentInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/TopicCommentInfoEx.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/TopicCommentInfoEx.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/TopicInfo.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/TopicInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/TopicInfoEx.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/TopicInfoEx.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/TopicPageInfo.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/TopicPageInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/UserInfo.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/domain/UserInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/interceptor/AdminLoginInterceptor.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/interceptor/AdminLoginInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/mapper/AdminMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/mapper/AdminMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/mapper/SectionMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/mapper/SectionMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/mapper/TopicCommentMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/mapper/TopicCommentMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/mapper/TopicMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/mapper/TopicMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/mapper/UserMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/mapper/UserMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/AdminService.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/AdminService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/SectionService.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/SectionService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/TopicCommentService.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/TopicCommentService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/TopicService.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/TopicService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/UserService.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/impl/AdminServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/impl/AdminServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/impl/SectionServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/impl/SectionServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/impl/TopicCommentServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/impl/TopicCommentServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/impl/TopicServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/impl/TopicServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/service/impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/util/CreateMD5.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/util/CreateMD5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/util/imgUploadBackData.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/util/imgUploadBackData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/util/picEncode.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/util/picEncode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/vo/PageData.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/vo/PageData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/vo/TopicCommentList.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/vo/TopicCommentList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/vo/TopicCounts.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/vo/TopicCounts.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/vo/UploadRes.class" afterPath="$PROJECT_DIR$/out/artifacts/coders_school_war_exploded/WEB-INF/classes/school/coder/vo/UploadRes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/controller/AdminController.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/controller/AdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/controller/HomeController.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/controller/HomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/controller/TopicCommentController.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/controller/TopicCommentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/controller/TopicController.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/controller/TopicController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/controller/UserController.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/AdminInfo.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/AdminInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/PageInfo.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/PageInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/SectionInfo.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/SectionInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/TagInfo.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/TagInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/TopicCommentInfo.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/TopicCommentInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/TopicCommentInfoEx.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/TopicCommentInfoEx.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/TopicInfo.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/TopicInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/TopicInfoEx.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/TopicInfoEx.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/TopicPageInfo.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/TopicPageInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/UserInfo.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/domain/UserInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/interceptor/AdminLoginInterceptor.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/interceptor/AdminLoginInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/mapper/AdminMapper.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/mapper/AdminMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/mapper/SectionMapper.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/mapper/SectionMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/mapper/TopicCommentMapper.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/mapper/TopicCommentMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/mapper/TopicMapper.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/mapper/TopicMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/mapper/UserMapper.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/mapper/UserMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/AdminService.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/AdminService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/SectionService.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/SectionService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/TopicCommentService.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/TopicCommentService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/TopicService.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/TopicService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/UserService.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/impl/AdminServiceImpl.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/impl/AdminServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/impl/SectionServiceImpl.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/impl/SectionServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/impl/TopicCommentServiceImpl.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/impl/TopicCommentServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/impl/TopicServiceImpl.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/impl/TopicServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/service/impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/util/CreateMD5.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/util/CreateMD5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/util/imgUploadBackData.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/util/imgUploadBackData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/util/picEncode.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/util/picEncode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/vo/PageData.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/vo/PageData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/vo/TopicCommentList.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/vo/TopicCommentList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/vo/TopicCounts.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/vo/TopicCounts.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/vo/UploadRes.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/school/coder/vo/UploadRes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/school/coder/util/CommonUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coders_school.iml" afterPath="$PROJECT_DIR$/coders_school.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/school/coder/controller/AuthLoginController.java" afterPath="$PROJECT_DIR$/src/school/coder/controller/AuthLoginController.java" />
     </list>
     <ignored path="coders_school.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -144,16 +41,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1975">
-              <caret line="79" column="82" selection-start-line="79" selection-start-column="78" selection-end-line="79" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/user/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -174,12 +61,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthLoginController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AuthLoginController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/school/coder/controller/AuthLoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="169">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JSON.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/fastjson-1.2.22.jar!/com/alibaba/fastjson/JSON.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="150" column="24" selection-start-line="150" selection-start-column="24" selection-end-line="150" selection-end-column="24" />
+              <folding>
+                <element signature="e#2786#2787#0" expanded="true" />
+                <element signature="e#2844#2845#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -194,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GithubAuthResJson.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GithubAuthResJson.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/school/coder/vo/GithubAuthResJson.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="175">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="e#1066#1067#0" expanded="true" />
                 <element signature="e#1100#1101#0" expanded="true" />
@@ -325,6 +227,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CommonUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/school/coder/util/CommonUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TopicController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/school/coder/controller/TopicController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -346,22 +260,6 @@
               <caret line="31" column="22" selection-start-line="27" selection-start-column="8" selection-end-line="31" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/school/coder/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="method#upload_avatar#0;class#UserController#0" expanded="false" />
-                <element signature="method#reg#0;class#UserController#0" expanded="false" />
-                <element signature="method#reguser#0;class#UserController#0" expanded="false" />
-                <element signature="method#userlogin#0;class#UserController#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -389,7 +287,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin/header/header.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin/index.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/login.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/reg.jsp" />
@@ -438,8 +335,9 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp" />
         <option value="$PROJECT_DIR$/src/school/coder/controller/UserController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/user/home.jsp" />
-        <option value="$PROJECT_DIR$/src/school/coder/controller/AuthLoginController.java" />
         <option value="$PROJECT_DIR$/src/school/coder/vo/GithubAuthResJson.java" />
+        <option value="$PROJECT_DIR$/src/school/coder/util/CommonUtil.java" />
+        <option value="$PROJECT_DIR$/src/school/coder/controller/AuthLoginController.java" />
       </list>
     </option>
   </component>
@@ -556,6 +454,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coders_school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coders_school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1156,12 +1076,12 @@
       <workItem from="1519169697057" duration="15619000" />
       <workItem from="1519204624861" duration="9325000" />
       <workItem from="1519262798238" duration="14132000" />
-      <workItem from="1519302867788" duration="3664000" />
+      <workItem from="1519302867788" duration="4833000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103297000" />
+    <option name="totallyTimeSpent" value="104466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1176,7 +1096,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4250412" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28830314" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1220,20 +1140,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/school/coder/mapper/SectionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/school/coder/mapper/SectionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/school/coder/service/impl/SectionServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -1602,14 +1508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/school/coder/controller/AuthLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1618,10 +1516,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/school/coder/util/CommonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/school/coder/vo/GithubAuthResJson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="175">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
             <element signature="e#1066#1067#0" expanded="true" />
             <element signature="e#1100#1101#0" expanded="true" />
@@ -1743,6 +1651,27 @@
             <element signature="e#5767#5768#0" expanded="true" />
             <element signature="e#5802#5803#0" expanded="true" />
             <element signature="e#5840#5841#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/fastjson-1.2.22.jar!/com/alibaba/fastjson/JSON.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="150" column="24" selection-start-line="150" selection-start-column="24" selection-end-line="150" selection-end-column="24" />
+          <folding>
+            <element signature="e#2786#2787#0" expanded="true" />
+            <element signature="e#2844#2845#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/school/coder/controller/AuthLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
