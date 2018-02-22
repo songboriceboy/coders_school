@@ -79,6 +79,15 @@
             success: function (data) {
               var html = template('topic-list-tpl', data);
               $('#topic-list').html(html);
+              $('.node a').on('click',function(){
+
+                var section_id = $(this).attr("section_id");
+                $("#page").pagination('setPageIndex', 0);
+                $("#page").pagination('setPageSize', pagesize);
+                $("#page").pagination('setParams', {section_id:section_id});
+                $("#page").pagination('remote');
+
+              })
             }
           }
         });
@@ -94,6 +103,8 @@
           $("#page").pagination('remote');
 
         })
+
+
 
 
       });
@@ -152,7 +163,7 @@
             </div>
 
             <div>
-              <span class="node"><a href="#">{{topic.section_name}}</a></span>
+              <span class="node"><a href="javascript:;" section_id = {{topic.section_id}}>{{topic.section_name}}</a></span>
               <span class="split">•</span>
               <span class="author"><a href="${pageContext.request.contextPath}/user/show/{{topic.user_id}}">{{topic.user_name}}</a></span>
               <span class="split">•</span>
