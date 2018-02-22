@@ -148,7 +148,7 @@
             </div>
 
             <div>
-              <span class="node"><a href="#">Android</a></span>
+              <span class="node"><a href="#">{{topic.section_name}}</a></span>
               <span class="split">•</span>
               <span class="author"><a href="${pageContext.request.contextPath}/user/show/{{topic.user_id}}">{{topic.user_name}}</a></span>
               <span class="split">•</span>

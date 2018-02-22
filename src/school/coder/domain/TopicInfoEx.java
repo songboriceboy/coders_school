@@ -6,6 +6,15 @@ package school.coder.domain;
 public class TopicInfoEx extends TopicInfo {
     private String user_name;
     private String user_avatar;
+    private String section_name;
+
+    public String getSection_name() {
+        return section_name;
+    }
+
+    public void setSection_name(String section_name) {
+        this.section_name = section_name;
+    }
 
     public String getUser_name() {
         return user_name;
