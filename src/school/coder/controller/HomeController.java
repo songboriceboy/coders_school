@@ -1,6 +1,7 @@
 package school.coder.controller;
 
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,9 +20,11 @@ public class HomeController {
 	private TopicService topicService;
 	@Autowired
 	private SectionService sectionService;
+//	protected Logger log = Logger.getLogger(HomeController.class);
 	@RequestMapping("/")
 	public ModelAndView index()
 	{
+
 		System.out.println("hello");
 		List<TopicInfoEx> topicInfoList = topicService.getAllTopics();
 		List<SectionInfo> sectionInfoList = sectionService.getAllSections();
