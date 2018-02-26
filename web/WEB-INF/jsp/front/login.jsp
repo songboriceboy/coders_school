@@ -167,7 +167,7 @@
                                            data-uk-tooltip="{pos:'bottom',animation:true}" title="微软登录">
                                         </a> &nbsp;
                                         <a class="uk-icon-button uk-icon-hover uk-icon-github"
-                                           href="https://github.com/login/oauth/authorize?client_id=dee9dd47e28f78701ccb&state=abcdefg&redirect_uri=http://www.songbo.info/testgit/auth/github; "
+                                           href="https://github.com/login/oauth/authorize?client_id=dee9dd47e28f78701ccb&state=cx4343kk&redirect_uri=http://www.songbo.info/testgit/auth/github; "
                                            data-uk-tooltip="{pos:'bottom',animation:true}" title="Github">
                                         </a> &nbsp;
                                     </div>

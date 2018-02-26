@@ -27,6 +27,18 @@
 
     <script src="${pageContext.request.contextPath}/assets/editor-md-master/editormd.min.js"></script>
     <script src="${pageContext.request.contextPath}/assets/layer/layer.js"></script>
+    <!-- Codemirror 和 marked 依赖 -->
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+    <script src="codemirror/lib/codemirror.js"></script>
+    <script src="codemirror/mode/markdown/markdown.js"></script>
+    <script src="codemirror/addon/mode/overlay.js"></script>
+    <script src="codemirror/mode/xml/xml.js"></script>
+    <script src="codemirror/mode/gfm/gfm.js"></script>
+    <script src="marked.js"></script>
+
+    <!-- HTML 编辑器的 CSS 与 JavaScript -->
+    <link rel="stylesheet" href="htmleditor.css">
+    <script src="htmleditor.js"></script>
     <style>
         html, h1, h2, h3, h4, h5, h6 {
             font-family: 'Microsoft YaHei',"Helvetica Neue",Helvetica,Arial,sans-serif!important;
@@ -110,7 +122,9 @@
            var editorMd = editormd({
                 id: "test-editormd"+num,
 //                height: 840,
+               autoFocus:false,
                 width   : "90%",
+                watch : false,
                 height  : 250,
                lineNumbers:false,
                 placeholder          : "文明社会，理性评论，支持Markdown",
@@ -139,24 +153,7 @@
                 //dialogMaskBgColor : "#000", // 设置透明遮罩层的背景颜色，全局通用，默认为 #fff
                 imageUpload: true,
                 imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
-                imageUploadURL: "{:url('api/uploader/uploadEditorImg?pic_type=10')}",
-                onload: function () {
-                    this.unwatch();
-//                    this.on('paste', function () {
-//                        console.log(1);
-//                    });
-
-                },
-                onpreviewing : function() {
-                    this.watch();
-//                            console.log("onpreviewing =>", this, this.id, this.settings);
-                    // on previewing you can custom css .editormd-preview-active
-                },
-
-                onpreviewed : function() {
-//                            console.log("onpreviewed =>", this, this.id, this.settings);
-                    this.unwatch();
-                }
+                imageUploadURL: "{:url('api/uploader/uploadEditorImg?pic_type=10')}"
             });
 
             /**
@@ -253,7 +250,6 @@
         $(document).ready(function () {
 
                     testEditor = initMdEditor('');
-//                    testEditor.hide();
 
                     //点击某条评论里的回复按钮，动态生成一个textarea
                     $('#uk-comment-list').on('click', '.btn-reply', function () {
@@ -273,7 +269,7 @@
                             testEditor2.editor.remove();
                             $('#reply-anywhere').remove();
                         }
-                        var reply = `
+                        var reply = `<li>
                                    <div class="reply" id="reply-anywhere">
                             <form class="uk-form" id="reply-reply-form" action="#" method="post" onsubmit="return check_submit(this);">
                                 <div class="uk-form-row">
@@ -285,10 +281,11 @@
                                     <input type="submit" class="uk-button">
                                 </div>
                             </form>
-                        </div>`;
+                        </div>
+                        </li>`;
                         var replynode = $(reply);
-                        $(this).closest('.reply-item').append(replynode);
-
+//                        $(this).closest('.reply-item').append(replynode);
+                        $(this).closest('.reply-child-item').after(replynode);
                         testEditor2 = initMdEditor(2);
 
                         return false;
@@ -350,27 +347,6 @@
 
                         return false;
                     })
-
-
-                    toChange();
-                    $(window).scroll(toChange);
-                    function toChange(){
-                        $('#test-editormd').each(function(i, elem){
-                            console.log($(elem).offset().top);
-                            console.log($(window).height());
-                            console.log($(document).scrollTop());
-                            if($(elem).offset().top < $(window).height() + $(document).scrollTop()){ //如果图片进入了可视区
-
-                                testEditor.show();
-                                testEditor.watch();
-                                testEditor.unwatch();
-                            }
-                            else {
-                                testEditor.hide();
-                            }
-                        });
-                    }
-
                 }
         );
     </script>

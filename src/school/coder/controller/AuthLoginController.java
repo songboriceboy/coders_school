@@ -34,8 +34,8 @@ public class AuthLoginController {
         String requestUrl = "https://github.com/login/oauth/access_token?client_id="+client_id+"&client_secret="+client_secret+"&code="+code+"&redirect_uri=http://www.songbo.info/testgit/auth/github";
         log.error("requestUrl"+requestUrl);
 
-        String me = CommonUtil.sendGet
-                (requestUrl);
+        String me = CommonUtil.sendPost
+                (requestUrl,null);
 
         log.error("me"+me);
         String atoke = me.split("&")[0];
