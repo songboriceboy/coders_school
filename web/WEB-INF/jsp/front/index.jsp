@@ -21,29 +21,7 @@
     <script src="${pageContext.request.contextPath}/assets/js/template.js"></script>
     <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
     <script type="text/javascript">
-      function upfile(){
-        var pic=document.getElementsByTagName('input')[0].files[0];
-        var fd=new FormData();
-        var xhr=new XMLHttpRequest();
-        xhr.open('post','${pageContext.request.contextPath}/user/upload_avatar',true);
-        xhr.onreadystatechange=function (){
-          if(this.readyState==4){
-            var res = JSON.parse(this.responseText);
-            document.getElementById('avatar').src = '${pageContext.request.contextPath}/avatar/' + res.src;
-          }
-        }
-        xhr.upload.onprogress=function (ev){
 
-          if(ev.lengthComputable){
-            var precent=100 * ev.loaded/ev.total;
-            console.log(precent);
-            document.getElementById('nei').style.width=precent+'%';
-            document.getElementById('precent').innerHTML=Math.floor(precent)+'%';
-          }
-        }
-        fd.append('file',pic);
-        xhr.send(fd);
-      }
 
       var pagesize = 5;
 
@@ -85,9 +63,6 @@
           $("#page").pagination('remote');
 
         })
-
-
-
 
       });
 

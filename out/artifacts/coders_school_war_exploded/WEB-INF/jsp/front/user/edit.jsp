@@ -20,11 +20,21 @@
     <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/assets/uikit-2.25.0/css/components/form-file.almost-flat.css" rel="stylesheet">
     <script>
-        $(function () {
-            $('.uk-tab').on('change.uk.tab',function (event, item) {
-                alert(item.text());
-            })
-        })
+        function upfile(){
+            var pic=document.getElementsByTagName('input')[0].files[0];
+            var fd=new FormData();
+            var xhr=new XMLHttpRequest();
+            xhr.open('post','${pageContext.request.contextPath}/user/upload_avatar',true);
+            xhr.onreadystatechange=function (){
+                if(this.readyState==4){
+                    var res = JSON.parse(this.responseText);
+                    document.getElementById('avatar').src = '${pageContext.request.contextPath}/avatar/' + res.src;
+                }
+            }
+
+            fd.append('file',pic);
+            xhr.send(fd);
+        }
     </script>
 </head>
 <body>
@@ -44,8 +54,8 @@
                             <ul class="uk-list">
                                 <li class="uk-margin-large-bottom">
                                     <div class="uk-form-file">
-                                        <img src="https://user-gold-cdn.xitu.io/2018/2/22/161bc4cd96f02929?imageView2/1/w/90/h/90/q/85/format/webp/interlace/1">
-                                        <input type="file">
+                                        <img id = "avatar" src="https://user-gold-cdn.xitu.io/2018/2/22/161bc4cd96f02929?imageView2/1/w/90/h/90/q/85/format/webp/interlace/1">
+                                        <input type="file" name="pic" onchange="upfile();"/>
                                     </div>
                                 </li>
                                 <li class="uk-grid">
