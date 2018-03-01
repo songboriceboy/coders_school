@@ -161,7 +161,8 @@ public class TopicController {
         String strTemp = request.getParameter("base");
         System.out.println(strTemp);
         strTemp = strTemp.replace("data:image/png;base64,","");
-        String strPath = request.getServletContext().getRealPath(File.separator+"upload");
+        String strPath = this.getClass().getClassLoader().getResource("/../../upload").getPath();
+//        String strPath = request.getServletContext().getRealPath(File.separator+"upload");
         String strUUid = UUID.randomUUID().toString();
         System.out.println(strPath);
 
