@@ -16,10 +16,10 @@
             <ul class="uk-navbar-nav">
                 <li><a href="${pageContext.request.contextPath}/">首页</a></li>
                 <li class="uk-parent" data-uk-dropdown>
-                    <a href="http://www.mooban.cn/down/">开源库</a>
+                    <a href="${pageContext.request.contextPath}/">开源库</a>
                 </li>
                 <li class="uk-parent" data-uk-dropdown="">
-                    <a href="http://www.mooban.cn/original/">活动</a>
+                    <a href="${pageContext.request.contextPath}/tag/index">标签</a>
                 </li>
             </ul>
 
@@ -87,7 +87,7 @@
         <ul class="uk-nav uk-nav-offcanvas">
             <li class="uk-active"><a href="#"><i class="uk-icon-home"></i> 首页</a></li>
             <li><a href="#"><i class="uk-icon-folder-o"></i>开源库</a></li>
-            <li><a href="#"><i class="uk-icon-folder-o"></i>活动</a></li>
+            <li><a href="${pageContext.request.contextPath}/tag/index"><i class="uk-icon-folder-o"></i>标签</a></li>
 
         </ul>
     </div>
