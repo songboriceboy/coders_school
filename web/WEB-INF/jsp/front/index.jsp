@@ -16,6 +16,7 @@
     <link href="${pageContext.request.contextPath}/assets/uikit-2.25.0/css/uikit.almost-flat.min.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/assets/Mricode.Pagination-master/mricode.pagination.css" rel="stylesheet" />
     <script src="${pageContext.request.contextPath}/assets/jquery/jquery.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/uikit.js"></script>
     <script src="${pageContext.request.contextPath}/assets/Mricode.Pagination-master/mricode.pagination.js"></script>
     <script src="${pageContext.request.contextPath}/assets/js/template.js"></script>
     <style>
@@ -45,19 +46,19 @@
 
       #top-header {
         background: #fff;
-        height: 88px;
-        border-bottom: 2px solid green;
+        height: 58px;
+        border-bottom: 1px solid #ccc;
         width: 100%
 
       }
 
       #top-header .uk-navbar-brand, #top-header .uk-navbar-content{
-        height: 88px;
+        height: 58px;
       }
 
       #top-header .uk-navbar-nav > li > a {
-        height: 88px;
-        line-height: 88px;
+        height: 58px;
+        line-height: 58px;
         font-family: "Microsoft Yahei";
         font-size: 16px;
         padding: 0 11px;
@@ -102,6 +103,9 @@
         margin-left: 60px;
       }
 
+      .uk-icon-justify{
+        padding-right: 5px;
+      }
 
     </style>
     <script type="text/javascript">
@@ -179,16 +183,16 @@
 
   </head>
   <body>
-  欢迎您 ${user_info.user_name}
-<a href="${pageContext.request.contextPath}/user/login">login</a>
-<a href="${pageContext.request.contextPath}/user/reg">reg</a>
-  <a href="${pageContext.request.contextPath}/topic/new">new topic</a>
-  <a href="${pageContext.request.contextPath}/">home</a>
-  <div id="wai">
-    <div id="nei"></div>
-  </div><span id="precent"></span><br/>
-  <img class="uk-border-circle" id="avatar">
-  <input type="file" name="pic" onchange="upfile();"/>
+  <%--欢迎您 ${user_info.user_name}--%>
+<%--<a href="${pageContext.request.contextPath}/user/login">login</a>--%>
+<%--<a href="${pageContext.request.contextPath}/user/reg">reg</a>--%>
+  <%--<a href="${pageContext.request.contextPath}/topic/new">new topic</a>--%>
+  <%--<a href="${pageContext.request.contextPath}/">home</a>--%>
+  <%--<div id="wai">--%>
+    <%--<div id="nei"></div>--%>
+  <%--</div><span id="precent"></span><br/>--%>
+  <%--<img class="uk-border-circle" id="avatar">--%>
+  <%--<input type="file" name="pic" onchange="upfile();"/>--%>
   <%@include file="common/header.jsp"%>
   <div class="mb-cover">
     <div class="b20"></div>

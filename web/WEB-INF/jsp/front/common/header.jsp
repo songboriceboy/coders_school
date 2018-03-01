@@ -11,90 +11,56 @@
     <div class="uk-container uk-container-center">
         <nav class="uk-navbar">
             <a class="uk-navbar-brand" href="${pageContext.request.contextPath}/" title="魔工坊">
-                <img src="http://www.mooban.cn/skin/moob/img/logo.png" alt="魔工坊" width="60" height="60">
+                <img src="https://gold-cdn.xitu.io/v3/static/img/logo.a7995ad.svg" alt="魔工坊" width="60" height="60">
             </a>
             <ul class="uk-navbar-nav">
                 <li><a href="${pageContext.request.contextPath}/">首页</a></li>
                 <li class="uk-parent" data-uk-dropdown>
-                    <a href="http://www.mooban.cn/down/">模板</a>
-                    <div class="uk-dropdown uk-dropdown-width-2 uk-dropdown-navbar" style="width: 200px;">
-                        <div class="uk-grid uk-dropdown-grid">
-                            <div class="uk-width-1-2">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">网站</li>
-                                    <li><a href="http://www.mooban.cn/down/dt-c5-1.html" target="_blank">Destoon</a></li>
-                                    <li><a href="http://www.mooban.cn/down/wp-c48-1.html" target="_blank">WordPress</a></li>
-                                    <li><a href="http://www.mooban.cn/down/dede-c31-1.html" target="_blank">DeDeCMS</a></li>
-                                    <li><a href="http://www.mooban.cn/down/ec-c7-1.html" target="_blank">ECShop</a></li>
-                                    <li><a href="http://www.mooban.cn/down/dz-c56-1.html" target="_blank">Discuz</a></li>
-                                    <li><a href="http://www.mooban.cn/down/static-c143-1.html" target="_blank">HTML</a></li>
-                                    <li><a href="http://www.mooban.cn/down/qita-c225-1.html" target="_blank">其他模板</a></li>
-                                </ul>
-                            </div>
-                            <div class="uk-width-1-2">
-                                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                    <li class="uk-nav-header">APP</li>
-                                    <li><a href="http://www.mooban.cn/down/app-c6-1.html" target="_blank">AppCan</a></li>
-                                    <li><a href="http://www.mooban.cn/down/ecm-c33-1.html" target="_blank">ECMobile</a></li>
-                                    <li><a href="http://www.mooban.cn/down/ect-c66-1.html" target="_blank">ECTouch</a></li>
-                                    <li><a href="http://www.mooban.cn/down/pg-c65-1.html" target="_blank">PhoneGap</a></li>
-                                    <li><a href="http://www.mooban.cn/down/web-c64-1.html" target="_blank">WebAPP</a></li>
-                                    <li><a href="http://www.mooban.cn/down/api-c32-1.html" target="_blank">APICloud</a></li>
-                                    <li><a href="http://www.mooban.cn/down/React-c227-1.html" target="_blank">React</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="http://www.mooban.cn/down/">开源库</a>
                 </li>
                 <li class="uk-parent" data-uk-dropdown="">
-                    <a href="http://www.mooban.cn/original/">原创</a>
-
-                </li>
-                <li class="uk-parent" data-uk-dropdown="">
-                    <a href="http://www.mooban.cn/source/">源码</a>
-
-                </li>
-                <li class="uk-parent" data-uk-dropdown="">
-                    <a href="http://www.mooban.cn/plugin/">插件</a>
-
-                </li>
-                <li class="uk-parent" data-uk-dropdown="">
-                    <a href="http://www.mooban.cn/material/">素材</a>
-
-                </li>
-                <li class="uk-parent" data-uk-dropdown="">
-                    <a href="http://school.mooban.cn/">教程</a>
-
-                </li>
-                <li class="uk-parent" data-uk-dropdown="">
-                    <a href="http://www.mooban.cn/know/">问答</a>
-
-                </li>
-                <li class="uk-parent uk-hidden-medium uk-active" data-uk-dropdown="">
-                    <a href="http://st.mooban.cn/?fr=mooban" target="_blank">更多</a>
-
+                    <a href="http://www.mooban.cn/original/">活动</a>
                 </li>
             </ul>
-            <div id="destoon_member" class="uk-navbar-content uk-navbar-flip top-head-avatar">
+
+            <div id="destoon_member" class="uk-navbar-content uk-navbar-flip uk-button-dropdown" data-uk-dropdown="{mode:'click',pos:'bottom-center'}">
                 <c:if test = "${!empty user_info}">
-                    <a title="" href="${pageContext.request.contextPath}/user/home/${user_info.user_id}"
-                       class="uk-border-circle uk-thumbnail" data-cached-title="回到个人中心首页">
-                        <div class="uk-border-circle"><img
-                                class="uk-border-circle" width="40" height="40"
-                                src="${pageContext.request.contextPath}/avatar/${user_info.user_avatar}"
-                                alt="魔工坊">
-                            <div class="uk-border-circle"></div>
-                        </div>
-                    </a>
+                <a title="" href="javascript:;"
+                class="uk-border-circle uk-thumbnail" data-cached-title="回到个人中心首页">
+                <div class="uk-border-circle"><img
+                class="uk-border-circle" width="40" height="40"
+                src="${pageContext.request.contextPath}/avatar/${user_info.user_avatar}"
+                alt="魔工坊">
+                <div class="uk-border-circle" >
+
+                </div>
+
+                </div>
+                </a>
+                    <div class="uk-dropdown">
+                        <ul class="uk-nav uk-nav-dropdown">
+                            <li><a href="#"><i class="uk-icon-pencil uk-icon-justify "></i>写文章</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#"><i class="uk-icon-home uk-icon-justify "></i>我的主页</a></li>
+                            <li><a href="#"><i class="uk-icon-heartbeat uk-icon-justify "></i>我喜欢的</a></li>
+                            <li><a href="#"><i class="uk-icon-book uk-icon-justify "></i>我的收藏集</a></li>
+                            <li><a href="#"><i class="uk-icon-film uk-icon-justify "></i>标签管理</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#"><i class="uk-icon-cog uk-icon-justify "></i>设置</a></li>
+                            <li><a href="#"><i class="uk-icon-leaf uk-icon-justify "></i>登出</a></li>
+                        </ul>
+                    </div>
                 </c:if>
 
 
                 <c:if test="${empty user_info}">
-                    <div class="uk-button-group"><a class="uk-button uk-button-primary uk-margin-right"
-                                                    href="${pageContext.request.contextPath}/user/reg">免费注册</a><a
-                            class="uk-button uk-button-primary"
-                            href="${pageContext.request.contextPath}/user/login">立即登录</a></div>
+                <div class="uk-button-group"><a class="uk-button uk-button-primary uk-margin-right"
+                href="${pageContext.request.contextPath}/user/reg">免费注册</a><a
+                class="uk-button uk-button-primary"
+                href="${pageContext.request.contextPath}/user/login">立即登录</a></div>
                 </c:if>
+
+
             </div>
 
         </nav>
@@ -105,7 +71,7 @@
         <div class="uk-grid">
             <div class="uk-width-4-6">
                 <div class="uk-navbar-brand uk-float-left">
-                    <a class="w1" href="http://www.mooban.cn/down/"> <i class="uk-icon-home"></i> 会员 - 魔工坊</a>
+                    <a class="w1" href="#"> <i class="uk-icon-home"></i> 会员 - 魔工坊</a>
                 </div>
             </div>
             <div class="uk-width-2-6">
@@ -119,14 +85,10 @@
 <div id="offcanvas" class="uk-offcanvas">
     <div class="uk-offcanvas-bar">
         <ul class="uk-nav uk-nav-offcanvas">
-            <li class="uk-active"><a href="http://www.mooban.cn/"><i class="uk-icon-home"></i> 首页</a></li>
-            <li><a href="http://www.mooban.cn/down/"><i class="uk-icon-folder-o"></i> 模板</a></li>
-            <li><a href="http://www.mooban.cn/original/"><i class="uk-icon-folder-o"></i> 原创</a></li>
-            <li><a href="http://www.mooban.cn/source/"><i class="uk-icon-folder-o"></i> 源码</a></li>
-            <li><a href="http://www.mooban.cn/plugin/"><i class="uk-icon-folder-o"></i> 插件</a></li>
-            <li><a href="http://www.mooban.cn/material/"><i class="uk-icon-folder-o"></i> 素材</a></li>
-            <li><a href="http://school.mooban.cn/"><i class="uk-icon-folder-o"></i> 教程</a></li>
-            <li><a href="http://www.mooban.cn/know/"><i class="uk-icon-folder-o"></i> 问答</a></li>
+            <li class="uk-active"><a href="#"><i class="uk-icon-home"></i> 首页</a></li>
+            <li><a href="#"><i class="uk-icon-folder-o"></i>开源库</a></li>
+            <li><a href="#"><i class="uk-icon-folder-o"></i>活动</a></li>
+
         </ul>
     </div>
 </div>
