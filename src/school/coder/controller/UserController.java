@@ -40,7 +40,14 @@ public class UserController {
         maView.setViewName("front/user/home");
         return maView;
     }
+    @RequestMapping("/edit/{id}")
+    public ModelAndView edit(@PathVariable int id)
+    {
 
+        ModelAndView maView = new ModelAndView();
+        maView.setViewName("front/user/edit");
+        return maView;
+    }
     @RequestMapping("/upload_avatar")
     public void upload_avatar(@RequestParam MultipartFile file, HttpServletRequest request, HttpServletResponse response) throws IOException {
 

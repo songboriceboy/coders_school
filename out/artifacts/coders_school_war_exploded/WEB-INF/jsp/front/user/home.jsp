@@ -57,7 +57,7 @@
                             </div>
                             <div class="uk-width-medium-1-5">
                                 <div>
-                                    编辑个人资料
+                                    <a href="${pageContext.request.contextPath}/user/edit/${user_info.user_id}">编辑个人资料</a>
                                 </div>
                             </div>
                         </div>
