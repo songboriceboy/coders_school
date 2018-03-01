@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872bce5c-9269-4a5f-82e2-113350dfc46c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp" />
     </list>
     <ignored path="coders_school.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,16 +71,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringDate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/school/coder/util/StringDate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TopicInfoEx.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/school/coder/domain/TopicInfoEx.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,12 +81,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
+            <state relative-caret-position="-4291">
               <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/user/home.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="338" selection-end-column="18" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,34 +114,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editormd.amd.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assets/editor-md-master/editormd.amd.js">
+      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4125">
-              <caret line="175" column="36" selection-start-line="175" selection-start-column="4" selection-end-line="175" selection-end-column="36" />
-              <folding>
-                <marker date="1463323853000" expanded="true" signature="10851:10884" ph="..." />
-                <marker date="1463323853000" expanded="true" signature="11035:11067" ph="..." />
-                <marker date="1463323853000" expanded="true" signature="20603:20617" ph="..." />
-                <marker date="1463323853000" expanded="true" signature="51303:51307" ph="..." />
-                <marker date="1463323853000" expanded="true" signature="51626:51648" ph="..." />
-                <marker date="1463323853000" expanded="true" signature="51809:51827" ph="..." />
-                <marker date="1463323853000" expanded="true" signature="51840:51846" ph="©" />
-                <marker date="1463323853000" expanded="true" signature="122163:122168" ph="&amp;##64;" />
-                <marker date="1463323853000" expanded="true" signature="124259:124283" ph="..." />
-                <marker date="1463323853000" expanded="true" signature="127134:127151" ph="..." />
-                <marker date="1463323853000" expanded="true" signature="146554:146567" ph="..." />
-              </folding>
+            <state relative-caret-position="254">
+              <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/school/coder/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="25" column="35" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="331">
+              <caret line="113" column="69" selection-start-line="113" selection-start-column="12" selection-end-line="113" selection-end-column="69" />
+              <folding>
+                <element signature="method#upload_avatar#0;class#UserController#0" expanded="false" />
+                <element signature="method#reg#0;class#UserController#0" expanded="false" />
+                <element signature="method#reguser#0;class#UserController#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -216,8 +209,8 @@
         <option value="$PROJECT_DIR$/src/school/coder/vo/TopicInfoEx.java" />
         <option value="$PROJECT_DIR$/src/school/coder/controller/TopicController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp" />
       </list>
     </option>
   </component>
@@ -1155,12 +1148,12 @@
       <workItem from="1519302867788" duration="6144000" />
       <workItem from="1519474857001" duration="7859000" />
       <workItem from="1519648716981" duration="6976000" />
-      <workItem from="1519906846569" duration="7040000" />
+      <workItem from="1519906846569" duration="7558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127652000" />
+    <option name="totallyTimeSpent" value="128170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1223,8 +1216,14 @@
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/WEB-INF/jsp/front/user/home.jsp</url>
+          <line>317</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="25" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1339,13 +1338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/user/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2475">
-          <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/coder_school_data.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1365,19 +1357,6 @@
         <state relative-caret-position="175">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/school/coder/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="113" column="69" selection-start-line="113" selection-start-column="12" selection-end-line="113" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#upload_avatar#0;class#UserController#0" expanded="false" />
-            <element signature="method#reg#0;class#UserController#0" expanded="false" />
-            <element signature="method#reguser#0;class#UserController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1594,18 +1573,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/user/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="175">
+          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="338" selection-end-column="18" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
+        <state relative-caret-position="-4291">
           <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/school/coder/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="113" column="69" selection-start-line="113" selection-start-column="12" selection-end-line="113" selection-end-column="69" />
+          <folding>
+            <element signature="method#upload_avatar#0;class#UserController#0" expanded="false" />
+            <element signature="method#reg#0;class#UserController#0" expanded="false" />
+            <element signature="method#reguser#0;class#UserController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/common/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
           <folding />
         </state>
       </provider>
