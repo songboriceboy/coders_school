@@ -12,8 +12,6 @@ import school.coder.domain.AdminInfo;
 
 public class AdminLoginInterceptor implements HandlerInterceptor{
 
-
-
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response,
 			Object arg2) throws Exception {
