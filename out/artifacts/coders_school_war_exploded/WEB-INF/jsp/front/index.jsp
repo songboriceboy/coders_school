@@ -103,29 +103,29 @@
 
     </style>
     <script type="text/javascript">
-      <%--function upfile(){--%>
-        <%--var pic=document.getElementsByTagName('input')[0].files[0];--%>
-        <%--var fd=new FormData();--%>
-        <%--var xhr=new XMLHttpRequest();--%>
-        <%--xhr.open('post','${pageContext.request.contextPath}/user/upload_avatar',true);--%>
-        <%--xhr.onreadystatechange=function (){--%>
-          <%--if(this.readyState==4){--%>
-            <%--var res = JSON.parse(this.responseText);--%>
-            <%--document.getElementById('avatar').src = '${pageContext.request.contextPath}/avatar/' + res.src;--%>
-          <%--}--%>
-        <%--}--%>
-        <%--xhr.upload.onprogress=function (ev){--%>
+      function upfile(){
+        var pic=document.getElementsByTagName('input')[0].files[0];
+        var fd=new FormData();
+        var xhr=new XMLHttpRequest();
+        xhr.open('post','${pageContext.request.contextPath}/user/upload_avatar',true);
+        xhr.onreadystatechange=function (){
+          if(this.readyState==4){
+            var res = JSON.parse(this.responseText);
+            document.getElementById('avatar').src = '${pageContext.request.contextPath}/avatar/' + res.src;
+          }
+        }
+        xhr.upload.onprogress=function (ev){
 
-          <%--if(ev.lengthComputable){--%>
-            <%--var precent=100 * ev.loaded/ev.total;--%>
-            <%--console.log(precent);--%>
-            <%--document.getElementById('nei').style.width=precent+'%';--%>
-            <%--document.getElementById('precent').innerHTML=Math.floor(precent)+'%';--%>
-          <%--}--%>
-        <%--}--%>
-        <%--fd.append('file',pic);--%>
-        <%--xhr.send(fd);--%>
-      <%--}--%>
+          if(ev.lengthComputable){
+            var precent=100 * ev.loaded/ev.total;
+            console.log(precent);
+            document.getElementById('nei').style.width=precent+'%';
+            document.getElementById('precent').innerHTML=Math.floor(precent)+'%';
+          }
+        }
+        fd.append('file',pic);
+        xhr.send(fd);
+      }
 
       var pagesize = 5;
 
@@ -177,16 +177,16 @@
 
   </head>
   <body>
-  <%--欢迎您 ${user_info.user_name}--%>
-<%--<a href="${pageContext.request.contextPath}/user/login">login</a>--%>
-<%--<a href="${pageContext.request.contextPath}/user/reg">reg</a>--%>
-  <%--<a href="${pageContext.request.contextPath}/topic/new">new topic</a>--%>
-  <%--<a href="${pageContext.request.contextPath}/">home</a>--%>
-  <%--<div id="wai">--%>
-    <%--<div id="nei"></div>--%>
-  <%--</div><span id="precent"></span><br/>--%>
-  <%--<img class="uk-border-circle" id="avatar">--%>
-  <%--<input type="file" name="pic" onchange="upfile();"/>--%>
+  欢迎您 ${user_info.user_name}
+<a href="${pageContext.request.contextPath}/user/login">login</a>
+<a href="${pageContext.request.contextPath}/user/reg">reg</a>
+  <a href="${pageContext.request.contextPath}/topic/new">new topic</a>
+  <a href="${pageContext.request.contextPath}/">home</a>
+  <div id="wai">
+    <div id="nei"></div>
+  </div><span id="precent"></span><br/>
+  <img class="uk-border-circle" id="avatar">
+  <input type="file" name="pic" onchange="upfile();"/>
   <%@include file="common/header.jsp"%>
   <div class="mb-cover">
     <div class="b20"></div>
@@ -237,7 +237,7 @@
               <span class="split">•</span>
               <span class="author"><a href="${pageContext.request.contextPath}/user/show/{{topic.user_id}}">{{topic.user_name}}</a></span>
               <span class="split">•</span>
-              <span class="datetime">{{topic.topic_createtime}}</span>
+              <span class="datetime">{{topic.createtime_str}}</span>
             </div>
 
           </div>

@@ -8,6 +8,15 @@ public class TopicInfoEx extends TopicInfo {
     private String user_avatar;
     private String section_name;
     private int comment_count;
+    private String createtime_str;
+
+    public String getCreatetime_str() {
+        return createtime_str;
+    }
+
+    public void setCreatetime_str(String createtime_str) {
+        this.createtime_str = createtime_str;
+    }
 
     public int getComment_count() {
         return comment_count;

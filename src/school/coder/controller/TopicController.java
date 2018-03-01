@@ -11,11 +11,11 @@ import school.coder.domain.*;
 import school.coder.service.SectionService;
 import school.coder.service.TopicCommentService;
 import school.coder.service.TopicService;
+import school.coder.util.StringDate;
 import school.coder.util.imgUploadBackData;
 import school.coder.util.picEncode;
 import school.coder.vo.PageData;
 import school.coder.vo.TopicCommentList;
-import school.coder.vo.TopicCounts;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -191,6 +191,10 @@ public class TopicController {
 
 
         lstBookInfos = topicService.getPagedTopics(pageinfo);
+        for(TopicInfoEx topicInfoEx : lstBookInfos)
+        {
+            topicInfoEx.setCreatetime_str(StringDate.getStringDate(topicInfoEx.getTopic_createtime()));
+        }
         PageData<TopicInfoEx> pageData = new PageData<TopicInfoEx>();
         pageData.setList(lstBookInfos);
         pageData.setTotal(count);
