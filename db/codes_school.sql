@@ -51,6 +51,11 @@ create table topic_info(
 		user_id int not null DEFAULT -1
 )engine = innodb;
 
+
+alter table topic_info add love_num int not null DEFAULT 0;
+alter table topic_info add comment_num int not null DEFAULT 0;
+alter table topic_info add is_publish int not null DEFAULT 0;
+
 DROP TABLE IF EXISTS topic_comment_info;
 CREATE TABLE topic_comment_info (
   comment_id int(11) NOT NULL AUTO_INCREMENT,
@@ -90,3 +95,9 @@ create table user_topic_love
 	topic_id int not null default 0 -- 被关注者
 )engine = innodb;
 
+create table user_opt_logs(
+	user_opt_logs_id  int not null PRIMARY KEY auto_increment,
+	user_id int not null DEFAULT 0,
+	opt_type_id int not null DEFAULT 0,-- 1.关注用户，2.喜欢文章，3.关注标签...
+	object_id int not null DEFAULT 0
+)engine = innodb;
