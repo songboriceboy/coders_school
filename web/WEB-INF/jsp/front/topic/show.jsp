@@ -39,70 +39,7 @@
     <!-- HTML 编辑器的 CSS 与 JavaScript -->
     <link rel="stylesheet" href="htmleditor.css">
     <script src="htmleditor.js"></script>
-    <style>
-        html, h1, h2, h3, h4, h5, h6 {
-            font-family: 'Microsoft YaHei',"Helvetica Neue",Helvetica,Arial,sans-serif!important;
-        }
-        .touch-nav {
-            line-height: 40px;
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            z-index: 999999;
-            background: #00a8e6 !important;
-        }
-        a.w1:link, a.w1:visited, a.w1:active, a.w1:hover {
-            color: #fff;
-            text-decoration: none;
-        }
-        .uk-navbar
-        {
-            background: 0;
-            border: 0;
-            text-shadow: none;
-        }
-        #top-header {
-            background: #fff;
-            height: 88px;
-            border-bottom: 2px solid green;
-            width: 100%
-        }
-        #top-header .uk-navbar-brand, #top-header .uk-navbar-content{
-            height: 88px;
-        }
-        #top-header .uk-navbar-nav > li > a {
-            height: 88px;
-            line-height: 88px;
-            font-family: "Microsoft Yahei";
-            font-size: 16px;
-            padding: 0 11px;
-        }
-        .mb-cover{
-            background: #f2f2f2;
-        }
-        .b20{
-            height: 20px;
-        }
-        .b35{
-            height: 35px;
-        }
-        .uk-panel-box {
-            background: #fff !important
-        }
-        a.b:link, a.b:visited, a.b:active {
-            color: #444;
-            text-decoration: none
-        }
-        a.b:hover {
-            color: #00a8e6
-        }
-        .uk-comment-header{
-            background: 0;
-            border: 0;
-            border-top:1px solid #ddd;
-        }
-    </style>
+    <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
     <script>
         var testEditor = null;
         var testEditor2 = null;
