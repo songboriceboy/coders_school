@@ -9,7 +9,7 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <header class="uk-hidden-small" id="top-header">
     <div class="uk-container uk-container-center">
-        <nav class="uk-navbar">
+        <nav class="uk-navbar uk-navbar-attached app-nav">
             <a class="uk-navbar-brand" href="${pageContext.request.contextPath}/" title="魔工坊">
                 <img src="https://gold-cdn.xitu.io/v3/static/img/logo.a7995ad.svg" alt="魔工坊" width="60" height="60">
             </a>

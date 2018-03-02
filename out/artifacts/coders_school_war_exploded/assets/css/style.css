@@ -2,6 +2,7 @@
 html, h1, h2, h3, h4, h5, h6 {
     font-family: 'Microsoft YaHei',"Helvetica Neue",Helvetica,Arial,sans-serif!important;
 }
+
 .touch-nav {
     line-height: 40px;
     position: fixed;
@@ -21,14 +22,16 @@ a.w1:link, a.w1:visited, a.w1:active, a.w1:hover {
     background: 0;
     border: 0;
     text-shadow: none;
+
 }
 
 #top-header {
     background: #fff;
     height: 58px;
     border-bottom: 1px solid #ccc;
-    width: 100%
-
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
 }
 
 #top-header .uk-navbar-brand, #top-header .uk-navbar-content{
@@ -43,6 +46,7 @@ a.w1:link, a.w1:visited, a.w1:active, a.w1:hover {
     padding: 0 11px;
 }
 .mb-cover{
+    padding-top: 60px;
     background: #f2f2f2;
 }
 .b20{
