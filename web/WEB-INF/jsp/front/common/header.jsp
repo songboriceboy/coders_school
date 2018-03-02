@@ -24,43 +24,41 @@
             </ul>
 
             <div id="destoon_member" class="uk-navbar-content uk-navbar-flip uk-button-dropdown" data-uk-dropdown="{mode:'click',pos:'bottom-center'}">
-                <c:if test = "${!empty user_info}">
-                <a title="" href="javascript:;"
-                class="uk-border-circle uk-thumbnail" data-cached-title="回到个人中心首页">
-                <div class="uk-border-circle"><img
-                class="uk-border-circle" width="40" height="40"
-                src="${pageContext.request.contextPath}/avatar/${user_info.user_avatar}"
-                alt="魔工坊">
-                <div class="uk-border-circle" >
+                <c:choose>
+                    <c:when test="${!empty user_info}">
+                        <a title="" href="javascript:;"
+                           class="uk-border-circle uk-thumbnail" data-cached-title="回到个人中心首页">
+                            <div class="uk-border-circle"><img
+                                    class="uk-border-circle" width="40" height="40"
+                                    src="${pageContext.request.contextPath}/avatar/${user_info.user_avatar}"
+                                    alt="魔工坊">
+                                <div class="uk-border-circle" >
 
-                </div>
+                                </div>
 
-                </div>
-                </a>
-                    <div class="uk-dropdown">
-                        <ul class="uk-nav uk-nav-dropdown">
-                            <li><a href="${pageContext.request.contextPath}/topic/new"><i class="uk-icon-pencil uk-icon-justify "></i>写文章</a></li>
-                            <li class="uk-nav-divider"></li>
-                            <li><a href="${pageContext.request.contextPath}/user/home/${user_info.user_id}"><i class="uk-icon-home uk-icon-justify "></i>我的主页</a></li>
-                            <li><a href="#"><i class="uk-icon-heartbeat uk-icon-justify "></i>我喜欢的</a></li>
-                            <li><a href="#"><i class="uk-icon-book uk-icon-justify "></i>我的收藏集</a></li>
-                            <li><a href="#"><i class="uk-icon-film uk-icon-justify "></i>标签管理</a></li>
-                            <li class="uk-nav-divider"></li>
-                            <li><a href="#"><i class="uk-icon-cog uk-icon-justify "></i>设置</a></li>
-                            <li><a href="#"><i class="uk-icon-leaf uk-icon-justify "></i>登出</a></li>
-                        </ul>
-                    </div>
-                </c:if>
-
-
-                <c:if test="${empty user_info}">
-                <div class="uk-button-group"><a class="uk-button uk-button-primary uk-margin-right"
-                href="${pageContext.request.contextPath}/user/reg">免费注册</a><a
-                class="uk-button uk-button-primary"
-                href="${pageContext.request.contextPath}/user/login">立即登录</a></div>
-                </c:if>
-
-
+                            </div>
+                        </a>
+                        <div class="uk-dropdown">
+                            <ul class="uk-nav uk-nav-dropdown">
+                                <li><a href="${pageContext.request.contextPath}/topic/new"><i class="uk-icon-pencil uk-icon-justify "></i>写文章</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="${pageContext.request.contextPath}/user/home/${user_info.user_id}"><i class="uk-icon-home uk-icon-justify "></i>我的主页</a></li>
+                                <li><a href="#"><i class="uk-icon-heartbeat uk-icon-justify "></i>我喜欢的</a></li>
+                                <li><a href="#"><i class="uk-icon-book uk-icon-justify "></i>我的收藏集</a></li>
+                                <li><a href="#"><i class="uk-icon-film uk-icon-justify "></i>标签管理</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#"><i class="uk-icon-cog uk-icon-justify "></i>设置</a></li>
+                                <li><a href="#"><i class="uk-icon-leaf uk-icon-justify "></i>登出</a></li>
+                            </ul>
+                        </div>
+                    </c:when>
+                    <c:otherwise>
+                        <div class="uk-button-group"><a class="uk-button uk-button-primary uk-margin-right"
+                                                        href="${pageContext.request.contextPath}/user/reg">免费注册</a><a
+                                class="uk-button uk-button-primary"
+                                href="${pageContext.request.contextPath}/user/login">立即登录</a></div>
+                    </c:otherwise>
+                </c:choose>
             </div>
 
         </nav>
@@ -88,7 +86,6 @@
             <li class="uk-active"><a href="#"><i class="uk-icon-home"></i> 首页</a></li>
             <li><a href="#"><i class="uk-icon-folder-o"></i>开源库</a></li>
             <li><a href="${pageContext.request.contextPath}/tag/index"><i class="uk-icon-folder-o"></i>标签</a></li>
-
         </ul>
     </div>
 </div>

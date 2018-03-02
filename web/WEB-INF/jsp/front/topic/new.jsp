@@ -149,13 +149,17 @@
                                 <i class="uk-icon-caret-down"></i>
                                 <select name="section_id">
                                     <c:forEach items="${sectionList}" var="section">
-                                        <c:if test="${section.section_id == topic.section_id}">
-                                            <option value="${section.section_id}" selected>${section.section_name}</option>
-                                        </c:if>
-                                        <c:if test="${section.section_id != topic.section_id}">
-                                            <option value="${section.section_id}">${section.section_name}</option>
-                                        </c:if>
+                                        <c:choose>
+                                            <c:when test="${section.section_id == topic.section_id}">
+                                                <option value="${section.section_id}" selected>${section.section_name}</option>
+                                            </c:when>
+
+                                            <c:otherwise>
+                                                <option value="${section.section_id}">${section.section_name}</option>
+                                            </c:otherwise>
+                                        </c:choose>
                                     </c:forEach>
+
                                 </select>
                             </div>
 
