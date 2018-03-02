@@ -18,8 +18,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.UUID;
 
 /**
@@ -120,6 +118,15 @@ public class UserController {
         {
             request.getSession().setAttribute("user_info",userInfo1);
         }
+        ModelAndView maView = new ModelAndView();
+        maView.setViewName("front/index");
+        return maView;
+    }
+
+    @RequestMapping("/logout")
+    public ModelAndView logout(UserInfo userInfo, HttpServletRequest request) throws NoSuchAlgorithmException {
+
+        request.getSession().invalidate();
         ModelAndView maView = new ModelAndView();
         maView.setViewName("front/index");
         return maView;

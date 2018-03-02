@@ -48,7 +48,7 @@
                                 <li><a href="#"><i class="uk-icon-film uk-icon-justify "></i>标签管理</a></li>
                                 <li class="uk-nav-divider"></li>
                                 <li><a href="#"><i class="uk-icon-cog uk-icon-justify "></i>设置</a></li>
-                                <li><a href="#"><i class="uk-icon-leaf uk-icon-justify "></i>登出</a></li>
+                                <li><a href="${pageContext.request.contextPath}/user/logout"><i class="uk-icon-leaf uk-icon-justify "></i>登出</a></li>
                             </ul>
                         </div>
                     </c:when>
@@ -93,7 +93,7 @@
                     <li><a href="#"><i class="uk-icon-film uk-icon-justify "></i>标签管理</a></li>
                     <li class="uk-nav-divider"></li>
                     <li><a href="#"><i class="uk-icon-cog uk-icon-justify "></i>设置</a></li>
-                    <li><a href="#"><i class="uk-icon-leaf uk-icon-justify "></i>登出</a></li>
+                    <li><a href="${pageContext.request.contextPath}/user/logout"><i class="uk-icon-leaf uk-icon-justify "></i>登出</a></li>
                 </ul>
             </c:when>
             <c:otherwise>
