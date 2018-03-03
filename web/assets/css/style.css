@@ -49,6 +49,9 @@ a.w1:link, a.w1:visited, a.w1:active, a.w1:hover {
     padding-top: 60px;
     background: #f2f2f2;
 }
+.app-cover{
+    background: #f2f2f2;
+}
 .b20{
     height: 20px;
 }
