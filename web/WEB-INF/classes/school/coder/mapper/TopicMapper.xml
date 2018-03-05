@@ -34,6 +34,24 @@ join userinfo on userinfo.user_id = topic_info.user_id
         limit #{pageStart},#{pageSize}
     </select>
 
+
+    <select id="getPagedTopicsScroll" parameterType="TopicPageInfoScroll" resultType="TopicInfoEx">
+        <include refid="query_topics"/>
+        <where>
+            <if test="last_topic_id!=0">
+                topic_info.topic_id &lt; #{last_topic_id}
+            </if>
+
+            <if test="section_id!=0">
+                and topic_info.section_id = #{section_id}
+            </if>
+
+        </where>
+        ORDER BY topic_id DESC
+        limit 0,20
+    </select>
+
+
     <select id="getTopicByID" resultType="Topicinfo">
         select * from topic_info where topic_id = #{value}
     </select>

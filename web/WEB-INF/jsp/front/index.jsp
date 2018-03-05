@@ -14,57 +14,99 @@
     <meta name="viewport"
           content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link href="${pageContext.request.contextPath}/assets/uikit-2.25.0/css/uikit.almost-flat.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/assets/Mricode.Pagination-master/mricode.pagination.css" rel="stylesheet" />
+    <%--<link href="${pageContext.request.contextPath}/assets/Mricode.Pagination-master/mricode.pagination.css" rel="stylesheet" />--%>
     <script src="${pageContext.request.contextPath}/assets/jquery/jquery.js"></script>
     <script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/uikit.js"></script>
-    <script src="${pageContext.request.contextPath}/assets/Mricode.Pagination-master/mricode.pagination.js"></script>
+    <%--<script src="${pageContext.request.contextPath}/assets/Mricode.Pagination-master/mricode.pagination.js"></script>--%>
     <script src="${pageContext.request.contextPath}/assets/js/template.js"></script>
     <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
     <script type="text/javascript">
 
+      var curr_req_id = 0;
+      function refresh(loadmore) {
+        $(window).scroll(function(){
+          console.log('正在滑动f');
 
-      var pagesize = 5;
-
-      $(function()
-      {
-        $("#page").pagination({
-          pageIndex: 0,
-          pageSize: pagesize,
-          showFirstLastBtn:true,
-//          showInfo: true,
-//          showJump: true,
-//          showPageSizes: true,
-          remote: {
-            url: '${pageContext.request.contextPath}/topic/getpagedtopics',
-            success: function (data) {
-              var html = template('topic-list-tpl', data);
-              $('#topic-list').html(html);
-              $('.node a').on('click',function(){
-
-                var section_id = $(this).attr("section_id");
-                $("#page").pagination('setPageIndex', 0);
-                $("#page").pagination('setPageSize', pagesize);
-                $("#page").pagination('setParams', {section_id:section_id});
-                $("#page").pagination('remote');
-
-              })
+          var scrollTop = $(this).scrollTop();    //滚动条距离顶部的高度
+          var scrollHeight = $(document).height();   //当前页面的总高度
+          var clientHeight = $(this).height();    //当前可视的页面高度
+          // console.log("top:"+scrollTop+",doc:"+scrollHeight+",client:"+clientHeight);
+          if(scrollTop + clientHeight >= scrollHeight){   //距离顶部+当前高度 >=文档总高度 即代表滑动到底部
+            console.log('下拉');
+            if(loadmore){
+              var last_id = $('#topic-list li:last-child').attr('id');
+              loadmore(last_id);
             }
           }
         });
+      }
+
+      $(function () {
+
+        refresh(function (last_id) {
+          if(curr_req_id == last_id)
+          {
+              return;
+          }
+          curr_req_id = last_id;
+          $.post("${pageContext.request.contextPath}/topic/getpagedtopics",{section_id:0,last_topic_id:last_id}, function (res) {
+            // layer.msg(ret.msg);
+            var data = JSON.parse(res);
+            var html = template('topic-list-tpl', data);
+            $('#topic-list').append(html);
+            curr_req_id = 0;
+          });
+        });
+
+        $.post("${pageContext.request.contextPath}/topic/getpagedtopics",{section_id:0,last_topic_id:0}, function (res) {
+          var data = JSON.parse(res);
+          var html = template('topic-list-tpl', data);
+          $('#topic-list').append(html);
+        });
+      })
+
+      <%--var pagesize = 5;--%>
+
+      <%--$(function()--%>
+      <%--{--%>
+        <%--$("#page").pagination({--%>
+          <%--pageIndex: 0,--%>
+          <%--pageSize: pagesize,--%>
+          <%--showFirstLastBtn:true,--%>
+<%--//          showInfo: true,--%>
+<%--//          showJump: true,--%>
+<%--//          showPageSizes: true,--%>
+          <%--remote: {--%>
+            <%--url: '${pageContext.request.contextPath}/topic/getpagedtopics',--%>
+            <%--success: function (data) {--%>
+              <%--var html = template('topic-list-tpl', data);--%>
+              <%--$('#topic-list').html(html);--%>
+              <%--$('.node a').on('click',function(){--%>
+
+                <%--var section_id = $(this).attr("section_id");--%>
+                <%--$("#page").pagination('setPageIndex', 0);--%>
+                <%--$("#page").pagination('setPageSize', pagesize);--%>
+                <%--$("#page").pagination('setParams', {section_id:section_id});--%>
+                <%--$("#page").pagination('remote');--%>
+
+              <%--})--%>
+            <%--}--%>
+          <%--}--%>
+        <%--});--%>
 
 
 
-        $('.uk-navbar-nav li a').on('click',function(){
+        <%--$('.uk-navbar-nav li a').on('click',function(){--%>
 
-          var section_id = $(this).attr("section_id");
-          $("#page").pagination('setPageIndex', 0);
-          $("#page").pagination('setPageSize', pagesize);
-          $("#page").pagination('setParams', {section_id:section_id});
-          $("#page").pagination('remote');
+          <%--var section_id = $(this).attr("section_id");--%>
+          <%--$("#page").pagination('setPageIndex', 0);--%>
+          <%--$("#page").pagination('setPageSize', pagesize);--%>
+          <%--$("#page").pagination('setParams', {section_id:section_id});--%>
+          <%--$("#page").pagination('remote');--%>
 
-        })
+        <%--})--%>
 
-      });
+      <%--});--%>
 
     </script>
 
@@ -105,10 +147,12 @@
   </div>
 
   <script type="text/html" id="topic-list-tpl">
-    <ul class="bookshelf">
+
 
       {{each list as topic i}}
-        <li class="uk-list uk-list-line uk-clearfix topic uk-margin-top">
+
+      <li class="uk-list uk-list-line uk-clearfix topic uk-margin-top" id="{{topic.topic_id}}">
+        {{topic.topic_id}}
           <a href="#" class="author-avatar"><img class="avatar" src="${pageContext.request.contextPath}/avatar/{{topic.user_avatar}}"></a>
           <div class="content">
             <div class="uk-grid">
@@ -138,7 +182,7 @@
 
       {{/each}}
 
-    </ul>
+
   </script>
   </body>
 </html>
