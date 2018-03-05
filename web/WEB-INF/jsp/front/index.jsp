@@ -14,57 +14,63 @@
     <meta name="viewport"
           content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link href="${pageContext.request.contextPath}/assets/uikit-2.25.0/css/uikit.almost-flat.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/assets/Mricode.Pagination-master/mricode.pagination.css" rel="stylesheet" />
+    <%--<link href="${pageContext.request.contextPath}/assets/Mricode.Pagination-master/mricode.pagination.css" rel="stylesheet" />--%>
     <script src="${pageContext.request.contextPath}/assets/jquery/jquery.js"></script>
     <script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/uikit.js"></script>
-    <script src="${pageContext.request.contextPath}/assets/Mricode.Pagination-master/mricode.pagination.js"></script>
+    <%--<script src="${pageContext.request.contextPath}/assets/Mricode.Pagination-master/mricode.pagination.js"></script>--%>
     <script src="${pageContext.request.contextPath}/assets/js/template.js"></script>
     <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
     <script type="text/javascript">
 
-
-      var pagesize = 5;
-
-      $(function()
-      {
-        $("#page").pagination({
-          pageIndex: 0,
-          pageSize: pagesize,
-          showFirstLastBtn:true,
-//          showInfo: true,
-//          showJump: true,
-//          showPageSizes: true,
-          remote: {
-            url: '${pageContext.request.contextPath}/topic/getpagedtopics',
-            success: function (data) {
-              var html = template('topic-list-tpl', data);
-              $('#topic-list').html(html);
-              $('.node a').on('click',function(){
-
-                var section_id = $(this).attr("section_id");
-                $("#page").pagination('setPageIndex', 0);
-                $("#page").pagination('setPageSize', pagesize);
-                $("#page").pagination('setParams', {section_id:section_id});
-                $("#page").pagination('remote');
-
-              })
-            }
-          }
-        });
-
-
-
-        $('.uk-navbar-nav li a').on('click',function(){
-
-          var section_id = $(this).attr("section_id");
-          $("#page").pagination('setPageIndex', 0);
-          $("#page").pagination('setPageSize', pagesize);
-          $("#page").pagination('setParams', {section_id:section_id});
-          $("#page").pagination('remote');
-
-        })
-
+      $.post("${pageContext.request.contextPath}/topic/getpagedtopics",{section_id:0,last_topic_id:0}, function (res) {
+        // layer.msg(ret.msg);
+        var data = JSON.parse(res);
+        alert(data.list[19].topic_id);
+        var html = template('topic-list-tpl', data);
+        $('#topic-list').html(html);
       });
+      <%--var pagesize = 5;--%>
+
+      <%--$(function()--%>
+      <%--{--%>
+        <%--$("#page").pagination({--%>
+          <%--pageIndex: 0,--%>
+          <%--pageSize: pagesize,--%>
+          <%--showFirstLastBtn:true,--%>
+<%--//          showInfo: true,--%>
+<%--//          showJump: true,--%>
+<%--//          showPageSizes: true,--%>
+          <%--remote: {--%>
+            <%--url: '${pageContext.request.contextPath}/topic/getpagedtopics',--%>
+            <%--success: function (data) {--%>
+              <%--var html = template('topic-list-tpl', data);--%>
+              <%--$('#topic-list').html(html);--%>
+              <%--$('.node a').on('click',function(){--%>
+
+                <%--var section_id = $(this).attr("section_id");--%>
+                <%--$("#page").pagination('setPageIndex', 0);--%>
+                <%--$("#page").pagination('setPageSize', pagesize);--%>
+                <%--$("#page").pagination('setParams', {section_id:section_id});--%>
+                <%--$("#page").pagination('remote');--%>
+
+              <%--})--%>
+            <%--}--%>
+          <%--}--%>
+        <%--});--%>
+
+
+
+        <%--$('.uk-navbar-nav li a').on('click',function(){--%>
+
+          <%--var section_id = $(this).attr("section_id");--%>
+          <%--$("#page").pagination('setPageIndex', 0);--%>
+          <%--$("#page").pagination('setPageSize', pagesize);--%>
+          <%--$("#page").pagination('setParams', {section_id:section_id});--%>
+          <%--$("#page").pagination('remote');--%>
+
+        <%--})--%>
+
+      <%--});--%>
 
     </script>
 

@@ -183,26 +183,47 @@ public class TopicController {
 
 
 
+//    @RequestMapping("getpagedtopics")
+//    public void getPagedTopics(TopicPageInfo pageinfo
+//            ,HttpServletResponse response) throws IOException
+//    {
+//        int count = topicService.getTopicsCounts(pageinfo);
+//        List<TopicInfoEx> lstBookInfos = new ArrayList<TopicInfoEx>();
+//
+//
+//        lstBookInfos = topicService.getPagedTopics(pageinfo);
+//        for(TopicInfoEx topicInfoEx : lstBookInfos)
+//        {
+//            topicInfoEx.setCreatetime_str(StringDate.getStringDate(topicInfoEx.getTopic_createtime()));
+//        }
+//        PageData<TopicInfoEx> pageData = new PageData<TopicInfoEx>();
+//        pageData.setList(lstBookInfos);
+//        pageData.setTotal(count);
+//
+//        String strJsonString = JSON.toJSONString(pageData);
+//        PrintWriter pWriter = response.getWriter();
+//        pWriter.println(strJsonString);
+//    }
+
     @RequestMapping("getpagedtopics")
-    public void getPagedTopics(TopicPageInfo pageinfo
+    public void getPagedTopics(TopicPageInfoScroll topicPageInfoScroll
             ,HttpServletResponse response) throws IOException
     {
-        int count = topicService.getTopicsCounts(pageinfo);
+//        int count = topicService.getTopicsCounts(pageinfo);
         List<TopicInfoEx> lstBookInfos = new ArrayList<TopicInfoEx>();
 
 
-        lstBookInfos = topicService.getPagedTopics(pageinfo);
+        lstBookInfos = topicService.getPagedTopics(topicPageInfoScroll);
         for(TopicInfoEx topicInfoEx : lstBookInfos)
         {
             topicInfoEx.setCreatetime_str(StringDate.getStringDate(topicInfoEx.getTopic_createtime()));
         }
         PageData<TopicInfoEx> pageData = new PageData<TopicInfoEx>();
         pageData.setList(lstBookInfos);
-        pageData.setTotal(count);
+        pageData.setTotal(0);
 
         String strJsonString = JSON.toJSONString(pageData);
         PrintWriter pWriter = response.getWriter();
         pWriter.println(strJsonString);
     }
-
 }

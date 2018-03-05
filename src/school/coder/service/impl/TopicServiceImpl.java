@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 import school.coder.domain.TopicInfo;
 import school.coder.domain.TopicInfoEx;
 import school.coder.domain.TopicPageInfo;
+import school.coder.domain.TopicPageInfoScroll;
 import school.coder.mapper.TopicMapper;
-import school.coder.mapper.UserMapper;
 import school.coder.service.TopicService;
 
 import java.util.List;
@@ -46,5 +46,10 @@ public class TopicServiceImpl implements TopicService {
     @Override
     public List<TopicInfoEx> getPagedTopics(TopicPageInfo topicPageInfo) {
         return topicMapper.getPagedTopics(topicPageInfo);
+    }
+
+    @Override
+    public List<TopicInfoEx> getPagedTopics(TopicPageInfoScroll topicPageInfoScroll) {
+        return topicMapper.getPagedTopicsScroll(topicPageInfoScroll);
     }
 }
