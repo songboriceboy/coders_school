@@ -132,3 +132,7 @@ a.b:hover {
     border: 0;
     border-top:1px solid #ddd;
 }
+/*写文章*/
+.markdown-editor{
+    padding-left: 0;
+}

@@ -10,28 +10,26 @@
     <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
-    <link id="data-uikit-theme" rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/uikit.docs.min.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/docs.css">
+    <link id="data-uikit-theme" rel="stylesheet" href="${pageContext.request.contextPath}/assets/uikit-2.25.0/css/uikit.almost-flat.css">
+    <%--<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/docs.css">--%>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/editor-md-master/css/editormd.css" />
     <script src="${pageContext.request.contextPath}/assets/jquery/jquery.js"></script>
     <script src="${pageContext.request.contextPath}/assets/editor-md-master/editormd.min.js"></script>
     <script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/uikit.min.js"></script>
     <script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/components/form-select.js"></script>
 
-
-    <%--<script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/uikit.min.js"></script>--%>
     <script>
 
-//        var testEditor = null;
+        //        var testEditor = null;
 
         $(function () {
 
             var testEditor = editormd({
                 id: "test-editormd",
 //                height: 840,
-                width   : "90%",
-                height  : 250,
-                placeholder          : "文明社会，理性评论，支持Markdown",
+                height:"100%",
+                width: "100%",
+                placeholder          : "文明社会，s理性评论，支持Markdown",
                 path: "${pageContext.request.contextPath}/assets/editor-md-master/lib/",
                 toolbarIcons: function () {
                     // Or return editormd.toolbarModes[name]; // full, simple, mini
@@ -67,12 +65,12 @@
                 },
                 onpreviewing : function() {
                     this.watch();
-                     console.log("onpreviewing =>", this, this.id, this.settings);
+                    console.log("onpreviewing =>", this, this.id, this.settings);
                     // on previewing you can custom css .editormd-preview-active
                 },
 
                 onpreviewed : function() {
-                     console.log("onpreviewed =>", this, this.id, this.settings);
+                    console.log("onpreviewed =>", this, this.id, this.settings);
                     this.unwatch();
                 }
             });
@@ -123,65 +121,62 @@
 
         });
     </script>
+    <style>
+        .mk-ed{
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
-<body class="tm-background">
+<body>
 
 
+<!--固定宽度，居中对齐-->
 
-<div class="tm-middle">
-    <div class="uk-container uk-container-center">
-        <div class="uk-grid" data-uk-grid-margin>
+<form class="uk-form"  action="#" method="post"
+      target="_blank" id = "article_form">
 
-            <div class="tm-main uk-width-medium-2-4">
+    <div class="uk-grid">
+        <div class="uk-width-1-2">
+            <input type="hidden" name = "topic_id" value="${topic.topic_id}" id="topic_id">
+            <input type="text" placeholder="请输入标题" class="uk-width-1-1 uk-form-large" name="topic_title" value="${topic.topic_title}" id = "title">
+        </div>
+        <div class="uk-width-1-4">
 
-                <div>
-                    <form action="#" method="post"
-                          target="_blank" id = "article_form">
-                        <h1>完整demo</h1>
+                <select name="section_id"  class="uk-form-large uk-width-1-1">
+                    <c:forEach items="${sectionList}" var="section">
+                        <c:choose>
+                            <c:when test="${section.section_id == topic.section_id}">
+                                <option value="${section.section_id}" selected>${section.section_name}</option>
+                            </c:when>
 
-                        <input type="hidden" name = "topic_id" value="${topic.topic_id}" id="topic_id">
+                            <c:otherwise>
+                                <option value="${section.section_id}">${section.section_name}</option>
+                            </c:otherwise>
+                        </c:choose>
+                    </c:forEach>
 
-                        标题： <input type="text" name="topic_title" value="${topic.topic_title}" id = "title">
-                        <div class="uk-margin">
+                </select>
 
-                            <div class="uk-button uk-form-select uk-active" data-uk-form-select="">
-                                <span></span>
-                                <i class="uk-icon-caret-down"></i>
-                                <select name="section_id">
-                                    <c:forEach items="${sectionList}" var="section">
-                                        <c:choose>
-                                            <c:when test="${section.section_id == topic.section_id}">
-                                                <option value="${section.section_id}" selected>${section.section_name}</option>
-                                            </c:when>
-
-                                            <c:otherwise>
-                                                <option value="${section.section_id}">${section.section_name}</option>
-                                            </c:otherwise>
-                                        </c:choose>
-                                    </c:forEach>
-
-                                </select>
-                            </div>
-
-                        </div>
-                        <div class="editormd" id="test-editormd">
-
-                            <textarea class="editormd-markdown-textarea" name="topic_markdown_content" id = "topic_markdown_content">${topic.topic_markdown_content}</textarea>
-                            <!-- html textarea 需要开启配置项 saveHTMLToTextarea == true -->
-                            <%--<textarea class="editormd-html-textarea" name="article_content"></textarea>--%>
-
-                        </div>
-                        <input type="button" value="保存博文" id = "submit">
-                    </form>
-
-                </div>
-            </div>
+        </div>
+        <div class="uk-width-1-4">
+            <input type="button" value="发布文章" id = "submit" class="uk-width-1-1 uk-form-large">
         </div>
     </div>
-</div>
-</div>
 
+    <div class="uk-grid uk-margin-remove mk-ed">
+
+        <div class="editormd  uk-height-viewport uk-width-1-1 markdown-editor" id="test-editormd">
+
+            <textarea class="editormd-markdown-textarea uk-width-1-1" name="topic_markdown_content" id = "topic_markdown_content">${topic.topic_markdown_content}</textarea>
+            <!-- html textarea 需要开启配置项 saveHTMLToTextarea == true -->
+            <%--<textarea class="editormd-html-textarea" name="article_content"></textarea>--%>
+
+        </div>
+
+    </div>
+
+</form>
 
 
 </body>
-<html>
+</html>
