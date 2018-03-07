@@ -29,7 +29,7 @@
 //                height: 840,
                 height:"100%",
                 width: "100%",
-                placeholder          : "文明社会，s理性评论，支持Markdown",
+                placeholder          : "Markdown编辑器",
                 path: "${pageContext.request.contextPath}/assets/editor-md-master/lib/",
                 toolbarIcons: function () {
                     // Or return editormd.toolbarModes[name]; // full, simple, mini
@@ -57,7 +57,7 @@
                 imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
                 imageUploadURL: "{:url('api/uploader/uploadEditorImg?pic_type=10')}",
                 onload: function () {
-                    this.unwatch();
+
                     this.on('paste', function () {
                         console.log(1);
                     });
