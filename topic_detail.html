@@ -12,7 +12,18 @@
     <script src="web/assets/Mricode.Pagination-master/mricode.pagination.js"></script>
     <script src="web/assets/js/template.js"></script>
     <link href="web/assets/css/style.css" rel="stylesheet">
+    <style>
 
+        .topic-author{
+            padding: 20px;
+        }
+        .topic-detail{
+            padding: 20px;
+        }
+        #uk-comment-list{
+            padding: 30px;
+        }
+    </style>
 </head>
 <body>
 <header class="uk-hidden-small" id="top-header">
@@ -92,169 +103,240 @@
             <div class="uk-width-medium-3-4">
 
                 <div class="uk-panel uk-panel-box uk-padding-remove">
-                    <ul class="uk-list">
-                        <li class="app-blog-item">
-                            <div class="title uk-text-truncate">
-                                <a href="#">JavaScript 代码整洁之道 代码整洁之道代码整洁之道</a>
-                            </div>
-                            <div>
-                                    <span class="topic-cate">
-                                        前端
-                                    </span>
-                                <span>
-                                        <a>zhangsan</a>
-                                    </span>
-                                <span>
-                                        三月前
-                                    </span>
-                                <span>
-                                        908次阅读
-                                    </span>
-                            </div>
+                    <div class="topic-content">
+                        <div class="topic-author">
+                            <img class="uk-align-left uk-border-circle"
+                                 src="https://avatars.githubusercontent.com/u/20903311" width="40" height="40">
+                            <div>zhangsan</div>
+                            <div>2018 年 03 月 07 日</div>
+                        </div>
+                        <h2 class="article-title uk-margin-large-left">
+                            转行程序员深漂的这三年 #3
+                        </h2>
+                        <div class="topic-detail">
+                            <div data-v-13f76525="" data-v-3f216172="" class="article-content juejin-image-viewer__container"><blockquote>转载至我的个人博客：<a href="https://link.juejin.im?target=http%3A%2F%2Fwww.lovchun.com" target="_blank" rel="nofollow noopener noreferrer">LOVCHUN.COM</a></blockquote><p><b>面试</b></p><p>2015-01-17，周六，我到了深圳火车站。周末两天我开始投简历，智联、拉钩、51jbo等等一切可以投的，全投！由于知道自己有多少斤两，尽量选择 30 人以内的小公司，3~4K ，前端岗位，都说培训出来随便拿到上万，反正我那一期大家都在 4 - 8K，能拿 8K 的，他本来就是对口的专业，来培训只是相当于复习，和我这类跨专业跨行的完全没有可比性。</p><p>真的很庆幸，这一年的前端还没有像现在这么如火如荼，技术日新月异。我所面试的小公司，几乎都是要求会写页面，使用 jQuery，类似这样的岗位描述，这让我收到的面试机会变得很多。</p><p>2015-01-19，我开始了面试。类似我这种半路出家的程序员，面对未知的行业，第一次面试心情也许会跟我一样吧：揣着零经验的简历，不知道怎么包装自己，也不知道入职了是否又能胜任这份工作。《锋利的 jQuery》，这本书很老了，书上有两个静态页面的 DEMO，简历上，我的开发经验，就写的它们，很寒碜，是吧？</p><p>我以为深圳的元月会和武汉一样冷，穿着羊毛衫和羽绒服出门面试了，19 号一天跑了3家，热炸了。<img alt="broken heart" title="broken heart" class="lazyload inited loaded" data-src="https://user-gold-cdn.xitu.io/2018/3/7/161ff68f3dd09915?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" data-width="23" data-height="23" src="https://user-gold-cdn.xitu.io/2018/3/7/161ff68f3dd09915?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p><p>第一次面试距离现在已经过去3年了，当时的窘境仍然记忆犹新。《蜘蛛旅游网》，是我面试的第一家公司，笔试结束后，有位小哥过来面试我。我紧紧的抱着书包，里面有我这次准备的“项目”，心理七上八下。两个 jQuery 外加一些 Plugins 做的静态页面，还是照着书写的，对我来讲，那个时候还真算个“项目”。</p><p>小哥和我聊了一会，我觉得时机差不多了，便说我有项目可以演示。他很感兴趣，问我带电脑没，要不要连 Wifi，还要去把 CTO 喊来一起看下。我小声的回了句，只是两个静态页面，瞬间气氛就尴尬了。不过他还是和 CTO 一起耐心的听完我的介绍、演示，结局自然是被 Pass 掉啦。</p><div>不用想也知道</div>，不过感觉两位都很友好啊，CTO 还象征性的给我介绍了一下公司的业务，加班的情况等等，如果有机会，我还想再“杀”回去面试一下。<p></p><p><b>就业</b></p><p>2015-01-21，在经过两天 5 家公司的面试，我越来越轻车熟路，越来越娴熟，心态也开始变化，其实面试并没有那么可怕，大家双向选择，不过我属于弱势一方，</p><div>毕竟零经验</div>。每次面试，如果有笔试，我都会抽空用手机把题拍照收集起来，回家查正确答案，19 - 20 号两天，我就汇集了 40 多道前端面试题。21 号面试的这家公司是《上海勇进》，他们是给招商银行做的一个外包项目，驻场开发。我的面试地点自然是在招行开发部里面，科学园的 14 楼。坐电梯到 14 楼，转行前，长期在户外工地，看到招行的办公环境，口水流了一地。我拿到面试题的时候，整整 3 页 A4 纸，题目 80% 居然都在我那 40 多道题目里面，激动的要死，不到 20 分钟就找到面试官说做完了，然后和我聊了一下，面试官居然也是武汉的，可能这也算是我的加分项？最终顺利入职了。<p></p><p>这个时候我已经不再带着我那两个 jQuery 的“项目”了，我也体会到，演示它们，并不能给我加任何分，反而被 Pass 的概率更大。</p><div></div><p>在招行驻场外包的时间，和我同一批入职的有 3 人，当然我们被“套路”了一回，转正前 2 周，我们都被辞退了，哎，这是个悲伤的故事。还特别应节气，被辞退之后正好迎来了“清明节”------ 清明时节雨纷纷，路上行人欲断魂。</p><p>在这短短 3 个月的工作时间内，我收获了 Dojo 的使用经验，为了兼容 IE8，一个多月的样式调整经验，体验了一把招行正规的开发流程，看了两遍《Javascript权威指南》，编写并维护了几个组件。在第二个月，公司应该是为下一个外包项目做准备，项目经理用 Require.js + Bootstrap ,写了个很完整的 DEMO，有 MOCK 数据，有异步请求，还有 10 个左右的页面，我如获至宝，和当初练写 CRUD 一样，每晚反复写这份 DEMO，这是我接触的第一个 AMD 的工具和 CSS Framework。</p><p><b>之后的故事</b></p><p>跟之前不一样的是，这次我有实打实的项目经验，有组件开发、Require.js、Bootstrap 等工具或框架的使用经验，投简历收到面试通知的概率更多了，最后我找到了我的第二个公司，除了 Dojo，我之前的经验全部能用上。在这个公司，我接触了 PHP、Mysql、Vim 、Git、Linux，由于刚入职，整体工作量不算太大，我有大量的时间去看这些东西，就是在这段时间，看了 CodeIgniter，前后端都能倒腾倒腾，Git + CodeIgniter + Require.js 写了自己第一个比较全面的<a href="https://link.juejin.im?target=https%3A%2F%2Fgitee.com%2Fnir_passion%2Flovechun" target="_blank" rel="nofollow noopener noreferrer">博客项目</a>。租服务器，备案域名，开始捣鼓 Linux，从搭建 LAMP 环境开始。</p><p>后面跳槽去了另一家公司，开始做微信公众号相关的开发，这段时间，谷歌开源了 Angular.js，Node.js 也横空出世，接踵而来的还有 React.js、Vue.js，还有更多的前端自动化工具，诸如 Grunt、Gulp、Bower等等。这个阶段，我意识到 IT 这一行，技术迭代飞快，但是我的基础限定了我学习这些新技术栈非常费时，所以每个周末，我都会在各大招聘网站上看不同公司对前端岗位的“岗位描述”。</p><div></div><p>“岗位描述”对我帮助很大，我只需要统计几十个公司的技术栈要求，就能筛选出必须要掌握的是哪些，可以加分的是哪些。在自己有限的学习能力下，它们帮我分清了主次，让我在这几年的时间，一直能抓住技术更新的方向、大部分公司的基本就业要求、提升的方向等等。</p><p><b>现在</b></p><p>我还记得刚来深圳的时候，女友开玩笑的和我说：“等我月薪上万就可以结婚了”。14 年，“月薪上万”对我这个 23 年还未出过湖北省的来讲，薪水还停留在武汉，2~3K 的概念，我当时一度觉得有个 6K 就算是极限了，上万对我肯定不可能。那个时候，我偶尔也会跑去知乎搜一下“月薪上万是种什么样的体验”。</p><p>从 2015-01 到 2016-08，在这近 20 个月的时间，3 -&gt; 4.5 -&gt; 6 -&gt; 8.5 -&gt; 12K，也从一个拿着两个静态页面面试四处碰壁的新人，变成了一名“熟练工”，从一个可以被随意开出不那么重要的人，变成了现在公司的主力开发。</p><p>祝福和我一样半路出家的程序员们，能顺顺利利在这一行越走越远！</p><p><b>其他</b></p><p>今年，我们也终于在武汉买房结婚了，这几年，少不了的是老婆给我的鼓舞和开导，真的非常感谢她。</p><p><img alt="" class="lazyload inited loaded" data-src="https://user-gold-cdn.xitu.io/2018/3/7/161ff6a7728f091f?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" data-width="690" data-height="1035" src="https://user-gold-cdn.xitu.io/2018/3/7/161ff6a7728f091f?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p><p><br></p></div>
 
-                        </li>
-                        <li class="app-blog-item">
-                            <div class="title uk-text-truncate">
-                                <a href="#">JavaScript 代码整洁之道 代码整洁之道代码整洁之道</a>
-                            </div>
-                            <div>
-                                    <span class="topic-cate">
-                                        前端
-                                    </span>
-                                <span>
-                                        <a>zhangsan</a>
-                                    </span>
-                                <span>
-                                        三月前
-                                    </span>
-                                <span>
-                                        908次阅读
-                                    </span>
-                            </div>
+                        </div>
+                    </div>
 
-                        </li>
-                        <li class="app-blog-item">
-                            <div class="title uk-text-truncate">
-                                <a href="#">JavaScript 代码整洁之道 代码整洁之道代码整洁之道</a>
-                            </div>
-                            <div>
-                                    <span class="topic-cate">
-                                        前端
-                                    </span>
-                                <span>
-                                        <a>zhangsan</a>
-                                    </span>
-                                <span>
-                                        三月前
-                                    </span>
-                                <span>
-                                        908次阅读
-                                    </span>
-                            </div>
 
-                        </li>
-                        <li class="app-blog-item">
-                            <div class="title uk-text-truncate">
-                                <a href="#">JavaScript 代码整洁之道 代码整洁之道代码整洁之道</a>
-                            </div>
-                            <div>
-                                    <span class="topic-cate">
-                                        前端
-                                    </span>
-                                <span>
-                                        <a>zhangsan</a>
-                                    </span>
-                                <span>
-                                        三月前
-                                    </span>
-                                <span>
-                                        908次阅读
-                                    </span>
-                            </div>
+                    <ul class="uk-comment-list" id="uk-comment-list">
 
-                        </li>
-                        <li class="app-blog-item">
-                            <div class="title uk-text-truncate">
-                                <a href="#">JavaScript 代码整洁之道 代码整洁之道代码整洁之道</a>
-                            </div>
-                            <div>
-                                    <span class="topic-cate">
-                                        前端
-                                    </span>
-                                <span>
-                                        <a>zhangsan</a>
-                                    </span>
-                                <span>
-                                        三月前
-                                    </span>
-                                <span>
-                                        908次阅读
-                                    </span>
-                            </div>
+                        <li class="reply-item" id="comment_19">
+                            <article class="uk-comment">
+                                <header class="uk-comment-header">
+                                    <img class="uk-comment-avatar" src="https://avatars.githubusercontent.com/u/20903311" width="50" height="50" alt="">
+                                    <h4 class="uk-comment-title">aaa</h4>
+                                    <div class="uk-comment-meta">Tue Feb 20 15:19:40 CST 2018 | Profile | #</div>
+                                </header>
+                                <div class="uk-comment-body">
+                                    <p></p><p>对方水电费是</p>
+                                    <p></p>
+                                </div>
+                                <div class="x-comment-footer uk-margin-top">
+                                    <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
+                                    <a href="#" class="uk-button">赞</a>
+                                </div>
+                            </article>
 
-                        </li>
-                        <li class="app-blog-item">
-                            <div class="title uk-text-truncate">
-                                <a href="#">JavaScript 代码整洁之道 代码整洁之道代码整洁之道</a>
-                            </div>
-                            <div>
-                                    <span class="topic-cate">
-                                        前端
-                                    </span>
-                                <span>
-                                        <a>zhangsan</a>
-                                    </span>
-                                <span>
-                                        三月前
-                                    </span>
-                                <span>
-                                        908次阅读
-                                    </span>
-                            </div>
+                            <ul class="ul-comment-list-child">
 
-                        </li>
-                        <li class="app-blog-item">
-                            <div class="title uk-text-truncate">
-                                <a href="#">JavaScript 代码整洁之道 代码整洁之道代码整洁之道</a>
-                            </div>
-                            <div>
-                                    <span class="topic-cate">
-                                        前端
-                                    </span>
-                                <span>
-                                        <a>zhangsan</a>
-                                    </span>
-                                <span>
-                                        三月前
-                                    </span>
-                                <span>
-                                        908次阅读
-                                    </span>
-                            </div>
+                                <li class="reply-child-item" id="comment_20">
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img class="uk-comment-avatar" src="https://avatars.githubusercontent.com/u/20903311" width="50" height="50" alt="">
+                                            <h4 class="uk-comment-title">aaa</h4>
+                                            <div class="uk-comment-meta">Tue Feb 20 15:19:46 CST 2018| Profile | #</div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p></p><p>发的所发生的</p>
+                                            <p></p>
+                                        </div>
+                                        <div class="x-comment-footer uk-margin-top">
+                                            <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
+                                            <a href="#" class="uk-button">赞</a>
+                                        </div>
+                                    </article>
+                                </li>
 
-                        </li>
-                        <li class="app-blog-item">
-                            <div class="title uk-text-truncate">
-                                <a href="#">JavaScript 代码整洁之道 代码整洁之道代码整洁之道</a>
-                            </div>
-                            <div>
-                                    <span class="topic-cate">
-                                        前端
-                                    </span>
-                                <span>
-                                        <a>zhangsan</a>
-                                    </span>
-                                <span>
-                                        三月前
-                                    </span>
-                                <span>
-                                        908次阅读
-                                    </span>
-                            </div>
+                                <li class="reply-child-item" id="comment_23">
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img class="uk-comment-avatar" src="https://avatars.githubusercontent.com/u/20903311" width="50" height="50" alt="">
+                                            <h4 class="uk-comment-title">aaa</h4>
+                                            <div class="uk-comment-meta">Tue Feb 20 15:20:41 CST 2018| Profile | #</div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p></p><p>有人讨厌他人</p>
+                                            <p></p>
+                                        </div>
+                                        <div class="x-comment-footer uk-margin-top">
+                                            <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
+                                            <a href="#" class="uk-button">赞</a>
+                                        </div>
+                                    </article>
+                                </li>
 
+                                <li class="reply-child-item" id="comment_89">
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img class="uk-comment-avatar" src="/zhujian/avatar/1d0c6585-1f53-4e81-9683-8d00363c15983.jpg" width="50" height="50" alt="">
+                                            <h4 class="uk-comment-title">bbb</h4>
+                                            <div class="uk-comment-meta">Thu Feb 22 10:58:43 CST 2018| Profile | #</div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p></p><p><a href="/user/aaaretrefds" title="@aaaretrefds" class="at-link">@aaaretrefds</a></p>
+                                            <p></p>
+                                        </div>
+                                        <div class="x-comment-footer uk-margin-top">
+                                            <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
+                                            <a href="#" class="uk-button">赞</a>
+                                        </div>
+                                    </article>
+                                </li>
+
+                            </ul>
                         </li>
+
+                        <li class="reply-item" id="comment_21">
+                            <article class="uk-comment">
+                                <header class="uk-comment-header">
+                                    <img class="uk-comment-avatar" src="https://avatars.githubusercontent.com/u/20903311" width="50" height="50" alt="">
+                                    <h4 class="uk-comment-title">aaa</h4>
+                                    <div class="uk-comment-meta">Tue Feb 20 15:20:10 CST 2018 | Profile | #</div>
+                                </header>
+                                <div class="uk-comment-body">
+                                    <p></p><p>孤鸿寡鹄</p>
+                                    <p></p>
+                                </div>
+                                <div class="x-comment-footer uk-margin-top">
+                                    <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
+                                    <a href="#" class="uk-button">赞</a>
+                                </div>
+                            </article>
+
+                            <ul class="ul-comment-list-child">
+
+                                <li class="reply-child-item" id="comment_22">
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img class="uk-comment-avatar" src="https://avatars.githubusercontent.com/u/20903311" width="50" height="50" alt="">
+                                            <h4 class="uk-comment-title">aaa</h4>
+                                            <div class="uk-comment-meta">Tue Feb 20 15:20:20 CST 2018| Profile | #</div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p></p><p>九号公馆好吧</p>
+                                            <p></p>
+                                        </div>
+                                        <div class="x-comment-footer uk-margin-top">
+                                            <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
+                                            <a href="#" class="uk-button">赞</a>
+                                        </div>
+                                    </article>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="reply-item" id="comment_24">
+                            <article class="uk-comment">
+                                <header class="uk-comment-header">
+                                    <img class="uk-comment-avatar" src="https://avatars.githubusercontent.com/u/20903311" width="50" height="50" alt="">
+                                    <h4 class="uk-comment-title">aaa</h4>
+                                    <div class="uk-comment-meta">Tue Feb 20 15:23:04 CST 2018 | Profile | #</div>
+                                </header>
+                                <div class="uk-comment-body">
+                                    <p></p><p>编程序持续性</p>
+                                    <p></p>
+                                </div>
+                                <div class="x-comment-footer uk-margin-top">
+                                    <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
+                                    <a href="#" class="uk-button">赞</a>
+                                </div>
+                            </article>
+
+                            <ul class="ul-comment-list-child">
+
+                                <li class="reply-child-item" id="comment_25">
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img class="uk-comment-avatar" src="https://avatars.githubusercontent.com/u/20903311" width="50" height="50" alt="">
+                                            <h4 class="uk-comment-title">aaa</h4>
+                                            <div class="uk-comment-meta">Tue Feb 20 15:23:10 CST 2018| Profile | #</div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p></p><p>对方水电费是</p>
+                                            <p></p>
+                                        </div>
+                                        <div class="x-comment-footer uk-margin-top">
+                                            <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
+                                            <a href="#" class="uk-button">赞</a>
+                                        </div>
+                                    </article>
+                                </li>
+
+                                <li class="reply-child-item" id="comment_28">
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img class="uk-comment-avatar" src="https://avatars.githubusercontent.com/u/20903311" width="50" height="50" alt="">
+                                            <h4 class="uk-comment-title">aaa</h4>
+                                            <div class="uk-comment-meta">Tue Feb 20 15:23:40 CST 2018| Profile | #</div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p></p><p>大萨达撒</p>
+                                            <p></p>
+                                        </div>
+                                        <div class="x-comment-footer uk-margin-top">
+                                            <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
+                                            <a href="#" class="uk-button">赞</a>
+                                        </div>
+                                    </article>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="reply-item" id="comment_26">
+                            <article class="uk-comment">
+                                <header class="uk-comment-header">
+                                    <img class="uk-comment-avatar" src="https://avatars.githubusercontent.com/u/20903311" width="50" height="50" alt="">
+                                    <h4 class="uk-comment-title">aaa</h4>
+                                    <div class="uk-comment-meta">Tue Feb 20 15:23:26 CST 2018 | Profile | #</div>
+                                </header>
+                                <div class="uk-comment-body">
+                                    <p></p><p>额外翁翁</p>
+                                    <p></p>
+                                </div>
+                                <div class="x-comment-footer uk-margin-top">
+                                    <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
+                                    <a href="#" class="uk-button">赞</a>
+                                </div>
+                            </article>
+
+                            <ul class="ul-comment-list-child">
+
+                                <li class="reply-child-item" id="comment_27">
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header">
+                                            <img class="uk-comment-avatar" src="https://avatars.githubusercontent.com/u/20903311" width="50" height="50" alt="">
+                                            <h4 class="uk-comment-title">aaa</h4>
+                                            <div class="uk-comment-meta">Tue Feb 20 15:23:32 CST 2018| Profile | #</div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p></p><p>对方水电费是缩短</p>
+                                            <p></p>
+                                        </div>
+                                        <div class="x-comment-footer uk-margin-top">
+                                            <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
+                                            <a href="#" class="uk-button">赞</a>
+                                        </div>
+                                    </article>
+                                </li>
+
+                            </ul>
+                        </li>
+
                     </ul>
-
                 </div>
 
             </div>
