@@ -35,6 +35,7 @@
             console.log('下拉');
             if(loadmore){
               var last_id = $('#topic-list li:last-child').attr('id');
+
               loadmore(last_id);
             }
           }
@@ -237,7 +238,7 @@
           <%--</div>--%>
         <%--</li>--%>
 
-      <li class="app-blog-item">
+      <li class="app-blog-item" id="{{topic.topic_id}}" >
           <div class="title uk-text-truncate">
               <a href="${pageContext.request.contextPath}/topic/show/{{topic.topic_id}}">{{topic.topic_title}}</a>
           </div>

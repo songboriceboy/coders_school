@@ -27,19 +27,19 @@
 
     <script src="${pageContext.request.contextPath}/assets/editor-md-master/editormd.min.js"></script>
     <script src="${pageContext.request.contextPath}/assets/layer/layer.js"></script>
-    <!-- Codemirror 和 marked 依赖 -->
-    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
-    <script src="codemirror/lib/codemirror.js"></script>
-    <script src="codemirror/mode/markdown/markdown.js"></script>
-    <script src="codemirror/addon/mode/overlay.js"></script>
-    <script src="codemirror/mode/xml/xml.js"></script>
-    <script src="codemirror/mode/gfm/gfm.js"></script>
-    <script src="marked.js"></script>
 
-    <!-- HTML 编辑器的 CSS 与 JavaScript -->
-    <link rel="stylesheet" href="htmleditor.css">
-    <script src="htmleditor.js"></script>
     <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
+<style>
+    .topic-author{
+        padding: 20px;
+    }
+    .topic-detail{
+        padding: 20px;
+    }
+    #uk-comment-list{
+        padding: 30px;
+    }
+</style>
     <script>
         var testEditor = null;
         var testEditor2 = null;
@@ -294,78 +294,238 @@
 <div class="mb-cover">
     <div class="b20"></div>
     <div class="uk-container uk-container-center">
+        <div class="uk-grid" data-uk-grid-margin="">
+            <div class="uk-width-medium-3-4">
 
-        <div class="uk-panel uk-panel-box">
-            <h2>${topic.topic_title}</h2>
-            <div>
-                ${topic.topic_content}
+                <div class="uk-panel uk-panel-box uk-padding-remove">
+                    <div class="topic-content">
+                        <div class="topic-author">
+                            <img class="uk-align-left uk-border-circle"
+                                 src="https://avatars.githubusercontent.com/u/20903311" width="40" height="40">
+                            <div>zhangsan</div>
+                            <div>2018 年 03 月 07 日</div>
+                        </div>
+                        <h2 class="article-title uk-margin-large-left">
+                            ${topic.topic_title}
+                        </h2>
+                        <div class="topic-detail">
+                            ${topic.topic_content}
+                        </div>
+                    </div>
+
+                    <ul class="uk-comment-list" id="uk-comment-list">
+                        <c:forEach items="${mapComments}" var="entry">
+                            <li class="reply-item" id="comment_${entry.value.curr_comment_id}">
+                                <article class="uk-comment">
+                                    <header class="uk-comment-header">
+                                        <img class="uk-comment-avatar" src="${pageContext.request.contextPath}/avatar/${entry.value.curr_user_avatar}" width="50" height="50" alt="">
+                                        <h4 class="uk-comment-title">${entry.value.curr_user_name}</h4>
+                                        <div class="uk-comment-meta">${entry.value.curr_comment_createtime} | Profile | #</div>
+                                    </header>
+                                    <div class="uk-comment-body">
+                                        <p>${entry.value.curr_comment_content}</p>
+                                    </div>
+                                    <div class="x-comment-footer uk-margin-top">
+                                        <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
+                                        <a href="#" class="uk-button">赞</a>
+                                    </div>
+                                </article>
+
+                                <ul class="ul-comment-list-child">
+                                    <c:forEach items="${entry.value.childCommentList}" var="childComment">
+                                        <li class="reply-child-item" id="comment_${childComment.comment_id}">
+                                            <article class="uk-comment">
+                                                <header class="uk-comment-header">
+                                                    <img class="uk-comment-avatar" src="${pageContext.request.contextPath}/avatar/${childComment.user_avatar}" width="50" height="50" alt="">
+                                                    <h4 class="uk-comment-title">${childComment.user_name}</h4>
+                                                    <div class="uk-comment-meta">${childComment.comment_createtime}| Profile | #</div>
+                                                </header>
+                                                <div class="uk-comment-body">
+                                                    <p>${childComment.comment_content}</p>
+                                                </div>
+                                                <div class="x-comment-footer uk-margin-top">
+                                                    <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
+                                                    <a href="#" class="uk-button">赞</a>
+                                                </div>
+                                            </article>
+                                        </li>
+                                    </c:forEach>
+                                </ul>
+                            </li>
+                        </c:forEach>
+                    </ul>
+
+                    <div class="reply" id="final-reply">
+                        <form class="uk-form" action="#" method="post" id="reply-form">
+                            <div class="uk-form-row">
+                                <div class="editormd" id="test-editormd">
+                                    <input type="hidden" name = "topic_id" value="${topic.topic_id}">
+                                    <textarea class="editormd-markdown-textarea" name="comment_markdown_content"></textarea>
+                                    <!-- html textarea 需要开启配置项 saveHTMLToTextarea == true -->
+                                    <%--<textarea class="editormd-html-textarea" name="article_content"></textarea>--%>
+
+                                </div>
+                                <input type="submit" class="uk-button" id="submit">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
             </div>
 
+            <div class="uk-width-medium-1-4" id="mb_list_right">
+                <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                    <a href="#" class="uk-float-right">查看全部</a>
+                    <h3 class="uk-panel-title">热门标签</h3>
+                    <div class="uk-grid uk-text-center">
+                        <div class="uk-width-1-2 uk-button uk-button-link ">
+                            代码规范
+                        </div>
+                        <div class="uk-width-1-2 uk-button uk-button-link">
+                            代码代码规范
+                        </div>
+                        <div class="uk-width-1-2 uk-button uk-button-link">
+                            代码规范
+                        </div>
+                        <div class="uk-width-1-2 uk-button uk-button-link">
+                            代码代码规范
+                        </div>
+                        <div class="uk-width-1-2 uk-button uk-button-link">
+                            代码规范
+                        </div>
+                        <div class="uk-width-1-2 uk-button uk-button-link">
+                            代码代码规范
+                        </div>
+                        <div class="uk-width-1-2 uk-button uk-button-link">
+                            代码规范
+                        </div>
+                        <div class="uk-width-1-2 uk-button uk-button-link">
+                            代码代码规范
+                        </div>
+                        <div class="uk-width-1-2 uk-button uk-button-link">
+                            代码规范
+                        </div>
+                        <div class="uk-width-1-2 uk-button uk-button-link">
+                            代码代码规范
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b20"></div>
+                <!--页脚部分-->
+                <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                    <h3 class="uk-panel-title">你可能感兴趣的人</h3>
+                    <ul class="uk-list">
+                        <li>
+                            <img class="uk-align-left uk-border-circle"
+                                 src="https://avatars.githubusercontent.com/u/20903311" width="40" height="40">
+                            <div>zhangsan</div>
+                            <div>前端学徒</div>
+                        </li>
+                        <li>
+                            <img class="uk-align-left uk-border-circle"
+                                 src="https://avatars.githubusercontent.com/u/20903311" width="40" height="40">
+                            <div>zhangsan</div>
+                            <div>前端学徒</div>
+                        </li>
+                        <li>
+                            <img class="uk-align-left uk-border-circle"
+                                 src="https://avatars.githubusercontent.com/u/20903311" width="40" height="40">
+                            <div>zhangsan</div>
+                            <div>前端学徒</div>
+                        </li>
+                        <li>
+                            <img class="uk-align-left uk-border-circle"
+                                 src="https://avatars.githubusercontent.com/u/20903311" width="40" height="40">
+                            <div>zhangsan</div>
+                            <div>前端学徒</div>
+                        </li>
+                        <li>
+                            <img class="uk-align-left uk-border-circle"
+                                 src="https://avatars.githubusercontent.com/u/20903311" width="40" height="40">
+                            <div>zhangsan</div>
+                            <div>前端学徒</div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <%--<div class="uk-container uk-container-center">--%>
+
+        <%--<div class="uk-panel uk-panel-box">--%>
+            <%--<h2>${topic.topic_title}</h2>--%>
+            <%--<div>--%>
+                <%--${topic.topic_content}--%>
+            <%--</div>--%>
+
+
+            <%--&lt;%&ndash;<ul class="uk-comment-list" id="uk-comment-list">&ndash;%&gt;--%>
+             <%--&lt;%&ndash;&ndash;%&gt;--%>
+            <%--&lt;%&ndash;</ul>&ndash;%&gt;--%>
 
             <%--<ul class="uk-comment-list" id="uk-comment-list">--%>
-             <%----%>
+                <%--<c:forEach items="${mapComments}" var="entry">--%>
+                    <%--<li class="reply-item" id="comment_${entry.value.curr_comment_id}">--%>
+                        <%--<article class="uk-comment">--%>
+                            <%--<header class="uk-comment-header">--%>
+                                <%--<img class="uk-comment-avatar" src="${pageContext.request.contextPath}/avatar/${entry.value.curr_user_avatar}" width="50" height="50" alt="">--%>
+                                <%--<h4 class="uk-comment-title">${entry.value.curr_user_name}</h4>--%>
+                                <%--<div class="uk-comment-meta">${entry.value.curr_comment_createtime} | Profile | #</div>--%>
+                            <%--</header>--%>
+                            <%--<div class="uk-comment-body">--%>
+                                <%--<p>${entry.value.curr_comment_content}</p>--%>
+                            <%--</div>--%>
+                            <%--<div class="x-comment-footer uk-margin-top">--%>
+                                <%--<a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>--%>
+                                <%--<a href="#" class="uk-button">赞</a>--%>
+                            <%--</div>--%>
+                        <%--</article>--%>
+
+                        <%--<ul class="ul-comment-list-child">--%>
+                            <%--<c:forEach items="${entry.value.childCommentList}" var="childComment">--%>
+                                <%--<li class="reply-child-item" id="comment_${childComment.comment_id}">--%>
+                                    <%--<article class="uk-comment">--%>
+                                        <%--<header class="uk-comment-header">--%>
+                                            <%--<img class="uk-comment-avatar" src="${pageContext.request.contextPath}/avatar/${childComment.user_avatar}" width="50" height="50" alt="">--%>
+                                            <%--<h4 class="uk-comment-title">${childComment.user_name}</h4>--%>
+                                            <%--<div class="uk-comment-meta">${childComment.comment_createtime}| Profile | #</div>--%>
+                                        <%--</header>--%>
+                                        <%--<div class="uk-comment-body">--%>
+                                            <%--<p>${childComment.comment_content}</p>--%>
+                                        <%--</div>--%>
+                                        <%--<div class="x-comment-footer uk-margin-top">--%>
+                                            <%--<a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>--%>
+                                            <%--<a href="#" class="uk-button">赞</a>--%>
+                                        <%--</div>--%>
+                                    <%--</article>--%>
+                                <%--</li>--%>
+                            <%--</c:forEach>--%>
+                        <%--</ul>--%>
+                    <%--</li>--%>
+                <%--</c:forEach>--%>
             <%--</ul>--%>
 
-            <ul class="uk-comment-list" id="uk-comment-list">
-                <c:forEach items="${mapComments}" var="entry">
-                    <li class="reply-item" id="comment_${entry.value.curr_comment_id}">
-                        <article class="uk-comment">
-                            <header class="uk-comment-header">
-                                <img class="uk-comment-avatar" src="${pageContext.request.contextPath}/avatar/${entry.value.curr_user_avatar}" width="50" height="50" alt="">
-                                <h4 class="uk-comment-title">${entry.value.curr_user_name}</h4>
-                                <div class="uk-comment-meta">${entry.value.curr_comment_createtime} | Profile | #</div>
-                            </header>
-                            <div class="uk-comment-body">
-                                <p>${entry.value.curr_comment_content}</p>
-                            </div>
-                            <div class="x-comment-footer uk-margin-top">
-                                <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
-                                <a href="#" class="uk-button">赞</a>
-                            </div>
-                        </article>
+            <%--<div class="reply" id="final-reply">--%>
+                <%--<form class="uk-form" action="#" method="post" id="reply-form">--%>
+                    <%--<div class="uk-form-row">--%>
+                        <%--<div class="editormd" id="test-editormd">--%>
+                            <%--<input type="hidden" name = "topic_id" value="${topic.topic_id}">--%>
+                            <%--<textarea class="editormd-markdown-textarea" name="comment_markdown_content"></textarea>--%>
+                            <%--<!-- html textarea 需要开启配置项 saveHTMLToTextarea == true -->--%>
+                            <%--&lt;%&ndash;<textarea class="editormd-html-textarea" name="article_content"></textarea>&ndash;%&gt;--%>
 
-                        <ul class="ul-comment-list-child">
-                            <c:forEach items="${entry.value.childCommentList}" var="childComment">
-                                <li class="reply-child-item" id="comment_${childComment.comment_id}">
-                                    <article class="uk-comment">
-                                        <header class="uk-comment-header">
-                                            <img class="uk-comment-avatar" src="${pageContext.request.contextPath}/avatar/${childComment.user_avatar}" width="50" height="50" alt="">
-                                            <h4 class="uk-comment-title">${childComment.user_name}</h4>
-                                            <div class="uk-comment-meta">${childComment.comment_createtime}| Profile | #</div>
-                                        </header>
-                                        <div class="uk-comment-body">
-                                            <p>${childComment.comment_content}</p>
-                                        </div>
-                                        <div class="x-comment-footer uk-margin-top">
-                                            <a href="#" class="uk-button btn-reply"><i class="uk-icon-reply"></i> 回复</a>
-                                            <a href="#" class="uk-button">赞</a>
-                                        </div>
-                                    </article>
-                                </li>
-                            </c:forEach>
-                        </ul>
-                    </li>
-                </c:forEach>
-            </ul>
+                        <%--</div>--%>
+                        <%--<input type="submit" class="uk-button" id="submit">--%>
+                    <%--</div>--%>
+                <%--</form>--%>
+            <%--</div>--%>
 
-            <div class="reply" id="final-reply">
-                <form class="uk-form" action="#" method="post" id="reply-form">
-                    <div class="uk-form-row">
-                        <div class="editormd" id="test-editormd">
-                            <input type="hidden" name = "topic_id" value="${topic.topic_id}">
-                            <textarea class="editormd-markdown-textarea" name="comment_markdown_content"></textarea>
-                            <!-- html textarea 需要开启配置项 saveHTMLToTextarea == true -->
-                            <%--<textarea class="editormd-html-textarea" name="article_content"></textarea>--%>
+        <%--</div>--%>
 
-                        </div>
-                        <input type="submit" class="uk-button" id="submit">
-                    </div>
-                </form>
-            </div>
-
-        </div>
-
-    </div>
+    <%--</div>--%>
 </div>
 </body>
 </html>
