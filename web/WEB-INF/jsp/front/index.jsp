@@ -65,48 +65,6 @@
         });
       })
 
-      <%--var pagesize = 5;--%>
-
-      <%--$(function()--%>
-      <%--{--%>
-        <%--$("#page").pagination({--%>
-          <%--pageIndex: 0,--%>
-          <%--pageSize: pagesize,--%>
-          <%--showFirstLastBtn:true,--%>
-<%--//          showInfo: true,--%>
-<%--//          showJump: true,--%>
-<%--//          showPageSizes: true,--%>
-          <%--remote: {--%>
-            <%--url: '${pageContext.request.contextPath}/topic/getpagedtopics',--%>
-            <%--success: function (data) {--%>
-              <%--var html = template('topic-list-tpl', data);--%>
-              <%--$('#topic-list').html(html);--%>
-              <%--$('.node a').on('click',function(){--%>
-
-                <%--var section_id = $(this).attr("section_id");--%>
-                <%--$("#page").pagination('setPageIndex', 0);--%>
-                <%--$("#page").pagination('setPageSize', pagesize);--%>
-                <%--$("#page").pagination('setParams', {section_id:section_id});--%>
-                <%--$("#page").pagination('remote');--%>
-
-              <%--})--%>
-            <%--}--%>
-          <%--}--%>
-        <%--});--%>
-
-
-
-        <%--$('.uk-navbar-nav li a').on('click',function(){--%>
-
-          <%--var section_id = $(this).attr("section_id");--%>
-          <%--$("#page").pagination('setPageIndex', 0);--%>
-          <%--$("#page").pagination('setPageSize', pagesize);--%>
-          <%--$("#page").pagination('setParams', {section_id:section_id});--%>
-          <%--$("#page").pagination('remote');--%>
-
-        <%--})--%>
-
-      <%--});--%>
 
     </script>
 
@@ -123,66 +81,184 @@
   <%--<img class="uk-border-circle" id="avatar">--%>
   <%--<input type="file" name="pic" onchange="upfile();"/>--%>
   <%@include file="common/header.jsp"%>
-  <div class="mb-cover">
-    <div class="b20"></div>
-    <div class="uk-container uk-container-center">
+  <div class="uk-container uk-container-center">
+      <div class="uk-panel uk-panel-box uk-text-center app-cate">
+          <ul class="uk-subnav uk-position-relative">
+              <c:forEach items="${sections}" var="section">
+                  <li><a href="javascript:;" section_id="${section.section_id}">${section.section_name}</a></li>
+              </c:forEach>
+              <%--<li class="uk-active"><a href="#">我关注的</a></li>--%>
+              <%--<li><a href="#">Android</a></li>--%>
+              <%--<li><a href="#">前端</a></li>--%>
+              <%--<li><a href="#">iOS</a></li>--%>
+              <%--<li><a href="#">设计</a></li>--%>
+              <%--<li><a href="#">产品</a></li>--%>
+              <%--<li><a href="#">工具资源</a></li>--%>
+              <%--<li><a href="#">阅读</a></li>--%>
+              <%--<li><a href="#">人工智能</a></li>--%>
+              <li class="app-all-tag uk-position-absolute"><a href="#">标签管理</a></li>
+          </ul>
 
-    <nav class="uk-navbar">
+      </div>
+  </div>
 
-      <ul class="uk-navbar-nav">
-          <c:forEach items="${sections}" var="section">
-              <li><a href="javascript:;" section_id="${section.section_id}">${section.section_name}</a></li>
-          </c:forEach>
-      </ul>
-  </nav>
+  <%--<div class="mb-cover">--%>
+  <%--<ul class="uk-margin-top" id="topic-list">--%>
+
+  <%--</ul>--%>
+  <%--</div>--%>
+
+  <div class="app-cover">
+      <div class="b20"></div>
+      <!--固定宽度，居中对齐-->
+      <div class="uk-container uk-container-center">
+          <div class="uk-grid" data-uk-grid-margin="">
+              <div class="uk-width-medium-3-4">
+
+                  <div class="uk-panel uk-panel-box uk-padding-remove">
+                      <ul class="uk-list" id="topic-list">
 
 
-  <ul class="uk-margin-top" id="topic-list">
+                      </ul>
 
-  </ul>
+                  </div>
 
-  <div id="page" class="m-pagination"></div>
+              </div>
 
-    </div>
+              <div class="uk-width-medium-1-4 uk-hidden-small" id="mb_list_right">
+                  <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                      <a href="#" class="uk-float-right">查看全部</a>
+                      <h3 class="uk-panel-title">热门标签</h3>
+                      <div class="uk-grid uk-text-center">
+                          <div class="uk-width-1-2 uk-button uk-button-link ">
+                              代码规范
+                          </div>
+                          <div class="uk-width-1-2 uk-button uk-button-link">
+                              代码代码规范
+                          </div>
+                          <div class="uk-width-1-2 uk-button uk-button-link">
+                              代码规范
+                          </div>
+                          <div class="uk-width-1-2 uk-button uk-button-link">
+                              代码代码规范
+                          </div>
+                          <div class="uk-width-1-2 uk-button uk-button-link">
+                              代码规范
+                          </div>
+                          <div class="uk-width-1-2 uk-button uk-button-link">
+                              代码代码规范
+                          </div>
+                          <div class="uk-width-1-2 uk-button uk-button-link">
+                              代码规范
+                          </div>
+                          <div class="uk-width-1-2 uk-button uk-button-link">
+                              代码代码规范
+                          </div>
+                          <div class="uk-width-1-2 uk-button uk-button-link">
+                              代码规范
+                          </div>
+                          <div class="uk-width-1-2 uk-button uk-button-link">
+                              代码代码规范
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="b20"></div>
+                  <!--页脚部分-->
+                  <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                      <h3 class="uk-panel-title">你可能感兴趣的人</h3>
+                      <ul class="uk-list">
+                          <li>
+                              <img class="uk-align-left uk-border-circle"
+                                   src="https://avatars.githubusercontent.com/u/20903311" width="40" height="40">
+                              <div>zhangsan</div>
+                              <div>前端学徒</div>
+                          </li>
+                          <li>
+                              <img class="uk-align-left uk-border-circle"
+                                   src="https://avatars.githubusercontent.com/u/20903311" width="40" height="40">
+                              <div>zhangsan</div>
+                              <div>前端学徒</div>
+                          </li>
+                          <li>
+                              <img class="uk-align-left uk-border-circle"
+                                   src="https://avatars.githubusercontent.com/u/20903311" width="40" height="40">
+                              <div>zhangsan</div>
+                              <div>前端学徒</div>
+                          </li>
+                          <li>
+                              <img class="uk-align-left uk-border-circle"
+                                   src="https://avatars.githubusercontent.com/u/20903311" width="40" height="40">
+                              <div>zhangsan</div>
+                              <div>前端学徒</div>
+                          </li>
+                          <li>
+                              <img class="uk-align-left uk-border-circle"
+                                   src="https://avatars.githubusercontent.com/u/20903311" width="40" height="40">
+                              <div>zhangsan</div>
+                              <div>前端学徒</div>
+                          </li>
+                      </ul>
+
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
 
   <script type="text/html" id="topic-list-tpl">
-
-
       {{each list as topic i}}
+      <%--<li class="uk-list uk-list-line uk-clearfix topic uk-margin-top" id="{{topic.topic_id}}">--%>
+        <%--{{topic.topic_id}}--%>
 
-      <li class="uk-list uk-list-line uk-clearfix topic uk-margin-top" id="{{topic.topic_id}}">
-        {{topic.topic_id}}
-          <a href="#" class="author-avatar"><img class="avatar" src="${pageContext.request.contextPath}/avatar/{{topic.user_avatar}}"></a>
-          <div class="content">
-            <div class="uk-grid">
-              <div class="uk-width-5-6">
-                <a href="${pageContext.request.contextPath}/topic/show/{{topic.topic_id}}">{{topic.topic_title}}</a>
-                <a href="${pageContext.request.contextPath}/topic/modify/{{topic.topic_id}}">修改</a>
-              </div>
-              <div class="uk-width-1-6 uk-vertical-align uk-text-center">
-                {{if topic.comment_count > 0}}
-                <span class="uk-badge uk-badge-notification uk-vertical-align-middle">
-                  {{topic.comment_count}}
-                </span>
-                {{/if}}
-              </div>
-            </div>
+          <%--<div class="content">--%>
+            <%--<div class="uk-grid">--%>
+              <%--<div class="uk-width-5-6">--%>
+                <%--<a href="${pageContext.request.contextPath}/topic/show/{{topic.topic_id}}">{{topic.topic_title}}</a>--%>
+                <%--<a href="${pageContext.request.contextPath}/topic/modify/{{topic.topic_id}}">修改</a>--%>
+              <%--</div>--%>
+              <%--<div class="uk-width-1-6 uk-vertical-align uk-text-center">--%>
+                <%--{{if topic.comment_count > 0}}--%>
+                <%--<span class="uk-badge uk-badge-notification uk-vertical-align-middle">--%>
+                  <%--{{topic.comment_count}}--%>
+                <%--</span>--%>
+                <%--{{/if}}--%>
+              <%--</div>--%>
+            <%--</div>--%>
 
-            <div>
-              <span class="node"><a href="javascript:;" section_id = {{topic.section_id}}>{{topic.section_name}}</a></span>
-              <span class="split">•</span>
-              <span class="author"><a href="${pageContext.request.contextPath}/user/show/{{topic.user_id}}">{{topic.user_name}}</a></span>
-              <span class="split">•</span>
-              <span class="datetime">{{topic.createtime_str}}</span>
-            </div>
+            <%--<div>--%>
+              <%--<span class="node"><a href="javascript:;" section_id = {{topic.section_id}}>{{topic.section_name}}</a></span>--%>
+              <%--<span class="split">•</span>--%>
+              <%--<span class="author"><a href="${pageContext.request.contextPath}/user/show/{{topic.user_id}}">{{topic.user_name}}</a></span>--%>
+              <%--<span class="split">•</span>--%>
+              <%--<span class="datetime">{{topic.createtime_str}}</span>--%>
+            <%--</div>--%>
 
+          <%--</div>--%>
+        <%--</li>--%>
+
+      <li class="app-blog-item">
+          <div class="title uk-text-truncate">
+              <a href="${pageContext.request.contextPath}/topic/show/{{topic.topic_id}}">{{topic.topic_title}}</a>
           </div>
-        </li>
-
+          <div>
+              <a href="javascript:;" section_id = {{topic.section_id}}>
+                                    <span class="topic-cate">
+                                        {{topic.section_name}}
+                                    </span>
+              </a>
+              <span>
+                      <a href="${pageContext.request.contextPath}/user/show/{{topic.user_id}}">{{topic.user_name}}</a>
+              </span>
+              <span>
+                   {{topic.createtime_str}}
+              </span>
+              <span>
+                   908次阅读
+               </span>
+          </div>
+      </li>
       {{/each}}
-
-
   </script>
   </body>
 </html>
