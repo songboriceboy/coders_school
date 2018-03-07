@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="872bce5c-9269-4a5f-82e2-113350dfc46c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new_bak.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/test_new.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/test_new.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/style.css" afterPath="$PROJECT_DIR$/web/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/write_topic.html" afterPath="$PROJECT_DIR$/write_topic.html" />
-    </list>
+    <list default="true" id="872bce5c-9269-4a5f-82e2-113350dfc46c" name="Default" comment="" />
     <ignored path="coders_school.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1141,12 +1134,12 @@
       <workItem from="1520079978442" duration="1939000" />
       <workItem from="1520255699926" duration="89000" />
       <workItem from="1520256149263" duration="4818000" />
-      <workItem from="1520414990810" duration="10431000" />
+      <workItem from="1520414990810" duration="10744000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152819000" />
+    <option name="totallyTimeSpent" value="153132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
