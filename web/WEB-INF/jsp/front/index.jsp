@@ -12,7 +12,7 @@
   <head>
     <title>hello</title>
     <meta name="viewport"
-          content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
+          content="width=device-width,user-sctag-item=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link href="${pageContext.request.contextPath}/assets/uikit-2.25.0/css/uikit.almost-flat.css" rel="stylesheet">
     <%--<link href="${pageContext.request.contextPath}/assets/Mricode.Pagination-master/mricode.pagination.css" rel="stylesheet" />--%>
     <script src="${pageContext.request.contextPath}/assets/jquery/jquery.js"></script>
@@ -21,6 +21,23 @@
     <script src="${pageContext.request.contextPath}/assets/js/template.js"></script>
     <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
       <script src="${pageContext.request.contextPath}/assets/layer/layer.js"></script>
+      <style>
+          .tag .tag-item{
+              background-color: #F7F7F7;
+              height: 28px;
+              line-height: 28px;
+          }
+          .tag .tag-item a{
+              color: black;
+          }
+          .tag .tag-item:hover a{
+              color: white;
+              text-decoration: none;
+          }
+          .tag .tag-item:hover{
+              background-color: #00CE00;
+          }
+      </style>
     <script type="text/javascript">
         var isNoMore = false;
         var iiLoading=null;
@@ -144,42 +161,31 @@
               </div>
 
               <div class="uk-width-medium-1-4 uk-hidden-small" id="mb_list_right">
-                  <div class="uk-panel uk-panel-box uk-panel-box-secondary">
-                      <a href="#" class="uk-float-right">查看全部</a>
-                      <h3 class="uk-panel-title">热门标签</h3>
-                      <div class="uk-grid uk-text-center">
-                          <div class="uk-width-1-2 uk-button uk-button-link ">
-                              代码规范
-                          </div>
-                          <div class="uk-width-1-2 uk-button uk-button-link">
-                              代码代码规范
-                          </div>
-                          <div class="uk-width-1-2 uk-button uk-button-link">
-                              代码规范
-                          </div>
-                          <div class="uk-width-1-2 uk-button uk-button-link">
-                              代码代码规范
-                          </div>
-                          <div class="uk-width-1-2 uk-button uk-button-link">
-                              代码规范
-                          </div>
-                          <div class="uk-width-1-2 uk-button uk-button-link">
-                              代码代码规范
-                          </div>
-                          <div class="uk-width-1-2 uk-button uk-button-link">
-                              代码规范
-                          </div>
-                          <div class="uk-width-1-2 uk-button uk-button-link">
-                              代码代码规范
-                          </div>
-                          <div class="uk-width-1-2 uk-button uk-button-link">
-                              代码规范
-                          </div>
-                          <div class="uk-width-1-2 uk-button uk-button-link">
-                              代码代码规范
-                          </div>
+                  <div class="tag uk-panel uk-panel-box uk-panel-box-secondary">
+                      <div>
+                          <div class="uk-text-bold uk-text-middle uk-float-left uk-margin-left uk-margin-top">热门标签</div>
+                          <div class="uk-float-right uk-margin-right uk-margin-top"><a href="#">查看全部</a></div>
+                      </div>
+                      <div class="uk-margin-large-top"><hr></div>
+
+                      <div class="uk-margin-top">
+                          <div class="tag-item uk-text-center uk-display-inline-block uk-width-1-3 uk-border-rounded uk-margin-left"><a href="#">架构</a></div>
+                          <div class="tag-item uk-text-center uk-display-inline-block uk-width-1-2 uk-border-rounded uk-margin-left"><a href="#">开源</a></div>
+                      </div>
+                      <div class="uk-margin-top">
+                          <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-3 uk-border-rounded uk-margin-left"><a href="#">算法</a></div>
+                          <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-2 uk-border-rounded uk-margin-left"><a href="#">GitHub</a></div>
+                      </div>
+                      <div class="uk-margin-top">
+                          <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-3 uk-border-rounded uk-margin-left"><a href="#">面试</a></div>
+                          <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-2 uk-border-rounded uk-margin-left"><a href="#">代码规范</a></div>
+                      </div>
+                      <div class="uk-margin-top">
+                          <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-3 uk-border-rounded uk-margin-left"><a href="#">产品</a></div>
+                          <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-2 uk-border-rounded uk-margin-left"><a href="#">铸剑翻译计划</a></   >
                       </div>
                   </div>
+
 
                   <div class="b20"></div>
                   <!--页脚部分-->
