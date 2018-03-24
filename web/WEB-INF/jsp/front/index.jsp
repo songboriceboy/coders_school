@@ -20,8 +20,10 @@
     <%--<script src="${pageContext.request.contextPath}/assets/Mricode.Pagination-master/mricode.pagination.js"></script>--%>
     <script src="${pageContext.request.contextPath}/assets/js/template.js"></script>
     <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
+      <script src="${pageContext.request.contextPath}/assets/layer/layer.js"></script>
     <script type="text/javascript">
-
+        var isNoMore = false;
+        var iiLoading=null;
       var curr_req_id = 0;
       function refresh(loadmore) {
         $(window).scroll(function(){
@@ -31,7 +33,7 @@
           var scrollHeight = $(document).height();   //当前页面的总高度
           var clientHeight = $(this).height();    //当前可视的页面高度
           // console.log("top:"+scrollTop+",doc:"+scrollHeight+",client:"+clientHeight);
-          if(scrollTop + clientHeight >= scrollHeight){   //距离顶部+当前高度 >=文档总高度 即代表滑动到底部
+          if(!isNoMore&&(scrollTop + clientHeight >= scrollHeight)){   //距离顶部+当前高度 >=文档总高度 即代表滑动到底部
             console.log('下拉');
             if(loadmore){
               var last_id = $('#topic-list li:last-child').attr('id');
@@ -45,16 +47,31 @@
       $(function () {
 
         refresh(function (last_id) {
+            if(last_id == undefined)
+            {
+                return;
+            }
+
           if(curr_req_id == last_id)
           {
               return;
           }
           curr_req_id = last_id;
+            iiLoading = layer.load();
           $.post("${pageContext.request.contextPath}/topic/getpagedtopics",{section_id:0,last_topic_id:last_id}, function (res) {
             // layer.msg(ret.msg);
             var data = JSON.parse(res);
+
             var html = template('topic-list-tpl', data);
             $('#topic-list').append(html);
+              layer.close(iiLoading);
+              if(data.list.length == 0)
+              {
+                  isNoMore = true;
+                  layer.msg('没有了', {
+                      time: 500
+                  });
+              }
             curr_req_id = 0;
           });
         });
@@ -239,6 +256,7 @@
         <%--</li>--%>
 
       <li class="app-blog-item" id="{{topic.topic_id}}" >
+          {{topic.topic_id}}
           <div class="title uk-text-truncate">
               <a href="${pageContext.request.contextPath}/topic/show/{{topic.topic_id}}">{{topic.topic_title}}</a>
           </div>
