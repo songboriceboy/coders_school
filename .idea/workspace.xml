@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872bce5c-9269-4a5f-82e2-113350dfc46c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/adapter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/style.css" afterPath="$PROJECT_DIR$/web/assets/css/style.css" />
     </list>
     <ignored path="coders_school.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="181" column="69" selection-start-line="181" selection-start-column="69" selection-end-line="181" selection-end-column="69" />
+            <state relative-caret-position="75">
+              <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
               <folding>
                 <element signature="n#div#2;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -82,18 +85,8 @@
       <file leaf-file-name="TopicController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/school/coder/controller/TopicController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="505">
               <caret line="225" column="19" selection-start-line="225" selection-start-column="19" selection-end-line="225" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="codes_school.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/codes_school.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2575">
-              <caret line="103" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,9 +115,21 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3350">
-              <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adapter.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/assets/js/adapter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,6 +144,7 @@
         <option value="Jsp File" />
         <option value="Class" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -153,7 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/school/coder/domain/SectionInfo.java" />
         <option value="$PROJECT_DIR$/src/school/coder/service/SectionService.java" />
         <option value="$PROJECT_DIR$/src/school/coder/mapper/SectionMapper.java" />
         <option value="$PROJECT_DIR$/src/school/coder/mapper/SectionMapper.xml" />
@@ -196,14 +201,15 @@
         <option value="$PROJECT_DIR$/write_topic.html" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/test_new.jsp" />
         <option value="$PROJECT_DIR$/home_new.html" />
-        <option value="$PROJECT_DIR$/web/assets/css/style.css" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/show.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/topic/new.jsp" />
         <option value="C:/豆约翰博客备份专家github官网/douyuehan_blogback/index.html" />
         <option value="$PROJECT_DIR$/src/school/coder/controller/TopicController.java" />
         <option value="D:/用户目录/下载/zhujian-master/登录和标签/Hoverlable.html" />
         <option value="D:/用户目录/下载/zhujian-master/登录和标签/loginPage.html" />
+        <option value="$PROJECT_DIR$/web/assets/css/style.css" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp" />
+        <option value="$PROJECT_DIR$/web/assets/js/adapter.js" />
       </list>
     </option>
   </component>
@@ -404,7 +410,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layer" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coders_school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coders_school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -466,16 +494,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\coder_school\coders_school\web\assets\js" />
+      <recent name="C:\coder_school\coders_school\web\WEB-INF\jsp\front\topic" />
+      <recent name="C:\coder_school\coders_school" />
+      <recent name="C:\coder_school\coders_school\web\WEB-INF\jsp\front\user" />
+      <recent name="C:\coder_school\coders_school\src\school\coder\domain" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\coder_school\coders_school" />
       <recent name="E:\coders_school\web" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\coder_school\coders_school\web\WEB-INF\jsp\front\topic" />
-      <recent name="C:\coder_school\coders_school" />
-      <recent name="C:\coder_school\coders_school\web\assets\js" />
-      <recent name="C:\coder_school\coders_school\web\WEB-INF\jsp\front\user" />
-      <recent name="C:\coder_school\coders_school\src\school\coder\domain" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.21">
@@ -1064,7 +1092,7 @@
       <workItem from="1520414990810" duration="15382000" />
       <workItem from="1520561981711" duration="1762000" />
       <workItem from="1520598397874" duration="1341000" />
-      <workItem from="1521873956333" duration="6008000" />
+      <workItem from="1521873956333" duration="8308000" />
     </task>
     <task id="LOCAL-00001" summary="idea commit test">
       <created>1520562154944</created>
@@ -1084,7 +1112,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166881000" />
+    <option name="totallyTimeSpent" value="169181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1100,7 +1128,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32454696" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32454696" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1167,13 +1195,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/school/coder/util/CommonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/vue/vue.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -1426,14 +1447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3350">
-          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/codes_school.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2575">
@@ -1465,26 +1478,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/school/coder/controller/AdminController.java">
+    <entry file="file://D:/用户目录/下载/zhujian-master/登录和标签/loginPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/school/coder/controller/TopicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="225" column="19" selection-start-line="225" selection-start-column="19" selection-end-line="225" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/用户目录/下载/zhujian-master/登录和标签/Hoverlable.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="36" selection-end-column="8" />
+        <state relative-caret-position="199">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="25" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1499,21 +1496,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/用户目录/下载/zhujian-master/登录和标签/loginPage.html">
+    <entry file="file://D:/用户目录/下载/zhujian-master/登录和标签/Hoverlable.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="18">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="36" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/school/coder/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/school/coder/controller/TopicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="225" column="19" selection-start-line="225" selection-start-column="19" selection-end-line="225" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/front/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="181" column="69" selection-start-line="181" selection-start-column="69" selection-end-line="181" selection-end-column="69" />
+        <state relative-caret-position="75">
+          <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
           <folding>
             <element signature="n#div#2;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/js/adapter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
