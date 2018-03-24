@@ -37,6 +37,21 @@
           .tag .tag-item:hover{
               background-color: #00CE00;
           }
+
+          .three-part-login{
+              font-size: 22px;
+          }
+
+          .uk-icon-weixin{
+              color: green;
+          }
+          .uk-icon-weibo{
+              color: red;
+          }
+          .uk-icon-github{
+              color: black;
+          }
+
       </style>
     <script type="text/javascript">
         var isNoMore = false;
@@ -161,6 +176,37 @@
               </div>
 
               <div class="uk-width-medium-1-4 uk-hidden-small" id="mb_list_right">
+
+                  <div class="login uk-panel uk-panel-box uk-panel-box-secondary">
+
+                      <div class="uk-text-bold uk-margin-small-bottom">铸剑-zhujian</div>
+                      <div>一个帮助开发者成长的社区</div>
+
+                      <form class="uk-form  uk-margin-small-top">
+                          <div class="uk-form-row ">
+                              <input type="text" placeholder="昵称" class="uk-form-blank uk-form-width-medium ">
+                          </div>
+                          <div class="uk-form-row">
+                              <input type="text" placeholder="邮箱/手机" class="uk-form-blank uk-form-width-medium">
+                          </div>
+                          <div class="uk-form-row">
+                              <input type="password" placeholder="密码（不少于6位）" class="uk-form-blank uk-form-width-medium">
+                          </div>
+
+                          <button id="login" class="uk-margin-top uk-button uk-button-primary uk-width-1-1" >立即注册</button>
+
+                      </form>
+                      <div class="uk-margin-top">
+                            <span class="uk-margin-small-right">第三方登录：</span>
+                            <span class="three-part-login ">
+                                <i ><a href="#" class="uk-icon-justify uk-icon-github uk-margin-small-left"></a></i>
+                                <i ><a href="#" class="uk-icon-justify uk-icon-weixin uk-margin-small-left"></a></i>
+                                <i ><a href="#" class="uk-icon-justify uk-icon-weibo uk-margin-small-left"></a></i>
+                            </span>
+
+                      </div>
+                  </div>
+                  <div class="b20"></div>
                   <div class="tag uk-panel uk-panel-box uk-panel-box-secondary">
                       <div>
                           <div class="uk-text-bold uk-text-middle uk-float-left uk-margin-left uk-margin-top">热门标签</div>
@@ -182,12 +228,12 @@
                       </div>
                       <div class="uk-margin-top">
                           <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-3 uk-border-rounded uk-margin-left"><a href="#">产品</a></div>
-                          <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-2 uk-border-rounded uk-margin-left"><a href="#">铸剑翻译计划</a></   >
+                          <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-2 uk-border-rounded uk-margin-left"><a href="#">铸剑翻译计划</a></div>
                       </div>
                   </div>
 
 
-                  <div class="b20"></div>
+
                   <!--页脚部分-->
                   <div class="uk-panel uk-panel-box uk-panel-box-secondary">
                       <h3 class="uk-panel-title">你可能感兴趣的人</h3>
