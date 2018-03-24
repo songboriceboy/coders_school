@@ -207,8 +207,7 @@ public class TopicController {
 
     @RequestMapping("getpagedtopics")
     public void getPagedTopics(TopicPageInfoScroll topicPageInfoScroll
-            ,HttpServletResponse response) throws IOException
-    {
+            ,HttpServletResponse response) throws IOException, InterruptedException {
 //        int count = topicService.getTopicsCounts(pageinfo);
         List<TopicInfoEx> lstBookInfos = new ArrayList<TopicInfoEx>();
 
@@ -224,6 +223,7 @@ public class TopicController {
 
         String strJsonString = JSON.toJSONString(pageData);
         PrintWriter pWriter = response.getWriter();
+        Thread.sleep(500);
         pWriter.println(strJsonString);
     }
 }
