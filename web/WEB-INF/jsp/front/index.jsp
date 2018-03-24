@@ -79,7 +79,19 @@
 
       $(function () {
 
-        refresh(function (last_id) {
+          $('#login-btn').on('click', function() {
+
+              layer.open({
+                  type: 1,
+                  skin: 'layui-layer-lan',
+                  shadeClose: true, //点击遮罩关闭层
+                  area: ['320px', '320px'],
+                  content: $('#ulogin')//弹框显示的url
+              });
+          }
+          );
+
+              refresh(function (last_id) {
             if(last_id == undefined)
             {
                 return;
@@ -178,11 +190,9 @@
 
               <div class="uk-width-medium-1-4 uk-hidden-small" id="mb_list_right">
 
-                  <div class="login uk-panel uk-panel-box uk-panel-box-secondary">
+                  <div id="ulogin" class="login uk-panel uk-panel-box uk-panel-box-secondary">
 
-                      <div class="uk-text-bold uk-margin-small-bottom">铸剑-zhujian</div>
-                      <div>一个帮助开发者成长的社区</div>
-
+                      <div class="uk-text-bold uk-margin-bottom">铸剑-zhujian</div>
                       <form class="uk-form  uk-margin-small-top">
                           <div class="uk-form-row ">
                               <input type="text" placeholder="昵称" class="uk-form-blank uk-form-width-medium ">

@@ -53,10 +53,18 @@
                         </div>
                     </c:when>
                     <c:otherwise>
-                        <div class="uk-button-group"><a class="uk-button uk-button-primary uk-margin-right"
-                                                        href="${pageContext.request.contextPath}/user/reg">免费注册</a><a
+                        <div class="uk-button-group">
+                            <a id = "login-btn" class="uk-button uk-button-primary uk-margin-right"
+                               href="#">免费注册
+                            </a>
+                            <%--<a class="uk-button uk-button-primary uk-margin-right"--%>
+                                                        <%--href="${pageContext.request.contextPath}/user/reg">免费注册--%>
+                            <%--</a>--%>
+                            <a
                                 class="uk-button uk-button-primary"
-                                href="${pageContext.request.contextPath}/user/login">立即登录</a></div>
+                                href="${pageContext.request.contextPath}/user/login">立即登录
+                            </a>
+                        </div>
                     </c:otherwise>
                 </c:choose>
             </div>
