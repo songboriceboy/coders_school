@@ -139,4 +139,35 @@ a.b:hover {
 .markdown-editor{
     padding-left: 0;
 }
+/*rigth tag*/
+.tag .tag-item{
+    background-color: #F7F7F7;
+    height: 0.37333rem;
+    line-height: 0.37333rem;
+    border-radius: 0.18667rem;
+}
+.tag .tag-item a{
+    color: black;
+}
+.tag .tag-item:hover a{
+    color: white;
+    text-decoration: none;
+}
+.tag .tag-item:hover{
+    background-color: #00CE00;
+}
 
+/*right login*/
+.three-part-login{
+    font-size: 22px;
+}
+
+.uk-icon-weixin{
+    color: green;
+}
+.uk-icon-weibo{
+    color: red;
+}
+.uk-icon-github{
+    color: black;
+}

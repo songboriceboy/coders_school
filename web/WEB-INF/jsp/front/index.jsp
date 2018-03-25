@@ -13,49 +13,7 @@
     <title>hello</title>
     <meta name="viewport"
           content="width=device-width,user-sctag-item=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <link href="${pageContext.request.contextPath}/assets/uikit-2.25.0/css/uikit.almost-flat.css" rel="stylesheet">
-    <%--<link href="${pageContext.request.contextPath}/assets/Mricode.Pagination-master/mricode.pagination.css" rel="stylesheet" />--%>
-    <script src="${pageContext.request.contextPath}/assets/jquery/jquery.js"></script>
-    <script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/uikit.js"></script>
-    <%--<script src="${pageContext.request.contextPath}/assets/Mricode.Pagination-master/mricode.pagination.js"></script>--%>
-    <script src="${pageContext.request.contextPath}/assets/js/template.js"></script>
-      <script src="${pageContext.request.contextPath}/assets/js/adapter.js"></script>
-    <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
-      <script src="${pageContext.request.contextPath}/assets/layer/layer.js"></script>
-      <%--https://www.520ued.com/tools/rem--%>
-      <style>
-          .tag .tag-item{
-              background-color: #F7F7F7;
-              height: 0.37333rem;
-              line-height: 0.37333rem;
-              border-radius: 0.18667rem;
-          }
-          .tag .tag-item a{
-              color: black;
-          }
-          .tag .tag-item:hover a{
-              color: white;
-              text-decoration: none;
-          }
-          .tag .tag-item:hover{
-              background-color: #00CE00;
-          }
-
-          .three-part-login{
-              font-size: 22px;
-          }
-
-          .uk-icon-weixin{
-              color: green;
-          }
-          .uk-icon-weibo{
-              color: red;
-          }
-          .uk-icon-github{
-              color: black;
-          }
-
-      </style>
+      <%@include file="common/common_css_js_include.jsp"%>
     <script type="text/javascript">
         var isNoMore = false;
         var iiLoading=null;
