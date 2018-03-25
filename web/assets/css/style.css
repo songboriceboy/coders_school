@@ -3,7 +3,10 @@ html, h1, h2, h3, h4, h5, h6 {
     font-family: 'Microsoft YaHei',"Helvetica Neue",Helvetica,Arial,sans-serif!important;
 }
 .uk-button{
-    font-size: 0.25rem;
+    font-size: 0.33rem;
+}
+.uk-dropdown{
+    font-size: 0.33rem;
 }
 .touch-nav {
     line-height: 40px;
