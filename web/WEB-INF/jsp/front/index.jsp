@@ -22,11 +22,13 @@
       <script src="${pageContext.request.contextPath}/assets/js/adapter.js"></script>
     <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
       <script src="${pageContext.request.contextPath}/assets/layer/layer.js"></script>
+      <%--https://www.520ued.com/tools/rem--%>
       <style>
           .tag .tag-item{
               background-color: #F7F7F7;
-              height: 28px;
-              line-height: 28px;
+              height: 0.37333rem;
+              line-height: 0.37333rem;
+              border-radius: 0.18667rem;
           }
           .tag .tag-item a{
               color: black;
@@ -227,19 +229,19 @@
 
                       <div class="uk-margin-top">
                           <div class="tag-item uk-text-center uk-display-inline-block uk-width-1-3 uk-border-rounded uk-margin-left"><a href="#">架构</a></div>
-                          <div class="tag-item uk-text-center uk-display-inline-block uk-width-1-2 uk-border-rounded uk-margin-left"><a href="#">开源</a></div>
+                          <div class="tag-item uk-text-center uk-display-inline-block uk-width-1-3 uk-border-rounded uk-margin-left"><a href="#">开源</a></div>
                       </div>
                       <div class="uk-margin-top">
                           <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-3 uk-border-rounded uk-margin-left"><a href="#">算法</a></div>
-                          <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-2 uk-border-rounded uk-margin-left"><a href="#">GitHub</a></div>
+                          <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-3 uk-border-rounded uk-margin-left"><a href="#">GitHub</a></div>
                       </div>
                       <div class="uk-margin-top">
                           <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-3 uk-border-rounded uk-margin-left"><a href="#">面试</a></div>
-                          <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-2 uk-border-rounded uk-margin-left"><a href="#">代码规范</a></div>
+                          <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-3 uk-border-rounded uk-margin-left"><a href="#">代码规范</a></div>
                       </div>
                       <div class="uk-margin-top">
                           <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-3 uk-border-rounded uk-margin-left"><a href="#">产品</a></div>
-                          <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-2 uk-border-rounded uk-margin-left"><a href="#">铸剑翻译计划</a></div>
+                          <div class="tag-item  uk-text-center uk-display-inline-block uk-width-1-3 uk-border-rounded uk-margin-left"><a href="#">铸剑翻译</a></div>
                       </div>
                   </div>
 

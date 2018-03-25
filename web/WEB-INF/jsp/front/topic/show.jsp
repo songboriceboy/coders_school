@@ -26,6 +26,7 @@
     <script src="${pageContext.request.contextPath}/assets/uikit-2.25.0/js/uikit.min.js"></script>
 
     <script src="${pageContext.request.contextPath}/assets/editor-md-master/editormd.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/js/adapter.js"></script>
     <script src="${pageContext.request.contextPath}/assets/layer/layer.js"></script>
 
     <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet">
