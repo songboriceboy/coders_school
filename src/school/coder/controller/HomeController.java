@@ -29,7 +29,7 @@ public class HomeController {
 		List<TopicInfoEx> topicInfoList = topicService.getAllTopics();
 		List<SectionInfo> sectionInfoList = sectionService.getAllSections();
 		ModelAndView maView = new ModelAndView();
-		maView.setViewName("front/index");
+		maView.setViewName("front/index_after_login");
 		maView.addObject("topics",topicInfoList);
 		maView.addObject("sections",sectionInfoList);
 		return maView;
