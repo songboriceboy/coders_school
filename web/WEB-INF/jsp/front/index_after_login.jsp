@@ -20,7 +20,7 @@
     }
 
     .firstPageOfLog .interval {
-        height: 25px;
+        height: 0.46296rem;
     }
 
     .uk-panel-box {
@@ -34,8 +34,8 @@
     }
 
     .uk-position-relative li {
-        padding-left: 50px;
-        font-size: 15px;
+        padding-left: 0.92593rem;
+        font-size: 0.27778rem;
     }
 
     .draft {
@@ -46,19 +46,19 @@
         padding: 0;
         background-color: white;
         /*border: 1px solid red;*/
-        height: 50px;
-        line-height: 50px;
+        height: 0.92593rem;
+        line-height: 0.92593rem;
     }
 
     .writeArticle img {
-        width: 50px;
-        height: 50px;
+        width: 0.92593rem;
+        height: 0.92593rem;
         display: inline-block;
     }
 
     .writeArticle ul li {
         display: inline-block;
-        margin-left: 20px;
+        margin-left: 0.37037rem;
     }
 
     .writeArticle ul {
@@ -69,8 +69,8 @@
         display: inline-block;
         border-right: 1px solid #EAEAEA;
 
-        padding-right: 14px;
-        margin-left: 10px;
+        padding-right: 0.25926rem;
+        margin-left: 0.18519rem;
     }
 
     .firstPageOfLog .option ul li:hover a {
@@ -84,7 +84,7 @@
 
     .firstPageOfLog .option {
         border-radius: 0;
-        padding: 6px;
+        padding: 0.11111rem;
         border-bottom: 1px solid #F5F5F5;
     }
 
@@ -97,13 +97,13 @@
     }
 
     .firstPageOfLog .rank {
-        padding-left: 370px;
+        padding-left: 6.85185rem;
     }
 
     .firstPageOfLog .rank li {
         border: 0px solid white;
-        padding-right: 14px;
-        margin-left: 10px;
+        padding-right: 0.25926rem;
+        margin-left: 0.18519rem;
 
     }
 
@@ -111,19 +111,19 @@
         display: inline-block;
         border: 1px solid #AFB8C2;
         border-radius: 100%;
-        margin-bottom: 4px;
+        margin-bottom: 0.07407rem;
     }
 
     .firstPageOfLog .text .cicle {
         display: inline-block;
         border: 1px solid #AFB8C2;
         border-radius: 100%;
-        margin-bottom: 4px;
+        margin-bottom: 0.07407rem;
     }
 
     .firstPageOfLog .text span {
-        font-size: 12px;
-        padding: 0 6px;
+        font-size: 0.22222rem;
+        padding: 0 0.11111rem;
         color: #B2BAC2;
     }
 
@@ -133,11 +133,11 @@
 
     .firstPageOfLog .text .content-title {
         color: black;
-        font-size: 18px;
+        font-size: 0.33333rem;
     }
 
     .firstPageOfLog .text .content {
-        margin-top: 6px;
+        margin-top: 0.11111rem;
     }
 
     .firstPageOfLog .text a {
@@ -145,7 +145,7 @@
     }
 
     .firstPageOfLog .buttonGroup .pic {
-        padding: 6px 10px;
+        padding: 0.11111rem 0.18519rem;
         border: 1px solid #EDEEEF;
     }
 
@@ -154,19 +154,19 @@
     }
 
     .firstPageOfLog .buttonGroup .count {
-        margin-left: 2px;
+        margin-left: 0.03704rem;
     }
 
     .firstPageOfLog .buttonGroup {
-        margin-top: 10px;
+        margin-top: 0.18519rem;
     }
 
     .firstPageOfLog .buttonGroup .share {
-        margin-left: 15px;
+        margin-left: 0.27778rem;
     }
 
     .firstPageOfLog .buttonGroup .collect, .firstPageOfLog .buttonGroup .share {
-        padding: 6px 15px;
+        padding: 0.11111rem 0.27778rem;
         border: 1px solid #EDEEEF;
         display: none;
     }
@@ -184,8 +184,8 @@
     }
 
     .firstPageOfLog .text img {
-        width: 60px;
-        height: 60px;
+        width: 1.11111rem;
+        height: 1.11111rem;
     }
 
     .firstPageOfLog .right-part .interest .interestingPeople {
@@ -198,8 +198,8 @@
     }
 
     .firstPageOfLog .right-part .interest a img {
-        width: 40px;
-        height: 40px;
+        width: 0.74074rem;
+        height: 0.74074rem;
         border-radius: 100%;
     }
 </style>
